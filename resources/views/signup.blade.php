@@ -16,9 +16,10 @@
             /* background-image: url('{{ asset('assets/images/home/login_bg.webp') }}');
             background-position: cover;
             background-repeat: no-repeat; */
-            
+
         }
-        body{
+
+        body {
             background-image: url('{{ asset('assets/images/home/login_bg.webp') }}');
             background-size: cover;
             background-position: center;
@@ -37,7 +38,7 @@
             align-items: center;
             justify-content: center;
             background: #2193b024;
-            
+
         }
 
         .login_section .container {
@@ -83,7 +84,7 @@
         .welcome_text h1 {
             margin: 20px 0px 0px 0px;
             font-size: 50px;
-            font-weight: 600;
+            font-weight: 500;
         }
 
         .welcome_text p {
@@ -163,9 +164,10 @@
         .flex_forget a {
             color: black;
         }
+
         .sign_in {
             display: block;
-            margin: 0 auto;
+            margin: 20px auto;
             width: 100%;
             padding: 10px;
             border-radius: 40px;
@@ -179,9 +181,11 @@
         .sign_in:hover {
             background: #2193b0;
         }
+
         .form_section form .form-control:focus {
             outline: 1px solid #2193b0;
         }
+
         @media (max-width: 1000px) {
             .left {
                 width: 100%;
@@ -191,12 +195,10 @@
             .right {
                 display: none;
             }
-
             .login_section .container{
                 width: 90%;
             }
         }
-      
     </style>
 </head>
 
@@ -210,42 +212,32 @@
                             <img src="{{ asset('assets/images/imas_logo.png') }}" alt="">
                         </div>
                         <div class="welcome_text">
-                            <h1>Welcome!</h1>
-                            <p>Please enter your details</p>
-                        </div>
-                        <div class="social_login">
-                            <a href="javascript:void(0);" class="social_btn">
-                                <i class="fa-brands fa-google"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="social_btn">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                            <a href="javascript:void(0);" class="social_btn">
-                                <i class="fa-brands fa-apple"></i>
-                            </a>
-                        </div>
-                        <div class="separator">
-                            <div class="line"></div>
-                            <h2>or</h2>
-                            <div class="line"></div>
+                            <h1>SIGN UP</h1>
                         </div>
                         <form action="">
+                            <label for="username">Username</label>
+                            <input type="text" name="username" id="username" class="form-control"
+                                placeholder="Esername">
+
                             <label for="email">Email Address</label>
                             <input type="email" name="email" id="email" class="form-control"
-                                placeholder="youremail@mail.com">
+                                placeholder="E-mail">
 
                             <label for="password">Password</label>
                             <input type="password" name="password" id="password" class="form-control"
-                                placeholder="*********">
+                                placeholder="Password">
+
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" name="confirm-password" id="confirm-password" class="form-control"
+                                placeholder="Confirm Password">
+
+                            <button type="submit" class="sign_in">Sign Up</button>
                             <div class="flex_forget">
                                 <div class="flex_remember">
-                                    <input type="checkbox" name="remember_me" id="remember_me">
-                                    <label for="remember_me">Remember me</label>
+                                    <label>Already have an account? <a href="{{ Route('login') }}">Login</a> here</label>
                                 </div>
-                                <a href="javascript:void(0);">Forget Password?</a>
                             </div>
-                            <button type="submit" class="sign_in">Sign In</button>
-                        
+
                         </form>
                     </div>
                 </div>
