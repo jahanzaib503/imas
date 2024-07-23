@@ -63,7 +63,7 @@
                                 <li><a class="dropdown-item" href="javascript:void(0);">HGV Drivers</a></li>
                                 <li><a class="dropdown-item" href="{{ Route('seafarers-medical') }}">Seafarers</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Safety Critical</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Ambulance</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('ambulance-driver-medical') }}">Ambulance</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Crane Operators</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Forklift Operators</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Bus Drivers</a></li>

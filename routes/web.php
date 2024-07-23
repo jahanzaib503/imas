@@ -31,3 +31,7 @@ Route::get('/signup', function () {
 Route::get('/seafarers-medical', function () {
     return view('seafarers-medical');
 })->name('seafarers-medical');
+
+Route::get('/ambulance-driver-medical', function () {
+    return view('ambulance-driver-medical');
+})->name('ambulance-driver-medical');
