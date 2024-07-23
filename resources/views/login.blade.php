@@ -13,6 +13,17 @@
             padding: 0;
             margin: 0;
             color: #373537;
+            /* background-image: url('{{ asset('assets/images/home/login_bg.webp') }}');
+            background-position: cover;
+            background-repeat: no-repeat; */
+            
+        }
+        body{
+            background-image: url('{{ asset('assets/images/home/login_bg.webp') }}');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
         }
 
         .logo img {
@@ -26,22 +37,28 @@
             align-items: center;
             justify-content: center;
             background: #2193b024;
+            
         }
 
         .login_section .container {
-            background: #ffffff;
-            border-radius: 10px;
             max-width: 1000px;
+            backdrop-filter: blur(30px);
+            background: #2193b01c;
+            box-shadow: 0 0 15px #37353770;
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(1.5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
         }
 
         .left {
-            width: 50%;
+            width: 48%;
             padding: 80px 20px;
             overflow: hidden;
         }
 
         .right {
-            width: 50%;
+            width: 48%;
             overflow: hidden;
         }
 
@@ -56,6 +73,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            flex-wrap: wrap;
         }
 
         .form_section {
@@ -171,6 +189,7 @@
                 display: none;
             }
         }
+      
     </style>
 </head>
 
