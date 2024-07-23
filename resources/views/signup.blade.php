@@ -84,7 +84,7 @@
         .welcome_text h1 {
             margin: 20px 0px 0px 0px;
             font-size: 50px;
-            font-weight: 500;
+            font-weight: 600;
         }
 
         .welcome_text p {
@@ -212,12 +212,12 @@
                             <img src="{{ asset('assets/images/imas_logo.png') }}" alt="">
                         </div>
                         <div class="welcome_text">
-                            <h1>SIGN UP</h1>
+                            <h1>Sign Up</h1>
                         </div>
                         <form action="">
                             <label for="username">Username</label>
                             <input type="text" name="username" id="username" class="form-control"
-                                placeholder="Esername">
+                                placeholder="Username">
 
                             <label for="email">Email Address</label>
                             <input type="email" name="email" id="email" class="form-control"

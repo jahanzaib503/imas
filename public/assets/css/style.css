@@ -993,5 +993,59 @@ img {
 
 
 .navbar .dropdown-item{
-    color: #fff;
+    color: var(--white);
+}
+
+.inner_banner {
+    height: 450px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.inner_banner:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: var(--primary);
+    top: 0;
+    opacity: 0.5;
+}
+
+.inner_banner .inner_banner_content {
+    position: relative;
+    color: var(--white);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.inner_banner .inner_banner_content ul.pagination {
+    gap: 30px;
+}
+
+.inner_banner .inner_banner_content ul.pagination .first {
+    font-weight: 600;
+    position: relative;
+    color: var(--primary);
+}
+
+.inner_banner .inner_banner_content ul.pagination .first:after {
+    content: '/';
+    position: absolute;
+    right: -15px;
+}
+
+.inner_sections .row {
+    align-items: center;
+}
+
+.inner_sections .content .heading {
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid var(--primary);
+    width: fit-content;
 }

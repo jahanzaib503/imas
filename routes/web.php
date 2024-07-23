@@ -27,3 +27,7 @@ Route::get('/login', function () {
 Route::get('/signup', function () {
     return view('signup');
 })->name('signup');
+
+Route::get('/seafarers-medical', function () {
+    return view('seafarers-medical');
+})->name('seafarers-medical');

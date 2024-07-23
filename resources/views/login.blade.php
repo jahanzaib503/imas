@@ -213,7 +213,7 @@
                             <h1>Welcome!</h1>
                             <p>Please enter your details</p>
                         </div>
-                        <div class="social_login">
+                        {{-- <div class="social_login">
                             <a href="javascript:void(0);" class="social_btn">
                                 <i class="fa-brands fa-google"></i>
                             </a>
@@ -228,7 +228,7 @@
                             <div class="line"></div>
                             <h2>or</h2>
                             <div class="line"></div>
-                        </div>
+                        </div> --}}
                         <form action="">
                             <label for="email">Email Address</label>
                             <input type="email" name="email" id="email" class="form-control"

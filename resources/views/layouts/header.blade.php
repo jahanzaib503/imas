@@ -27,7 +27,7 @@
             <div class="navtop">
                 <a href="tel:+123 456 7891">Call Us: +123 456 7891</a>
                 <a href="maito:info@imasmedical.com">info@imasmedical.com</a>
-                <a href="javascript:void(0);"><i class="fa-regular fa-user"></i> My Account</a>
+                <a href="{{ Route('login') }}"><i class="fa-regular fa-user"></i> My Account</a>
             </div>
         </div>
     </div>
@@ -52,7 +52,7 @@
                 </div>
                 <div class="offcanvas-body">
                     <div class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                        <a class="nav-item nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-item nav-link active" aria-current="page" href="{{ Route('index') }}">Home</a>
                         <div class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button">
                                 Medical Assessments
@@ -61,7 +61,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="javascript:void(0);">Taxi Drivers</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">HGV Drivers</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Seafarers</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('seafarers-medical') }}">Seafarers</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Safety Critical</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Ambulance</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Crane Operators</a></li>
