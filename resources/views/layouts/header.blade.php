@@ -64,12 +64,12 @@
                                 <li><a class="dropdown-item" href="{{ Route('seafarers-medical') }}">Seafarers</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Safety Critical</a></li>
                                 <li><a class="dropdown-item" href="{{ Route('ambulance-driver-medical') }}">Ambulance</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Crane Operators</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Forklift Operators</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Bus Drivers</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Train Drivers</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Motorhomes</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Sports Medicals</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('crane-operators-medical') }}">Crane Operators</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('forklift-operator-medical') }}">Forklift Operators</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('bus-driver-medical') }}">Bus Drivers</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('train-driver-medical') }}">Train Drivers</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('motorhome-drivers-medical') }}">Motorhomes</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('sports-medicals') }}">Sports Medicals</a></li>
                             </ul>
                         </div>
                         <div class="nav-item dropdown">

@@ -110,6 +110,25 @@
         font-size: 23px;
         line-height: 30px;
     }
+    .description h3{
+        position: relative;
+        margin: 5px 0;
+        left: 0;
+        transform: inherit;
+        font-size: 20px;
+    }
+    .member{
+        margin: 0;
+    }
+    .member:nth-of-type(even){
+        text-align: left;
+    }
+    .member:nth-of-type(even) h3{
+        right: inherit;
+    }
+    .team{
+        padding: 0;
+    }
 }
 
 @media (max-width: 575px) {
