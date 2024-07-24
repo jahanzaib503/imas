@@ -214,9 +214,10 @@
                         <div class="welcome_text">
                             <h1>Sign Up</h1>
                         </div>
-                        <form action="">
+                        <form method="POST" action="{{ route('register') }}">
+                            @csrf
                             <label for="username">Username</label>
-                            <input type="text" name="username" id="username" class="form-control"
+                            <input type="text" name="name" id="username" class="form-control"
                                 placeholder="Username">
 
                             <label for="email">Email Address</label>
@@ -227,9 +228,9 @@
                             <input type="password" name="password" id="password" class="form-control"
                                 placeholder="Password">
 
-                            <label for="confirm-password">Confirm Password</label>
+                            <!-- <label for="confirm-password">Confirm Password</label>
                             <input type="password" name="confirm-password" id="confirm-password" class="form-control"
-                                placeholder="Confirm Password">
+                                placeholder="Confirm Password"> -->
 
                             <button type="submit" class="sign_in">Sign Up</button>
                             <div class="flex_forget">

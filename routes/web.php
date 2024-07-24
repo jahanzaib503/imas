@@ -20,9 +20,9 @@ Route::get('/', function () {
     return view('index');
 })->name('index');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+// Route::get('/signin', function () {
+//     return view('login');
+// })->name('login');
 
 Route::get('/signup', function () {
     return view('signup');
@@ -35,3 +35,8 @@ Route::get('/seafarers-medical', function () {
 Route::get('/ambulance-driver-medical', function () {
     return view('ambulance-driver-medical');
 })->name('ambulance-driver-medical');
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

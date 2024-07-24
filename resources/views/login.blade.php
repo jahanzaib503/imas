@@ -229,7 +229,8 @@
                             <h2>or</h2>
                             <div class="line"></div>
                         </div> --}}
-                        <form action="">
+                        <form method="POST" action="{{ route('login') }}">
+                        @csrf
                             <label for="email">Email Address</label>
                             <input type="email" name="email" id="email" class="form-control"
                                 placeholder="youremail@mail.com">
@@ -238,11 +239,11 @@
                             <input type="password" name="password" id="password" class="form-control"
                                 placeholder="*********">
                             <div class="flex_forget">
-                                <div class="flex_remember">
+                                <!-- <div class="flex_remember">
                                     <input type="checkbox" name="remember_me" id="remember_me">
                                     <label for="remember_me">Remember me</label>
-                                </div>
-                                <a href="javascript:void(0);">Forget Password?</a>
+                                </div> -->
+                                <a href="{{ route('password.request') }}">Forget Password?</a>
                             </div>
                             <button type="submit" class="sign_in">Sign In</button>
                         
