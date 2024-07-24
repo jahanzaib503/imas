@@ -35,3 +35,27 @@ Route::get('/seafarers-medical', function () {
 Route::get('/ambulance-driver-medical', function () {
     return view('ambulance-driver-medical');
 })->name('ambulance-driver-medical');
+
+Route::get('/crane-operators-medical', function () {
+    return view('crane-operators-medical');
+})->name('crane-operators-medical');
+
+Route::get('/forklift-operator-medical', function () {
+    return view('forklift-operator-medical');
+})->name('forklift-operator-medical');
+
+Route::get('/bus-driver-medical', function () {
+    return view('bus-driver-medical');
+})->name('bus-driver-medical');
+
+Route::get('/train-driver-medical', function () {
+    return view('train-driver-medical');
+})->name('train-driver-medical');
+
+Route::get('/motorhome-drivers-medical', function () {
+    return view('motorhome-drivers-medical');
+})->name('motorhome-drivers-medical');
+
+Route::get('/sports-medicals', function () {
+    return view('sports-medicals');
+})->name('sports-medicals');
