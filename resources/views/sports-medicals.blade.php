@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <section class="inner_banner"
-        style="background-image: url('{{ asset('assets/images/banner/motorhome-drivers-medical.jpg') }}')">
+        style="background-image: url('{{ asset('assets/images/banner/sports-medicals.webp') }}')">
         <div class="container">
             <div class="inner_banner_content">
                 <h1>Sports Medicals & Events Medical Cover Assessments</h1>
@@ -19,9 +19,13 @@
         <div class="container">
             <div class="caution_text">
                 <h3>
-                    D4 medicals from £45, an assessment that all drivers must pass before being granted their C1 license in
-                    order to drive a motorhome.
+                    Welcome to IMAS Medical: Your Destination for Sports Medicals and Event Medical Cover
                 </h3>
+                <p class="text-center">
+                    At IMAS Medical, we are dedicated to ensuring the health, safety, and well-being of athletes and
+                    event participants alike. With our comprehensive range of services, we provide top-notch sports medicals
+                    and event medical cover to meet the diverse needs of individuals, teams, and event organisers.
+                </p>
             </div>
         </div>
     </section>
@@ -33,18 +37,36 @@
                 <div class="col-lg-6">
                     <div class="content wow fadeInLeft" data-wow-duration="1s">
                         <h2 class="heading">
-                            What is a Motorhome driver medical?
+                            Sports Medicals
                         </h2>
-                        <p class="para">
-                            An D4 medical is a medical examination that is required for individuals in the UK who wish to
-                            obtain or renew their license to drive Motorhomes. These medical examinations are mandated by
-                            the Driver and Vehicle Licensing Agency (DVLA) and are an essential part of ensuring road
-                            safety.
-                        </p>
+                        <ul>
+                            <li>
+                                <strong>Expertise:</strong>
+                                Our team comprises highly skilled and experienced sports medicine specialists who are
+                                passionate about helping athletes perform at their best and preventing injuries. With
+                                advanced training and a deep understanding of sports-related conditions and treatments, our
+                                specialists are committed to delivering exceptional care to every patient.
+                            </li>
+                            <li>
+                                <strong>Comprehensive Services:</strong>
+                                From pre-participation physical exams to injury assessments and rehabilitation, we offer a
+                                full spectrum of sports medicals tailored to the unique requirements of each athlete and
+                                sport. Whether you're a professional boxer in need of a boxing medical or a footballer
+                                requiring a comprehensive football medical, our team has the expertise to address your
+                                specific needs.
+                            </li>
+                            <li>
+                                <strong>Personalised Care:</strong>
+                                We recognise that every athlete is unique, which is why we take a personalised approach to
+                                every sports medical assessment and treatment plan. Our specialists take the time to
+                                understand your individual goals, challenges, and concerns, and work closely with you to
+                                develop a customised plan that meets your needs and maximises your performance potential.
+                            </li>
+                        </ul>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/motorhome1.jpg') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/sports1.webp') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
             </div>
@@ -56,74 +78,26 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/motorhome2.jpg') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/sports2.webp') }}" alt=""
                         class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">
                         <h2 class="heading">
-                            What’s involved in my medical?
+                            Event Medical Cover
                         </h2>
-                        <ol>
-                            <li>
-                                <strong>Medical History Review: </strong> <br>
-                                The medical practitioner will begin by reviewing the driver's medical history. They may ask
-                                questions about any existing medical conditions, surgeries, hospitalizations, medications,
-                                or treatments. It's important for the driver to provide accurate and complete information
-                                during this phase.
-                            </li>
-                            <li>
-                                <strong>Vision Assessment: </strong> <br>
-                                The driver's vision will be assessed, including distance and peripheral vision. The medical
-                                practitioner will check for visual impairments that may affect the ability to drive safely.
-                            </li>
-                            <li>
-                                <strong>Hearing Assessment: </strong> <br>
-                                The driver's hearing will be evaluated to ensure they can hear and respond to important
-                                auditory signals on the road, such as horns and sirens.
-                            </li>
-
-                            <li>
-                                <strong>Blood Pressure Measurement:</strong> <br>
-                                The driver's blood pressure will be taken to assess cardiovascular health. Elevated blood
-                                pressure can be a concern as it may increase the risk of medical events while driving.
-                            </li>
-                            <li>
-                                <strong>Physical Examination: </strong> <br>
-                                The medical practitioner will conduct a general physical examination, including checking for
-                                any physical disabilities or conditions that might affect the ability to drive.
-                            </li>
-                            <li>
-                                <strong>Neurological Examination: </strong> <br>
-                                The nervous system will be assessed to check for signs of neurological conditions that could
-                                impair driving skills.
-                            </li>
-                            <li>
-                                <strong>Medication Review: </strong> <br>
-                                If the driver is taking any medications, the medical practitioner will review them to
-                                determine if they could affect driving ability or pose safety risks on the road.
-                            </li>
-                            <li>
-                                <strong>Additional Tests: </strong> <br>
-                                In some cases, additional tests may be required, depending on the driver's medical history
-                                and the medical practitioner's assessment. These tests may include an electrocardiogram
-                                (ECG) for heart health or specific neurological tests.
-                            </li>
-                            <li>
-                                <strong>Fitness to Drive Assessment: </strong> <br>
-                                Based on the findings from the various examinations and assessments, the medical
-                                practitioner will make an overall assessment of the driver's fitness to drive Motorhomes. If
-                                the driver meets the necessary medical standards, they will receive a D4 medical
-                                certificate.
-                            </li>
-                            <li>
-                                <strong>D4 Medical Certificate: </strong> <br>
-                                This certificate is an essential document and must be submitted to the Driver and Vehicle
-                                Licensing Agency (DVLA) as part of the HGV license application or renewal process. It
-                                indicates that the driver has passed the D4 medical examination and is medically fit to
-                                drive.  
-                            </li>
-                        </ol>
+                        <p>
+                            Planning an event? Our event medical cover services are designed to ensure the health and safety of participants and spectators alike. Whether you're organising a sporting event, concert, festival, or corporate gathering, our team of medical professionals is available to provide on-site medical support, first aid treatment, and emergency response services as needed.
+                        </p>
+                        <p>
+                            We understand the importance of being prepared for any medical emergencies that may arise during an event. That's why our event medical cover services include comprehensive emergency preparedness planning, ensuring that our team is equipped to respond quickly and effectively to any medical situation, from minor injuries to life-threatening emergencies.
+                        </p>
+                        <p>
+                            Ready to take your sports performance or event safety to the next level? Schedule a consultation with one of our sports medicine specialists today and discover how IMAS Medical can support you with our comprehensive sports medicals and event medical cover services.
+                        </p>
+                        <p>
+                            For more information or to book your consultation, please contact us
+                        </p>
                     </div>
                 </div>
 
@@ -131,51 +105,7 @@
         </div>
     </section>
 
-    <section class="inner_sections">
-        <div class="container">
-            <div class="row">
-
-                <div class="col-lg-6">
-                    <div class="content wow fadeInLeft" data-wow-duration="1s">
-                        <h2 class="heading">
-                            What medical conditions could affect my application?
-                        </h2>
-                        <p class="para">
-                            Successfully passing your medical examination involves a careful consideration of various
-                            medical factors that could potentially impact your ability to drive safely. Your appointed GP
-                            will carefully evaluate each of these factors. The good news is that the most frequent causes of
-                            non-compliance can often be easily resolved.
-                        </p>
-                        <p class="para">
-                            For instance, it's not uncommon for drivers to encounter difficulties during their vision
-                            assessment due to an inadequate or outdated prescription for corrective lenses. In such
-                            instances, we strongly recommend a pre-appointment visit to an optician to ensure your vision
-                            meets the necessary standards.
-                        </p>
-                        <p class="para">
-                            Similarly, elevated blood pressure readings can sometimes be attributed to stress, hurrying to
-                            the appointment, or underlying health conditions. For individuals who do not pass due to high
-                            blood pressure, we extend a complimentary re-test opportunity, allowing you to address and
-                            manage this concern.
-                        </p>
-                        <p class="para">
-                            While some medical conditions may be more serious and potentially create hurdles to passing the
-                            medical examination, effective management can often mitigate even the most severe conditions as
-                            barriers to obtaining or renewing your license. The surest way to determine your eligibility is
-                            through a comprehensive evaluation by a qualified medical professional.
-                        </p>
-                        <p class="para">
-                            Book your medical appointment <a href="javascript:void(0);">now</a>.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/ambulance2.webp') }}" alt=""
-                        class="img-fluid wow fadeInRight" data-wow-duration="2s">
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <section class="space" data-bg-src="{{ asset('assets/images/home/process_bg_1.jpg') }}">
         <div class="container">
@@ -244,11 +174,13 @@
         <div class="auto-container">
             <div class="clearfix">
                 <div class="text">
-                    <h2 class="wow fadeInUp" data-wow-duration="2s">Book Your Sports Medicals & Events Medical Cover Assessments Today
+                    <h2 class="wow fadeInUp" data-wow-duration="2s">Book Your Sports Medicals & Events Medical Cover
+                        Assessments Today
                     </h2>
                     <p class="cta_para wow fadeInUp" data-wow-duration="3s">
-                        Don’t let delays or long waiting lists hinder your career at sea. Contact Medicals Northwest to book
-                        your Sports Medicals & Events Medical Cover Assessments and ensure you’re fit for duty. Your health and safety
+                        Don’t let delays or long waiting lists hinder your career at sea. Contact IMAS Medical to book
+                        your Sports Medicals & Events Medical Cover Assessments and ensure you’re fit for duty. Your health
+                        and safety
                         are
                         our top
                         priorities.

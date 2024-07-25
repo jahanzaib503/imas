@@ -65,3 +65,23 @@ Route::get('/motorhome-drivers-medical', function () {
 Route::get('/sports-medicals', function () {
     return view('sports-medicals');
 })->name('sports-medicals');
+
+Route::get('/sickness-referrals', function () {
+    return view('sickness-referrals');
+})->name('sickness-referrals');
+
+Route::get('/health-surveillance', function () {
+    return view('health-surveillance');
+})->name('health-surveillance');
+
+Route::get('/pre-employment-medicals', function () {
+    return view('pre-employment-medicals');
+})->name('pre-employment-medicals');
+
+Route::get('/safety-critical-medicals', function () {
+    return view('safety-critical-medicals');
+})->name('safety-critical-medicals');
+
+Route::get('/book-medical', function () {
+    return view('book-medical');
+})->name('book-medical');

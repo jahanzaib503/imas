@@ -127,10 +127,36 @@ button {
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+.navtop .left {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .navtop a {
     color: #fff;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.navtop a.dropdown-item{
+    color: var(--black);
+}
+
+.dropdown-menu.show{
+    z-index: 1021;
+}
+.profile .dropdown-toggle::after{
+    display: none;
 }
 
 a:hover {
@@ -1166,4 +1192,55 @@ img {
 }
 .three_cards .process-card{
     margin: 0 auto;
+}
+.assessment_card .card-header {
+    padding: 0;
+}
+
+.assessment_card {
+    border-radius: 10px;
+    margin: 15px 0px;
+}
+
+.assessment_card .card-header img {
+    border-radius: 10px 10px 0px 0px;
+    height: 300px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.assessment_card .heading {
+    font-size: 22px;
+    color: var(--dark);
+    min-height: 70px;
+    margin-top: 10px;
+}
+.book_price_flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.book_price_flex .price {
+    margin-bottom: 0px;
+    font-size: 30px;
+    color: var(--primary);
+}
+
+.book_price_flex .card_btn {
+    background: var(--dark);
+    color: #fff;
+    border-radius: 20px;
+    transition: .3s ease-in-out;
+}
+
+.book_price_flex .card_btn:hover {
+    background: var(--primary);
+}
+
+.assessment_card:hover {
+    transform: scale(1.01);
+    transition: .4s all ease;
+    box-shadow: 2px 4px #8080802b;
 }

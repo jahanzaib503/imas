@@ -25,9 +25,26 @@
     <div class="header-top">
         <div class="container">
             <div class="navtop">
-                <a href="tel:+123 456 7891">Call Us: +123 456 7891</a>
-                <a href="maito:info@imasmedical.com">info@imasmedical.com</a>
-                <a href="{{ Route('login') }}"><i class="fa-regular fa-user"></i> My Account</a>
+                <div class="left">
+                    <a href="tel:+123 456 7891">Call Us: +123 456 7891</a>
+                    <a href="maito:info@imasmedical.com">info@imasmedical.com</a>
+                </div>
+                <div class="right">
+                    {{-- <a href="{{ Route('login') }}"><i class="fa-regular fa-user"></i> My Account</a> --}}
+                    <div class="profile">
+                        <a href="javascript:void(0);" class="dropdown-toggle" id="profile_dropdownButton" data-bs-toggle="profile_dropdown" aria-expanded="false">
+                            <img
+                                src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
+                                alt="" >
+                                <i class="fa fa-chevron-down ms-1" id="dropdownIcon"></i>
+                        </a>
+
+                    </div>
+                    <ul class="dropdown-menu" aria-labelledby="profile_dropdown">
+                        <li><a class="dropdown-item" href="javascript:void(0);">Profile</a></li>
+                        <li><a class="dropdown-item" href="javascript:void(0);">Logout</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -63,13 +80,20 @@
                                 <li><a class="dropdown-item" href="javascript:void(0);">HGV Drivers</a></li>
                                 <li><a class="dropdown-item" href="{{ Route('seafarers-medical') }}">Seafarers</a></li>
                                 <li><a class="dropdown-item" href="javascript:void(0);">Safety Critical</a></li>
-                                <li><a class="dropdown-item" href="{{ Route('ambulance-driver-medical') }}">Ambulance</a></li>
-                                <li><a class="dropdown-item" href="{{ Route('crane-operators-medical') }}">Crane Operators</a></li>
-                                <li><a class="dropdown-item" href="{{ Route('forklift-operator-medical') }}">Forklift Operators</a></li>
-                                <li><a class="dropdown-item" href="{{ Route('bus-driver-medical') }}">Bus Drivers</a></li>
-                                <li><a class="dropdown-item" href="{{ Route('train-driver-medical') }}">Train Drivers</a></li>
-                                <li><a class="dropdown-item" href="{{ Route('motorhome-drivers-medical') }}">Motorhomes</a></li>
-                                <li><a class="dropdown-item" href="{{ Route('sports-medicals') }}">Sports Medicals</a></li>
+                                <li><a class="dropdown-item"
+                                        href="{{ Route('ambulance-driver-medical') }}">Ambulance</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('crane-operators-medical') }}">Crane
+                                        Operators</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('forklift-operator-medical') }}">Forklift
+                                        Operators</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('bus-driver-medical') }}">Bus Drivers</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ Route('train-driver-medical') }}">Train
+                                        Drivers</a></li>
+                                <li><a class="dropdown-item"
+                                        href="{{ Route('motorhome-drivers-medical') }}">Motorhomes</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('sports-medicals') }}">Sports
+                                        Medicals</a></li>
                             </ul>
                         </div>
                         <div class="nav-item dropdown">
@@ -78,13 +102,17 @@
                                 <i class="fa fa-chevron-down ms-1" id="dropdownIcon2"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                                <li><a class="dropdown-item" href="javascript:void(0);">Sickness Referrals</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Health Surveillance</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Pre-employment Medical</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Safety Critical Medicals</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('sickness-referrals') }}">Sickness
+                                        Referrals</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('health-surveillance') }}">Health
+                                        Surveillance</a></li>
+                                <li><a class="dropdown-item"
+                                        href="{{ Route('pre-employment-medicals') }}">Pre-employment Medical</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('safety-critical-medicals') }}">Safety
+                                        Critical Medicals</a></li>
                             </ul>
                         </div>
-                        <a class="nav-item nav-link" href="javascript:void(0);">Book Medical</a>
+                        <a class="nav-item nav-link" href="{{ Route('book-medical') }}">Book Medical</a>
                         <a class="nav-item nav-link" href="javascript:void(0);">Contact Us</a>
                         <a href="javascript:void(0);" class="nav-item th-btn">Book Now</a>
                     </div>

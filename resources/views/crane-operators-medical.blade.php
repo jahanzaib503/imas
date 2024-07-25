@@ -216,7 +216,7 @@
                 <div class="text">
                     <h2 class="wow fadeInUp" data-wow-duration="2s">Book Your Crane Operators Medical Assessment Today</h2>
                     <p class="cta_para wow fadeInUp" data-wow-duration="3s">
-                        Don’t let delays or long waiting lists hinder your career at sea. Contact Medicals Northwest to book
+                        Don’t let delays or long waiting lists hinder your career at sea. Contact IMAS Medical to book
                         your Crane Operators Medical Assessment and ensure you’re fit for duty. Your health and safety are our top
                         priorities.
                     </p>
