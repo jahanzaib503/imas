@@ -33,10 +33,10 @@
                         <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Latest News & Updates</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Terms and Conditions</a>
+                        <a href="{{ Route('terms-conditions') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Terms and Conditions</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Privacy Policy</a>
+                        <a href="{{ Route('privacy-policy') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Privacy Policy</a>
                     </li>
                     <li>
                         <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> GDPR Policy</a>
@@ -101,6 +101,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 </body>

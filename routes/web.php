@@ -85,3 +85,15 @@ Route::get('/safety-critical-medicals', function () {
 Route::get('/book-medical', function () {
     return view('book-medical');
 })->name('book-medical');
+
+Route::get('/terms-conditions', function () {
+    return view('terms-conditions');
+})->name('terms-conditions');
+
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy-policy');
+
+Route::get('/booking', function () {
+    return view('booking');
+})->name('booking');

@@ -1244,3 +1244,46 @@ img {
     transition: .4s all ease;
     box-shadow: 2px 4px #8080802b;
 }
+
+/* Ibrahim CSS */
+
+p.main-sec-top-para {
+    text-align: center;
+}
+span.main-sec-clr{
+    color: var(--primary);
+    font-weight: 600;
+}
+.main-sec-list{
+    font-size: 15px;
+    list-style: none;
+    list-style-position: inside;
+}
+.main-sec-list li {
+    color: var(--secondary);
+}
+p.main-sec-list-heading {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--primary);
+}
+.list_style_a {
+    list-style: lower-alpha;
+}
+
+
+
+
+.appointment_form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.appointment_form h2 {
+    margin-bottom: 20px;
+}
+.appointment_sec {
+    padding: 60px 0;
+    background: #f9f9f9;
+}
