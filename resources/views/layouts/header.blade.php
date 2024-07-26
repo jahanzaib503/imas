@@ -27,7 +27,7 @@
         <div class="container">
             <div class="navtop">
                 <div class="left">
-                    <a href="tel:+123 456 7891">Call Us: +123 456 7891</a>
+                    <a href="tel:+44 7968 999683">Call Us: +44 7968 999683</a>
                     <a href="maito:info@imasmedical.com">info@imasmedical.com</a>
                 </div>
                 <div class="right">
@@ -114,8 +114,8 @@
                             </ul>
                         </div>
                         <a class="nav-item nav-link" href="{{ Route('book-medical') }}">Book Medical</a>
-                        <a class="nav-item nav-link" href="javascript:void(0);">Contact Us</a>
-                        <a href="javascript:void(0);" class="nav-item th-btn">Book Now</a>
+                        <a class="nav-item nav-link" href="{{ Route('contact-us') }}">Contact Us</a>
+                        <a href="{{ Route('booking') }}" class="nav-item th-btn">Book Now</a>
                     </div>
                 </div>
             </div>

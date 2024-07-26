@@ -1371,3 +1371,53 @@ p.main-sec-list-heading {
     padding: 60px 0;
     background: #f9f9f9;
 }
+
+.contact_sec{
+    margin: 50px 0;
+}
+.get_in_touch {
+    padding: 30px;
+    background: #2193b026;
+}
+
+ul.contact_list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.contact_list li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ul.contact_list li .icon {
+    padding: 10px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+ul.contact_list li a {
+    color: #000;
+    font-weight: 600;
+}
+
+ul.contact_list li a:hover {
+    color: var(--primary);
+}
+
+.contact_form {
+    padding: 30px;
+    border: 1px solid var(--primary);
+    border-radius: 30px;
+}
+
+.contact_form textarea {
+    margin-top: 20px;
+}
+.form_btn {
+    margin: 30px 0px;
+    text-align: center;
+}

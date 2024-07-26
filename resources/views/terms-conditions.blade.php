@@ -54,7 +54,7 @@
                         <li>If the correct items are not brought, the doctor will be NOT be able to carry out the
                             medical
                             assessment. It is the responsibility of the driver to be aware of the items required for the
-                            medical. For any questions regarding what is required, please call us on +123 456 7891 or
+                            medical. For any questions regarding what is required, please call us on +44 7968 999683 or
                             email
                             through to info@imasmedical.com</li>
                         <li>You must bring the following to your medical; failure to bring the following may mean the

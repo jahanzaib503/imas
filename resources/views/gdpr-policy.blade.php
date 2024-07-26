@@ -89,7 +89,7 @@
 
             <div class="gdpr-contact wow fadeInUp" data-wow-duration="1s">
                 <span>Email:<a href="mailto:info@imasmedical.com">info@imasmedical.com</a></span>
-                <span>Phone:<a href="tel:+123 456 7891">+123 456 7891</a></span>
+                <span>Phone:<a href="tel:+44 7968 999683">+44 7968 999683</a></span>
             </div>
 
                      

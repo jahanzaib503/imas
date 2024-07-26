@@ -14,8 +14,8 @@
                         with confidence and priority at IMAS.
                     </p>
                     <div class="flex_btn wow fadeInUp" data-wow-duration="4s">
-                        <a href="javascript:void(0);" class="th-btn">About Us</a>
-                        <a href="javascript:void(0);" class="th-btn style4 wow fadeInUp">View All Services</a>
+                        <a href="{{ Route('contact-us') }}" class="th-btn">Contact Us</a>
+                        <a href="{{ Route('book-medical') }}" class="th-btn style4 wow fadeInUp">View All Services</a>
                     </div>
                 </div>
             </div>
@@ -50,7 +50,7 @@
                                     class="fa-sharp fa-solid fa-star"></i><i
                                     class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
                             </div>
-                            <a href="tel:+123 456 7896" class="box-link"><i class="fa-solid fa-phone"></i> +123 456
+                            <a href="tel:+44 7968 999683" class="box-link"><i class="fa-solid fa-phone"></i> +123 456
                                 7896</a>
                         </div>
                     </div>
@@ -209,7 +209,7 @@
             </div>
 
             <div class="btn-box pull-right wow fadeInUp" data-wow-duration="4s">
-                <a href="javascript:void(0);" class="th-btn style4">Book an Appointment</a>
+                <a href="{{ Route('book-medical') }}" class="th-btn style4">Book an Appointment</a>
             </div>
 
         </div>
@@ -278,8 +278,8 @@
                     <p class="sec-text text-white">As an approved provider to numerous local authorities across the Northwest and holding multiple commercial contracts with councils, IMAS Medical is committed to delivering a high-quality service. With locations in over 10 areas, we’ve established a strong reputation for excellence in both quality and customer service. When you book your taxi medical with us, you can rest assured that you’re working with an experienced and reputable provider.</p>
                 </div>
                 <div class="flex_btn">
-                    <a href="javascript:void(0);" class="th-btn shadow-1">Book Appointment</a>
-                    <a href="javascript:void(0);" class="th-btn style2 shadow-1 text-dark">Get Free Consulting</a>
+                    <a href="{{ Route('booking') }}" class="th-btn shadow-1">Book Appointment</a>
+                    <a href="tel:+44 7968 999683" class="th-btn style2 shadow-1 text-dark">Get Free Consulting</a>
                 </div>
             </div>
             <div class="col-xl-5">

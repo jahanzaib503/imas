@@ -83,7 +83,7 @@
             <p class="main-sec-list-heading2 cs-para wow fadeInUp" data-wow-duration="1s">Currently we only offer clinics in the Northwest of England.</p>
 
             <p class="main-sec-list-heading wow fadeInUp" data-wow-duration="1s">Will I need to bring my medical summary from my GP?</p>
-            <p class="main-sec-list-heading2 cs-para wow fadeInUp" data-wow-duration="1s">For taxi drivers, certain councils require a medical summary to be seen by the doctor. Please consult the medical form and ensure the form can be completed by any registered doctor before booking. If unsure, please give us a call on <a href="tel:+123 456 7891">+123 456 7891</a> or email at <a href="mailto:info@imasmedical.com">info@imasmedical.com</a> and we will be happy to assist.</p>
+            <p class="main-sec-list-heading2 cs-para wow fadeInUp" data-wow-duration="1s">For taxi drivers, certain councils require a medical summary to be seen by the doctor. Please consult the medical form and ensure the form can be completed by any registered doctor before booking. If unsure, please give us a call on <a href="tel:+44 7968 999683">+44 7968 999683</a> or email at <a href="mailto:info@imasmedical.com">info@imasmedical.com</a> and we will be happy to assist.</p>
             <p class="main-sec-list-heading2 cs-para wow fadeInUp" data-wow-duration="1s">As of September 2021, you must bring your medical summary for the following councils: Blackburn, Burnley, Cheshire West & Chester, Liverpool, Manchester, North Warwickshire, Oldham, Rochdale, Salford, Sefton, Shropshire, St Helen’s, Stockport, Trafford, and Walsall.</p>
 
             <p class="main-sec-list-heading wow fadeInUp" data-wow-duration="1s">What is your cancellation policy?</p>

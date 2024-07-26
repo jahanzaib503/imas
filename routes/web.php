@@ -110,3 +110,11 @@ Route::get('/customer-support', function () {
 Route::get('/gdpr-policy', function () {
     return view('gdpr-policy');
 })->name('gdpr-policy');
+
+Route::get('/contact-us', function () {
+    return view('contact-us');
+})->name('contact-us');
+
+Route::get('/about-us', function () {
+    return view('about-us');
+})->name('about-us');

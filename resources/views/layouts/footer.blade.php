@@ -10,13 +10,13 @@
                     </p>
                     <ul class="footer_list">
                         <li>
-                            <a href="javscript:void(0);"><i class="fa-solid fa-location-dot me-2"></i> 123 dummy address</a>
+                            <a href="javscript:void(0);"><i class="fa-solid fa-location-dot me-2"></i> 173 Stanley Road Cheadle SK8 6RF</a>
                         </li>
                         <li>
                             <a href="mailto:info@imasmedical.com"><i class="fa-solid fa-envelope me-2"></i> info@imasmedical.com</a>
                         </li>
                         <li>
-                            <a href="tel:+123 456 7891"><i class="fa-solid fa-phone me-2"></i> +123 456 7891</a>
+                            <a href="tel:+44 7968 999683"><i class="fa-solid fa-phone me-2"></i> +44 7968 999683</a>
                         </li>
                     </ul>
                 </div>
@@ -27,7 +27,7 @@
                 </div>
                 <ul class="footer_list">
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> About Us</a>
+                        <a href="{{ Route('about-us') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> About Us</a>
                     </li>
                     <li>
                         <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Latest News & Updates</a>
