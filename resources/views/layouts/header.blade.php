@@ -77,10 +77,10 @@
                                 <i class="fa fa-chevron-down ms-1" id="dropdownIcon"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="javascript:void(0);">Taxi Drivers</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">HGV Drivers</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('taxi-driver-medical') }}">Taxi Drivers</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('hgv-driver-medical') }}">HGV Drivers</a></li>
                                 <li><a class="dropdown-item" href="{{ Route('seafarers-medical') }}">Seafarers</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Safety Critical</a></li>
+                                {{-- <li><a class="dropdown-item" href="javascript:void(0);">Safety Critical</a></li> --}}
                                 <li><a class="dropdown-item"
                                         href="{{ Route('ambulance-driver-medical') }}">Ambulance</a></li>
                                 <li><a class="dropdown-item" href="{{ Route('crane-operators-medical') }}">Crane

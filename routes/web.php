@@ -23,6 +23,8 @@ Route::get('/', function () {
 // Route::get('/signin', function () {
 //     return view('login');
 // })->name('login');
+Auth::routes();
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/signup', function () {
     return view('signup');
@@ -36,10 +38,13 @@ Route::get('/ambulance-driver-medical', function () {
     return view('ambulance-driver-medical');
 })->name('ambulance-driver-medical');
 
+Route::get('/taxi-driver-medical', function () {
+    return view('taxi-driver-medical');
+})->name('taxi-driver-medical');
 
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/hgv-driver-medical', function () {
+    return view('hgv-driver-medical');
+})->name('hgv-driver-medical');
 
 
 Route::get('/crane-operators-medical', function () {
@@ -97,3 +102,11 @@ Route::get('/privacy-policy', function () {
 Route::get('/booking', function () {
     return view('booking');
 })->name('booking');
+
+Route::get('/customer-support', function () {
+    return view('customer-support');
+})->name('customer-support');
+
+Route::get('/gdpr-policy', function () {
+    return view('gdpr-policy');
+})->name('gdpr-policy');

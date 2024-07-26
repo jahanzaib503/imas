@@ -39,10 +39,10 @@
                         <a href="{{ Route('privacy-policy') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> GDPR Policy</a>
+                        <a href="{{ Route('gdpr-policy') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> GDPR Policy</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Customer Support</a>
+                        <a href="{{ Route('customer-support') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Customer Support</a>
                     </li>
                     <li>
                         <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Download Forms</a>
@@ -55,25 +55,25 @@
                 </div>
                 <ul class="footer_list">
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Hackey Carriage Driver Medical Assessment</a>
+                        <a href="{{ Route('taxi-driver-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Hackey Carriage Driver Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Private Hire Taxi Driver Medical Assessment</a>
+                        <a href="{{ Route('taxi-driver-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Private Hire Taxi Driver Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> HGV Lorry Driver Medical Assessment</a>
+                        <a href="{{ Route('hgv-driver-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> HGV Lorry Driver Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> LGV Lorry Driver Medical Assessment</a>
+                        <a href="{{ Route('hgv-driver-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> LGV Lorry Driver Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Ambulance Driver Medical Assessment</a>
+                        <a href="{{ Route('ambulance-driver-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Ambulance Driver Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Reach Truck / Forklift Operators Medical Assessment</a>
+                        <a href="{{ Route('forklift-operator-medical') }};"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Reach Truck / Forklift Operators Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Crane Operators Medical Assessment</a>
+                        <a href="{{ Route('crane-operators-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Crane Operators Medical Assessment</a>
                     </li>
                 </ul>
             </div>
