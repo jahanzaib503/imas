@@ -13,17 +13,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 Route::get('/', function () {
     return view('index');
 })->name('index');
 
-// Route::get('/signin', function () {
-//     return view('login');
-// })->name('login');
-Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Route::get('/signup', function () {
@@ -41,8 +34,6 @@ Route::get('/ambulance-driver-medical', function () {
 Route::get('/taxi-driver-medical', function () {
     return view('taxi-driver-medical');
 })->name('taxi-driver-medical');
-
-//Auth::routes();
 
 Auth::routes(['register' => false]);
 
