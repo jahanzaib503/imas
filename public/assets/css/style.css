@@ -1270,9 +1270,93 @@ p.main-sec-list-heading {
 .list_style_a {
     list-style: lower-alpha;
 }
+.main-sec ol { 
+    counter-reset: item;
+    
+ }
 
+ .cs-main-sec a {
+    color: var(--secondary);
+    text-decoration: underline;
+}
+.cs-main-sec a:hover{
+    color: var(--primary);
+}
+.main-sec-list li{
+    display: block;
+}
+.main-sec-list li:before { 
+    content: counters(item, ".") " "; 
+    counter-increment: item;
+}
 
+.list-style-alpha{
+    list-style: none;
+}
 
+.list-head {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.list-name::before{
+    color: var(--primary);
+    font-weight: 600;
+}
+.wrapper {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.wrapper ol {
+	list-style: none;
+	padding: 0;
+}
+
+.wrapper li + .wrapper li {
+	margin-top: 1rem;
+}
+
+.wrapper li {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	background: var(--white);
+	padding: 1.5rem;
+	border-radius: 1rem;
+	width: calc(100% - 2rem);
+	box-shadow: 0.25rem 0.25rem 0.75rem rgb(0 0 0 / 0.1);
+}
+
+.wrapper li::before {
+	counter-increment: list-item;
+	content: counter(list-item);
+	font-size: 3rem;
+	font-weight: 700;
+	width: 2em;
+	height: 2em;
+	background: var(--primary);
+	flex: 0 0 auto;
+	border-radius: 50%;
+	color: var(--white);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper li:nth-child(even) {
+	flex-direction: row;
+	background: var(--white);
+	margin-right: -2rem;
+	margin-left: 100px;
+}
+.wrapper li {
+    margin-top: 30px;
+}
+
+.inner_sections .content .wrapper ol li .heading {
+    font-size: 17px;
+}
 
 .appointment_form {
     background: #fff;
@@ -1286,4 +1370,54 @@ p.main-sec-list-heading {
 .appointment_sec {
     padding: 60px 0;
     background: #f9f9f9;
+}
+
+.contact_sec{
+    margin: 50px 0;
+}
+.get_in_touch {
+    padding: 30px;
+    background: #2193b026;
+}
+
+ul.contact_list {
+    list-style: none;
+    padding: 0;
+}
+
+ul.contact_list li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+ul.contact_list li .icon {
+    padding: 10px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 10px;
+}
+
+ul.contact_list li a {
+    color: #000;
+    font-weight: 600;
+}
+
+ul.contact_list li a:hover {
+    color: var(--primary);
+}
+
+.contact_form {
+    padding: 30px;
+    border: 1px solid var(--primary);
+    border-radius: 30px;
+}
+
+.contact_form textarea {
+    margin-top: 20px;
+}
+.form_btn {
+    margin: 30px 0px;
+    text-align: center;
 }

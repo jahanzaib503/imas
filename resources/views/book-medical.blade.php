@@ -22,7 +22,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="100ms">
                     <div class="card-header">
-                        <a href="javascript:void(0);">
+                        <a href="{{ Route('booking') }}">
                             <img src="{{ asset('assets/images/inner-images/taxi_assessment.jpg') }}" alt="">
                         </a>
                     </div>
@@ -35,7 +35,7 @@
                                 £50
                             </p>
     
-                            <a href="javascript:void(0)" class="btn card_btn">
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -45,7 +45,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="200ms">
                     <div class="card-header">
-                        <a href="javascript:void(0);">
+                        <a href="{{ Route('booking') }};">
                             <img src="{{ asset('assets/images/inner-images/hgv_assessment.jpg') }}" alt="">
                         </a>
                     </div>
@@ -58,7 +58,7 @@
                                 £45
                             </p>
     
-                            <a href="javascript:void(0)" class="btn card_btn">
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -69,7 +69,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="300ms">
                     <div class="card-header">
-                        <a href="javascript:void(0);">
+                        <a href="{{ Route('booking') }};">
                             <img src="{{ asset('assets/images/inner-images/seafarers2.jpg') }}" alt="">
                         </a>
                     </div>
@@ -82,7 +82,7 @@
                                 £75
                             </p>
     
-                            <a href="javascript:void(0)" class="btn card_btn">
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -93,7 +93,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="400ms">
                     <div class="card-header">
-                        <a href="javascript:void(0);">
+                        <a href="{{ Route('booking') }};">
                             <img src="{{ asset('assets/images/banner/bus-driver-medical.webp') }}" alt="">
                         </a>
                     </div>
@@ -106,7 +106,7 @@
                                 £45
                             </p>
     
-                            <a href="javascript:void(0)" class="btn card_btn">
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -117,7 +117,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="500ms">
                     <div class="card-header">
-                        <a href="javascript:void(0);">
+                        <a href="{{ Route('booking') }};">
                             <img src="{{ asset('assets/images/inner-images/train1.webp') }}" alt="">
                         </a>
                     </div>
@@ -130,7 +130,7 @@
                                 £45
                             </p>
     
-                            <a href="javascript:void(0)" class="btn card_btn">
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -141,7 +141,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="600ms">
                     <div class="card-header">
-                        <a href="javascript:void(0);">
+                        <a href="{{ Route('booking') }};">
                             <img src="{{ asset('assets/images/inner-images/ambulance1.jpg') }}" alt="">
                         </a>
                     </div>
@@ -154,7 +154,7 @@
                                 £45
                             </p>
     
-                            <a href="javascript:void(0)" class="btn card_btn">
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -164,7 +164,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="700ms">
                     <div class="card-header">
-                        <a href="javascript:void(0);">
+                        <a href="{{ Route('booking') }};">
                             <img src="{{ asset('assets/images/inner-images/motorhome1.jpg') }}" alt="">
                         </a>
                     </div>
@@ -177,7 +177,7 @@
                                 £45
                             </p>
     
-                            <a href="javascript:void(0)" class="btn card_btn">
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -187,7 +187,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="800ms">
                     <div class="card-header">
-                        <a href="javascript:void(0);">
+                        <a href="{{ Route('booking') }};">
                             <img src="{{ asset('assets/images/inner-images/why_choose.webp') }}" alt="">
                         </a>
                     </div>
@@ -200,7 +200,7 @@
                                 £80
                             </p>
     
-                            <a href="javascript:void(0)" class="btn card_btn">
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -223,7 +223,7 @@
             </div>
 
             <div class="btn-box pull-right wow fadeInUp" data-wow-duration="4s">
-                <a href="javascript:void(0);" class="th-btn style4">Book an Appointment</a>
+                <a href="{{ Route('book-medical') }}" class="th-btn style4">Book an Appointment</a>
             </div>
 
         </div>
@@ -292,8 +292,8 @@
                     <p class="sec-text text-white">As an approved provider to numerous local authorities across the Northwest and holding multiple commercial contracts with councils, IMAS Medical is committed to delivering a high-quality service. With locations in over 10 areas, we’ve established a strong reputation for excellence in both quality and customer service. When you book your taxi medical with us, you can rest assured that you’re working with an experienced and reputable provider.</p>
                 </div>
                 <div class="flex_btn">
-                    <a href="javascript:void(0);" class="th-btn shadow-1">Book Appointment</a>
-                    <a href="javascript:void(0);" class="th-btn style2 shadow-1 text-dark">Get Free Consulting</a>
+                    <a href="{{ Route('booking') }}" class="th-btn shadow-1">Book Appointment</a>
+                    <a href="tel:+44 7968 999683" class="th-btn style2 shadow-1 text-dark">Get Free Consulting</a>
                 </div>
             </div>
             <div class="col-xl-5">

@@ -67,6 +67,18 @@
     .footer_list .flex_btn {
         justify-content: start;
     }
+    .wrapper li{
+        width: 100%;
+    }
+    .wrapper li:nth-child(even){
+        margin: 20px 0;
+    }
+    .wrapper li{
+        flex-direction: column;
+    }
+    .wrapper li:nth-child(even){
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 767px) {

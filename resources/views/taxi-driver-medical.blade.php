@@ -1,15 +1,15 @@
 @extends('layouts.main')
 @section('content')
     <section class="inner_banner"
-        style="background-image: url('{{ asset('assets/images/banner/bus-driver-medical.webp') }}')">
+        style="background-image: url('{{ asset('assets/images/banner/taxi-driver-medical.jpeg') }}')">
         <div class="container">
             <div class="inner_banner_content">
-                <h1>Bus / Coach Drivers Medical Assessment</h1>
+                <h1>Taxi Driver Medicals</h1>
                 <ul class="pagination">
                     <li>
                         <a class="first" href="{{ Route('index') }}">Home</a>
                     </li>
-                    <li>Bus / Coach Drivers Medical Assessment</li>
+                    <li>Taxi Driver Medicals</li>
                 </ul>
             </div>
         </div>
@@ -19,8 +19,10 @@
         <div class="container">
             <div class="caution_text">
                 <h3>
-                    Bus / Coach Driver medicals from £45, an assessment that all drivers must pass before being granted
-                    their license.
+
+                    Taxi Driver Medicals Hackey Carriage / Private Hire Driver Medical Forms A taxi or private hire medical
+                    from £50, an assessment that all drivers must pass before being granted their licence to operate.
+
                 </h3>
             </div>
         </div>
@@ -33,20 +35,17 @@
                 <div class="col-lg-6">
                     <div class="content wow fadeInLeft" data-wow-duration="1s">
                         <h2 class="heading">
-                            What is a Bus / Coach Drivers Truck medical?
+                            What is a taxi driver medical?
                         </h2>
                         <p class="para">
-                            A bus/coach driver medical, also known as a PCV (Passenger Carrying Vehicle) or PSV (Public
-                            Service Vehicle) driver medical examination, is a specialised medical assessment designed to
-                            evaluate the physical and mental fitness of individuals who drive buses and coaches in the UK
-                            and many other countries. This medical examination is crucial to ensure the safety of passengers
-                            and other road users, as bus and coach drivers are responsible for the transportation of
-                            passengers and operate large vehicles.
+                            A taxi or private hire medical is an assessment that all drivers must pass before being granted
+                            their license to operate. The test is carried out to ensure that taxi drivers are medically fit
+                            to safely drive a private hire vehicle or hackney carriage on public roads.
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/bus1.webp') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/taxi1.jpg') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
             </div>
@@ -58,7 +57,7 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/bus2.webp') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/taxi2.jpg') }}" alt=""
                         class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
@@ -66,48 +65,13 @@
                         <h2 class="heading">
                             What’s involved in my medical?
                         </h2>
-                        <ol>
-                            <li>
-                                <strong>Physical Examination: </strong> <br>
-                                A comprehensive physical assessment is conducted to evaluate the overall health and physical
-                                fitness of the bus or coach driver. This may include checking vital signs like blood
-                                pressure, heart rate, and overall physical condition.
-                            </li>
-                            <li>
-                                <strong>Vision Assessment: </strong> <br>
-                                Vision tests are essential to ensure that the driver has adequate visual acuity, peripheral
-                                vision, and depth perception. Good vision is critical for safely navigating and operating a
-                                large vehicle.
-                            </li>
-                            <li>
-                                <strong>Hearing Assessment: </strong> <br>
-                                Adequate hearing is necessary for communication with passengers, fellow drivers, and
-                                emergency situations. Hearing tests may be conducted to evaluate hearing acuity.
-                            </li>
-
-                            <li>
-                                <strong>Mental Health Assessment: </strong> <br>
-                                A mental health evaluation may be included to assess the driver's mental well-being and
-                                cognitive function.
-                            </li>
-                            <li>
-                                <strong>Review of Medical History: </strong> <br>
-                                The medical examiner will review the driver's medical history, including any past injuries,
-                                surgeries, or medical conditions that could impact their ability to operate a bus or coach
-                                safely.
-                            </li>
-                            <li>
-                                <strong>Medication Review: </strong> <br>
-                                If the driver is taking any medications, the examiner may review them to determine if there
-                                are any side effects that could impair their ability to perform their job safely.
-                            </li>
-                            <li>
-                                <strong>Cardiovascular Health Assessment: </strong> <br>
-                                Due to the demanding nature of the job and the potential for long hours, cardiovascular
-                                health assessments may be conducted to check for conditions such as high blood pressure,
-                                heart disease, or other cardiovascular issues.
-                            </li>
-                        </ol>
+                        <p class="para">
+                            During the medical assessment, our team will perform a detailed evaluation of your physical and
+                            mental health, which includes an eyesight test, a blood pressure check, and a questionnaire
+                            about your medical history. Additionally, our doctor will review your medical records, in line
+                            with local authority requirements. The length of the appointment (15 or 30 minutes) depends on
+                            whether the local authority requires a full medical record or just a summary.
+                        </p>
                     </div>
                 </div>
 
@@ -125,36 +89,19 @@
                             What medical conditions could affect my application?
                         </h2>
                         <p class="para">
-                            Successfully passing your medical examination involves a careful consideration of various
-                            medical factors that could potentially impact your ability to drive safely. Your appointed GP
-                            will carefully evaluate each of these factors. The good news is that the most frequent causes of
-                            non-compliance can often be easily resolved.
-                        </p>
-                        <p class="para">
-                            For instance, it's not uncommon for drivers to encounter difficulties during their vision
-                            assessment due to an inadequate or outdated prescription for corrective lenses. In such
-                            instances, we strongly recommend a pre-appointment visit to an optician to ensure your vision
-                            meets the necessary standards.
-                        </p>
-                        <p class="para">
-                            Similarly, elevated blood pressure readings can sometimes be attributed to stress, hurrying to
-                            the appointment, or underlying health conditions. For individuals who do not pass due to high
-                            blood pressure, we extend a complimentary re-test opportunity, allowing you to address and
-                            manage this concern.
-                        </p>
-                        <p class="para">
-                            While some medical conditions may be more serious and potentially create hurdles to passing the
-                            medical examination, effective management can often mitigate even the most severe conditions as
-                            barriers to obtaining or renewing your license. The surest way to determine your eligibility is
-                            through a comprehensive evaluation by a qualified medical professional.
-                        </p>
-                        <p class="para">
-                            Book your medical appointment <a href="javascript:void(0);">now</a>.
+                            Passing a taxi medical requires taking into account various medical conditions that could affect
+                            your ability to drive safely. The GP carrying out your assessment will assess each condition
+                            carefully. Fortunately, the most common reasons for failure are usually easy to address. For
+                            instance, drivers may fail their vision test due to an inadequate or outdated prescription. In
+                            such cases, we advise visiting an optician before the appointment. Similarly, high blood
+                            pressure can sometimes be caused by stress, rushing to the appointment, or an underlying
+                            condition. We offer a free re-test to drivers who fail due to high blood pressure, so they can
+                            address the issue.
                         </p>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/ambulance2.webp') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/taxi3.jpg') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
             </div>
@@ -228,11 +175,12 @@
         <div class="auto-container">
             <div class="clearfix">
                 <div class="text">
-                    <h2 class="wow fadeInUp" data-wow-duration="2s">Book Your Bus / Coach Drivers Medical Assessment Today
+                    <h2 class="wow fadeInUp" data-wow-duration="2s">Book Your Taxi Driver Medical Assessment Today
                     </h2>
                     <p class="cta_para wow fadeInUp" data-wow-duration="3s">
                         Don’t let delays or long waiting lists hinder your career at sea. Contact IMAS Medical to book
-                        your Bus / Coach Drivers Medical Assessment and ensure you’re fit for duty. Your health and safety are
+                        your Taxi Driver Medical Assessment and ensure you’re fit for duty. Your health and safety
+                        are
                         our top
                         priorities.
                     </p>

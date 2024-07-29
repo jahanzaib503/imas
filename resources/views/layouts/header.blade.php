@@ -27,7 +27,7 @@
         <div class="container">
             <div class="navtop">
                 <div class="left">
-                    <a href="tel:+123 456 7891">Call Us: +123 456 7891</a>
+                    <a href="tel:+44 7968 999683">Call Us: +44 7968 999683</a>
                     <a href="maito:info@imasmedical.com">info@imasmedical.com</a>
                 </div>
                 <!-- <div class="right">
@@ -92,10 +92,10 @@
                                 <i class="fa fa-chevron-down ms-1" id="dropdownIcon"></i>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="javascript:void(0);">Taxi Drivers</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">HGV Drivers</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('taxi-driver-medical') }}">Taxi Drivers</a></li>
+                                <li><a class="dropdown-item" href="{{ Route('hgv-driver-medical') }}">HGV Drivers</a></li>
                                 <li><a class="dropdown-item" href="{{ Route('seafarers-medical') }}">Seafarers</a></li>
-                                <li><a class="dropdown-item" href="javascript:void(0);">Safety Critical</a></li>
+                                {{-- <li><a class="dropdown-item" href="javascript:void(0);">Safety Critical</a></li> --}}
                                 <li><a class="dropdown-item"
                                         href="{{ Route('ambulance-driver-medical') }}">Ambulance</a></li>
                                 <li><a class="dropdown-item" href="{{ Route('crane-operators-medical') }}">Crane
@@ -129,8 +129,8 @@
                             </ul>
                         </div>
                         <a class="nav-item nav-link" href="{{ Route('book-medical') }}">Book Medical</a>
-                        <a class="nav-item nav-link" href="javascript:void(0);">Contact Us</a>
-                        <a href="javascript:void(0);" class="nav-item th-btn">Book Now</a>
+                        <a class="nav-item nav-link" href="{{ Route('contact-us') }}">Contact Us</a>
+                        <a href="{{ Route('booking') }}" class="nav-item th-btn">Book Now</a>
                     </div>
                 </div>
             </div>
