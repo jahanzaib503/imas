@@ -30,22 +30,37 @@
                     <a href="tel:+44 7968 999683">Call Us: +44 7968 999683</a>
                     <a href="maito:info@imasmedical.com">info@imasmedical.com</a>
                 </div>
-                <div class="right">
+                <!-- <div class="right">
                     {{-- <a href="{{ Route('login') }}"><i class="fa-regular fa-user"></i> My Account</a> --}}
                     <div class="profile">
                         <a href="javascript:void(0);" class="dropdown-toggle" id="profile_dropdownButton" data-bs-toggle="profile_dropdown" aria-expanded="false">
                             <img
                                 src="https://images.rawpixel.com/image_png_social_square/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIzLTAxL3JtNjA5LXNvbGlkaWNvbi13LTAwMi1wLnBuZw.png"
                                 alt="" >
+                                @auth
+                                    <span>{{ Auth::user()->name }}</span>
+                                @endauth            
                                 <i class="fa fa-chevron-down ms-1" id="dropdownIcon"></i>
                         </a>
 
                     </div>
                     <ul class="dropdown-menu" aria-labelledby="profile_dropdown">
-                        <li><a class="dropdown-item" href="javascript:void(0);">Profile</a></li>
-                        <li><a class="dropdown-item" href="javascript:void(0);">Logout</a></li>
+                        @auth
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li>
+                                <a class="dropdown-item" href="javascript:void(0);" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                    Logout
+                                </a>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                    @csrf
+                                </form>
+                            </li>
+                        @else
+                            <li><a class="dropdown-item" href=">Create Account</a></li>
+                        @endauth    
                     </ul>
-                </div>
+
+                </div> -->
             </div>
         </div>
     </div>

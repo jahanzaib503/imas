@@ -205,7 +205,7 @@
                         </div>
                         <div class="welcome_text">
                             <h1>Welcome!</h1>
-                            <p>Please enter your details</p>
+                            <p>Please enter Admin Credentials</p>
                         </div>
                         
                         <form method="POST" action="{{ route('login') }}">
@@ -233,7 +233,7 @@
                                     <strong>{{ $message }}</strong>
                                 </span>
                             @enderror
-                            <div class="flex_forget">
+                            <!-- <div class="flex_forget">
                                 <div class="flex_remember">
                                 <input class="form-check-input" type="checkbox" name="remember" id="remember"
                                     {{ old('remember') ? 'checked' : '' }}>
@@ -247,13 +247,15 @@
                                         {{ __('Forgot Your Password?') }}
                                     </a>
                                 @endif
-                            </div>
-
+                            </div> -->
+                            <br>
+                            <br>
+                    
                             <button type="submit" class="sign_in">
                                 {{ __('Login') }}
                             </button>
 
-                            <p class="mt-3">Didn't have an account? <a href="{{ Route('signup') }}">Signup</a></p>
+                            <!-- <p class="mt-3">Didn't have an account? <a href="">Signup</a></p> -->
 
                         </form>
                     </div>
