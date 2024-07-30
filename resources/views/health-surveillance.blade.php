@@ -1,40 +1,32 @@
 @extends('layouts.main')
 @section('content')
-    <section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/seafarers_medical.jpg') }}')">
+    <section class="inner_banner"
+        style="background-image: url('{{ asset('assets/images/banner/health-surveillance.webp') }}')">
         <div class="container">
             <div class="inner_banner_content">
-                <h1>SEAFARERS MEDICAL</h1>
+                <h1>
+                    Health Surveillance
+                </h1>
                 <ul class="pagination">
                     <li>
                         <a class="first" href="{{ Route('index') }}">Home</a>
                     </li>
-                    <li>Seafarers Medical Assessments</li>
+                    <li>
+                        Health Surveillance
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
-
     <section class="inner_sections">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="content wow fadeInLeft" data-wow-duration="1s">
-                        <h2 class="heading">
-                            What is a Seafarers Medical Assessment?
-                        </h2>
-                        <p class="para">
-                            A Seafarers Medical Assessment is a comprehensive medical examination required for individuals
-                            working at sea. It ensures that seafarers are medically fit to perform their duties without
-                            compromising their health or the safety of others on board. These assessments are typically
-                            conducted according to the standards set by the Maritime and Coastguard Agency (MCA) and other
-                            relevant regulatory bodies.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers1.jpg') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
-                </div>
+            <div class="caution_text">
+                <h3>
+                    At IMAS Medical, we believe that proactive health monitoring is essential for maintaining overall
+                    well-being and preventing potential health issues. That's why we offer comprehensive health surveillance
+                    services aimed at helping our clients stay fit, healthy, and productive.
+                </h3>
             </div>
         </div>
     </section>
@@ -44,37 +36,25 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers2.jpg') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/health-surveillance1.webp') }}" alt=""
+                        class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">
                         <h2 class="heading">
-                            Why is it Important?
+                            Our Approach
                         </h2>
                         <p class="para">
-                            Maintaining a valid Seafarers Medical Certificate is crucial for several reasons:
+                            Our approach to health surveillance is centred on thorough assessment, personalized care, and
+                            proactive intervention. We understand that each individual's health needs are unique, so we
+                            tailor our services to address specific concerns and promote optimal health outcomes.
                         </p>
-                        <ul>
-                            <li>
-                                <strong>Safety: </strong>
-                                Ensures the health and safety of the seafarer and their colleagues by identifying any
-                                medical conditions that could impair their ability to work safely at sea.
-                            </li>
-                            <li>
-                                <strong>Compliance: </strong>
-                                Meets legal and regulatory requirements, allowing seafarers to work on vessels without any legal impediments.
-                            </li>
-                            <li>
-                                <strong>Prevention: </strong>
-                                Early detection of health issues that could become serious if left untreated, ensuring long-term health and well-being.
-                            </li>
-                        </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
 
     <section class="inner_sections">
         <div class="container">
@@ -82,73 +62,99 @@
                 <div class="col-lg-6">
                     <div class="content wow fadeInLeft" data-wow-duration="1s">
                         <h2 class="heading">
-                            Implications of Not Having It Done
+                            What We Offer
                         </h2>
-                        <p class="para">
-                            Failing to obtain or renew a Seafarers Medical Certificate can have significant consequences:
-                        </p>
-                        <ul>
+                        <ol>
                             <li>
-                                <strong>Employment Restrictions: </strong>
-                                Without a valid certificate, seafarers are not permitted to work on most vessels, leading to potential job loss or suspension.
+                                <strong>Health Checks:</strong> <br>
+                                Our experienced medical professionals conduct thorough health checks to assess various
+                                aspects of our clients' well-being. This may include measurements such as blood pressure,
+                                heart rate, and body mass index (BMI), as well as other relevant health indicators.
                             </li>
                             <li>
-                                <strong>Legal Issues: </strong>
-                                Non-compliance with maritime regulations can result in legal penalties for both the individual and their employer.
+                                <strong>Health Questionnaire:</strong> <br>
+                                In addition to physical assessments, we also provide comprehensive health questionnaires to
+                                gather information about our clients' medical history, lifestyle habits, and any specific
+                                health concerns they may have. This allows us to gain a holistic understanding of their
+                                health status and identify any potential risk factors.
                             </li>
                             <li>
-                                <strong>Safety Risks: </strong>
-                                Unaddressed health issues can lead to accidents or emergencies at sea, putting the entire crew at risk.
+                                <strong>Risk Assessment:</strong> <br>
+                                Based on the findings from the health checks and questionnaires, our medical team conducts
+                                thorough risk assessments to identify any potential health risks or areas of concern. This
+                                enables us to develop targeted intervention strategies and personalized health plans to
+                                address specific needs and mitigate risks.
                             </li>
-                        </ul>
+
+                            <li>
+                                <strong>Preventive Care:</strong> <br>
+                                Our goal is not just to treat illness but to prevent it from occurring in the first place.
+                                That's why we emphasize preventive care as a cornerstone of our health surveillance
+                                services. We provide practical advice and guidance on healthy lifestyle choices, disease
+                                prevention strategies, and proactive health management to empower our clients to take
+                                control of their health and well-being.
+                            </li>
+                            <li>
+                                <strong>Ongoing Monitoring:</strong> <br>
+                                Health surveillance is not a one-time event but an ongoing process. We offer regular
+                                monitoring and follow-up appointments to track our clients' progress, monitor changes in
+                                their health status, and adjust their health plans as needed. This ensures that they receive
+                                the continuous support and care they need to maintain optimal health over the long term.
+                            </li>
+                        </ol>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers3.jpg') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/health-surveillance2.webp') }}" alt=""
+                        class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
+
             </div>
         </div>
     </section>
-
 
     <section class="inner_sections">
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers4.jpg') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/why_choose.webp') }}" alt=""
+                        class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">
                         <h2 class="heading">
-                            How IMAS Medical Can Help
+                            Why Choose IMAS Medical?
                         </h2>
-                        <p class="para">
-                            At IMAS Medical, we understand the urgency and importance of Seafarers Medical Assessments. Our services include:
-                        </p>
                         <ul>
                             <li>
-                                <strong>Immediate Response: </strong>
-                                We offer prompt appointment scheduling, including evenings and weekends, to ensure you get your assessment without delay.
+                                <strong>Expertise:</strong>
+                                Our team consists of highly skilled medical professionals with expertise in health
+                                surveillance and preventive care.
                             </li>
                             <li>
-                                <strong>Qualified Doctors: </strong>
-                                Our GMC-registered doctors are experienced in conducting thorough seafarer medical examinations in accordance with regulatory standards.
+                                <strong>Comprehensive Services:</strong>
+                                We offer a wide range of health surveillance services tailored to meet the diverse needs of
+                                our clients.
                             </li>
                             <li>
-                                <strong>Nationwide Coverage: </strong>
-                                We provide services across most areas of the UK, ensuring accessibility and convenience.
+                                <strong>Personalised Care:</strong>
+                                We take a personalised approach to health surveillance, addressing each client's unique
+                                health concerns and goals.
                             </li>
+
                             <li>
-                                <strong>Competitive Pricing: </strong>
-                                Our assessments are priced competitively, offering excellent value for comprehensive medical evaluations.
+                                <strong>Empowering Approach:</strong>
+                                We believe in empowering our clients to take an active role in their health and well-being
+                                through education, support, and proactive intervention.
                             </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
+
 
     <section class="cta-section bg-theme mb-30">
         <div class="pattern-layer lazy" style="background-image: url('{{ asset('assets/images/home/shape-2.png') }}');">
@@ -156,9 +162,13 @@
         <div class="auto-container">
             <div class="clearfix">
                 <div class="text">
-                    <h2 class="wow fadeInUp" data-wow-duration="2s">Book Your Seafarers Medical Assessment Today</h2>
+                    <h2 class="wow fadeInUp" data-wow-duration="2s">
+                        Get in Touch
+                    </h2>
                     <p class="cta_para wow fadeInUp" data-wow-duration="3s">
-                        Don’t let delays or long waiting lists hinder your career at sea. Contact IMAS Medical to book your Seafarers Medical Assessment and ensure you’re fit for duty. Your health and safety are our top priorities.
+                        If you're ready to take control of your health and well-being or would like to learn more about our
+                        health surveillance services, we invite you to contact us today. Our friendly and experienced team
+                        is here to support you every step of the way on your journey to better health.
                     </p>
                 </div>
 
@@ -172,7 +182,7 @@
 
     </section>
 
-   
+
 
     <section class="overflow-hidden cta-sec4">
         <div class="container">

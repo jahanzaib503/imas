@@ -1,40 +1,31 @@
 @extends('layouts.main')
 @section('content')
-    <section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/seafarers_medical.jpg') }}')">
+    <section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/sickness-referrals.webp') }}')">
         <div class="container">
             <div class="inner_banner_content">
-                <h1>SEAFARERS MEDICAL</h1>
+                <h1>
+                    Sickness Referrals
+                </h1>
                 <ul class="pagination">
                     <li>
                         <a class="first" href="{{ Route('index') }}">Home</a>
                     </li>
-                    <li>Seafarers Medical Assessments</li>
+                    <li>
+                        Sickness Referrals
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
-
     <section class="inner_sections">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="content wow fadeInLeft" data-wow-duration="1s">
-                        <h2 class="heading">
-                            What is a Seafarers Medical Assessment?
-                        </h2>
-                        <p class="para">
-                            A Seafarers Medical Assessment is a comprehensive medical examination required for individuals
-                            working at sea. It ensures that seafarers are medically fit to perform their duties without
-                            compromising their health or the safety of others on board. These assessments are typically
-                            conducted according to the standards set by the Maritime and Coastguard Agency (MCA) and other
-                            relevant regulatory bodies.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers1.jpg') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
-                </div>
+            <div class="caution_text">
+                <h3>
+                    At IMAS Medical, we understand the challenges that come with sickness absence in the workplace.
+                    That's why we offer comprehensive sickness referral services aimed at supporting both employees and
+                    employers through these difficult times.
+                </h3>
             </div>
         </div>
     </section>
@@ -44,37 +35,26 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers2.jpg') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/sickness1.webp') }}" alt=""
+                        class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">
                         <h2 class="heading">
-                            Why is it Important?
+                            Our Approach
                         </h2>
                         <p class="para">
-                            Maintaining a valid Seafarers Medical Certificate is crucial for several reasons:
+                            When it comes to sickness referrals, our approach is centred on thorough assessment and
+                            personalized guidance. We recognize that each individual's situation is unique, so we take the
+                            time to understand the nature of the sickness, its impact on the individual's ability to work,
+                            and any specific concerns or considerations.
                         </p>
-                        <ul>
-                            <li>
-                                <strong>Safety: </strong>
-                                Ensures the health and safety of the seafarer and their colleagues by identifying any
-                                medical conditions that could impair their ability to work safely at sea.
-                            </li>
-                            <li>
-                                <strong>Compliance: </strong>
-                                Meets legal and regulatory requirements, allowing seafarers to work on vessels without any legal impediments.
-                            </li>
-                            <li>
-                                <strong>Prevention: </strong>
-                                Early detection of health issues that could become serious if left untreated, ensuring long-term health and well-being.
-                            </li>
-                        </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
 
     <section class="inner_sections">
         <div class="container">
@@ -82,73 +62,96 @@
                 <div class="col-lg-6">
                     <div class="content wow fadeInLeft" data-wow-duration="1s">
                         <h2 class="heading">
-                            Implications of Not Having It Done
+                            What We Offer
                         </h2>
-                        <p class="para">
-                            Failing to obtain or renew a Seafarers Medical Certificate can have significant consequences:
-                        </p>
-                        <ul>
+                        <ol>
                             <li>
-                                <strong>Employment Restrictions: </strong>
-                                Without a valid certificate, seafarers are not permitted to work on most vessels, leading to potential job loss or suspension.
+                                <strong>Assessment:</strong> <br>
+                                Our experienced medical professionals conduct detailed assessments to evaluate the nature
+                                and severity of the sickness. This includes reviewing medical records, conducting
+                                examinations, and discussing symptoms with the individual.
                             </li>
                             <li>
-                                <strong>Legal Issues: </strong>
-                                Non-compliance with maritime regulations can result in legal penalties for both the individual and their employer.
+                                <strong>Recommendations:</strong> <br>
+                                Based on the assessment findings, we provide clear and practical recommendations regarding
+                                the duration of sickness absence. We take into account factors such as the nature of the
+                                illness, the individual's job role, and any relevant medical guidelines.
                             </li>
                             <li>
-                                <strong>Safety Risks: </strong>
-                                Unaddressed health issues can lead to accidents or emergencies at sea, putting the entire crew at risk.
+                                <strong>Return-to-Work Plans:</strong> <br>
+                                We understand that a smooth return to work is crucial for both the individual and the
+                                employer. That's why we develop customized return-to-work plans tailored to the individual's
+                                needs. This may include phased return options, adjustments to workload or responsibilities,
+                                and ongoing support as needed.
                             </li>
-                        </ul>
+
+                            <li>
+                                <strong>Communication:</strong> <br>
+                                We maintain open communication channels with both the individual and their employer
+                                throughout the sickness referral process. This ensures that everyone is kept informed and
+                                involved every step of the way.
+                            </li>
+                            <li>
+                                <strong>Supportive Environment:</strong> <br>
+                                We strive to create a supportive and empathetic environment where individuals feel
+                                comfortable discussing their health concerns. Our team is committed to providing
+                                compassionate care and guidance to help individuals navigate through challenging times.
+                            </li>
+                        </ol>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers3.jpg') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/sickness2.webp') }}" alt=""
+                        class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
+
             </div>
         </div>
     </section>
-
 
     <section class="inner_sections">
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers4.jpg') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/why_choose.webp') }}" alt=""
+                        class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">
                         <h2 class="heading">
-                            How IMAS Medical Can Help
+                            Why Choose IMAS Medical?
                         </h2>
-                        <p class="para">
-                            At IMAS Medical, we understand the urgency and importance of Seafarers Medical Assessments. Our services include:
-                        </p>
                         <ul>
                             <li>
-                                <strong>Immediate Response: </strong>
-                                We offer prompt appointment scheduling, including evenings and weekends, to ensure you get your assessment without delay.
+                                <strong>Expertise:</strong>
+                                Our team consists of highly skilled medical professionals with extensive experience in
+                                managing sickness referrals.
                             </li>
                             <li>
-                                <strong>Qualified Doctors: </strong>
-                                Our GMC-registered doctors are experienced in conducting thorough seafarer medical examinations in accordance with regulatory standards.
+                                <strong>Tailored Solutions:</strong>
+                                We understand that one size does not fit all. That's why we offer personalized
+                                recommendations and support tailored to each individual's needs.
                             </li>
                             <li>
-                                <strong>Nationwide Coverage: </strong>
-                                We provide services across most areas of the UK, ensuring accessibility and convenience.
+                                <strong>Timely Service:</strong>
+                                We recognize the importance of timely intervention. Our efficient processes ensure that
+                                individuals receive the support they need when they need it most.
                             </li>
+
                             <li>
-                                <strong>Competitive Pricing: </strong>
-                                Our assessments are priced competitively, offering excellent value for comprehensive medical evaluations.
+                                <strong>Client-Centered Approach:</strong>
+                                At IMAS Medical, our focus is always on the well-being and satisfaction of our
+                                clients. We go above and beyond to ensure that their needs are met and their expectations
+                                are exceeded.
                             </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
+
 
     <section class="cta-section bg-theme mb-30">
         <div class="pattern-layer lazy" style="background-image: url('{{ asset('assets/images/home/shape-2.png') }}');">
@@ -156,9 +159,13 @@
         <div class="auto-container">
             <div class="clearfix">
                 <div class="text">
-                    <h2 class="wow fadeInUp" data-wow-duration="2s">Book Your Seafarers Medical Assessment Today</h2>
+                    <h2 class="wow fadeInUp" data-wow-duration="2s">
+                        Get in Touch
+                    </h2>
                     <p class="cta_para wow fadeInUp" data-wow-duration="3s">
-                        Don’t let delays or long waiting lists hinder your career at sea. Contact IMAS Medical to book your Seafarers Medical Assessment and ensure you’re fit for duty. Your health and safety are our top priorities.
+                        If you're in need of sickness referral services or would like to learn more about how Medicals
+                        Northwest can support your organization, we encourage you to get in touch with our friendly team.
+                        Your health and well-being are our top priorities, and we're here to help every step of the way.
                     </p>
                 </div>
 
@@ -172,7 +179,7 @@
 
     </section>
 
-   
+
 
     <section class="overflow-hidden cta-sec4">
         <div class="container">

@@ -1,40 +1,32 @@
 @extends('layouts.main')
 @section('content')
-    <section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/seafarers_medical.jpg') }}')">
+    <section class="inner_banner"
+        style="background-image: url('{{ asset('assets/images/banner/pre-employment-medicals.webp') }}')">
         <div class="container">
             <div class="inner_banner_content">
-                <h1>SEAFARERS MEDICAL</h1>
+                <h1>
+                    Pre-Employment Medicals
+                </h1>
                 <ul class="pagination">
                     <li>
                         <a class="first" href="{{ Route('index') }}">Home</a>
                     </li>
-                    <li>Seafarers Medical Assessments</li>
+                    <li>
+                        Pre-Employment Medicals
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
-
     <section class="inner_sections">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="content wow fadeInLeft" data-wow-duration="1s">
-                        <h2 class="heading">
-                            What is a Seafarers Medical Assessment?
-                        </h2>
-                        <p class="para">
-                            A Seafarers Medical Assessment is a comprehensive medical examination required for individuals
-                            working at sea. It ensures that seafarers are medically fit to perform their duties without
-                            compromising their health or the safety of others on board. These assessments are typically
-                            conducted according to the standards set by the Maritime and Coastguard Agency (MCA) and other
-                            relevant regulatory bodies.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers1.jpg') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
-                </div>
+            <div class="caution_text">
+                <h3>
+                    At IMAS Medical, we understand the importance of ensuring that prospective employees are fit and healthy
+                    to perform their job roles effectively and safely. That's why we offer comprehensive pre-employment
+                    medical assessments designed to evaluate the health and fitness of individuals entering the workforce.
+                </h3>
             </div>
         </div>
     </section>
@@ -44,37 +36,26 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers2.jpg') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/pre-employment1.webp') }}" alt=""
+                        class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">
                         <h2 class="heading">
-                            Why is it Important?
+                            Our Approach
                         </h2>
                         <p class="para">
-                            Maintaining a valid Seafarers Medical Certificate is crucial for several reasons:
+                            Our approach to pre-employment medicals is focused on thorough evaluation, personalized care,
+                            and adherence to industry standards. We aim to provide employers with valuable insights into the
+                            health status of their prospective employees while also ensuring that individuals receive the
+                            support and guidance they need to thrive in their new roles.
                         </p>
-                        <ul>
-                            <li>
-                                <strong>Safety: </strong>
-                                Ensures the health and safety of the seafarer and their colleagues by identifying any
-                                medical conditions that could impair their ability to work safely at sea.
-                            </li>
-                            <li>
-                                <strong>Compliance: </strong>
-                                Meets legal and regulatory requirements, allowing seafarers to work on vessels without any legal impediments.
-                            </li>
-                            <li>
-                                <strong>Prevention: </strong>
-                                Early detection of health issues that could become serious if left untreated, ensuring long-term health and well-being.
-                            </li>
-                        </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
 
     <section class="inner_sections">
         <div class="container">
@@ -82,73 +63,99 @@
                 <div class="col-lg-6">
                     <div class="content wow fadeInLeft" data-wow-duration="1s">
                         <h2 class="heading">
-                            Implications of Not Having It Done
+                            What We Offer
                         </h2>
-                        <p class="para">
-                            Failing to obtain or renew a Seafarers Medical Certificate can have significant consequences:
-                        </p>
-                        <ul>
+                        <ol>
                             <li>
-                                <strong>Employment Restrictions: </strong>
-                                Without a valid certificate, seafarers are not permitted to work on most vessels, leading to potential job loss or suspension.
+                                <strong>Comprehensive Health Checks:</strong> <br>
+                                Our experienced medical professionals conduct thorough health assessments to evaluate
+                                various aspects of the candidate's health and fitness. This may include measurements such as
+                                blood pressure, heart rate, lung function, vision, and hearing, as well as other relevant
+                                health indicators.
                             </li>
                             <li>
-                                <strong>Legal Issues: </strong>
-                                Non-compliance with maritime regulations can result in legal penalties for both the individual and their employer.
+                                <strong>Medical History Review:</strong> <br>
+                                In addition to physical assessments, we review the candidate's medical history to identify
+                                any pre-existing conditions or health concerns that may impact their ability to perform the
+                                job role safely and effectively.
                             </li>
                             <li>
-                                <strong>Safety Risks: </strong>
-                                Unaddressed health issues can lead to accidents or emergencies at sea, putting the entire crew at risk.
+                                <strong>Job-Specific Assessments:</strong> <br>
+                                We understand that different job roles may have specific health requirements or risks
+                                associated with them. That's why we tailor our assessments to address the unique demands of
+                                each job role, ensuring that candidates are physically and medically capable of meeting job
+                                requirements.
                             </li>
-                        </ul>
+
+                            <li>
+                                <strong>Fitness for Duty Determination:</strong> <br>
+                                Based on the findings from the pre-employment medical assessment, we provide employers with
+                                a clear determination of the candidate's fitness for duty. This enables employers to make
+                                informed decisions regarding the candidate's suitability for the job role.
+                            </li>
+                            <li>
+                                <strong>Risk Mitigation Strategies:</strong> <br>
+                                In cases where potential health risks or concerns are identified, we work with employers to
+                                develop appropriate risk mitigation strategies. This may include recommending accommodations
+                                or adjustments to the work environment, as well as providing guidance on health promotion
+                                and preventive care measures.
+                            </li>
+                        </ol>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers3.jpg') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/pre-employment2.webp') }}" alt=""
+                        class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
+
             </div>
         </div>
     </section>
-
 
     <section class="inner_sections">
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers4.jpg') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/why_choose.webp') }}" alt=""
+                        class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">
                         <h2 class="heading">
-                            How IMAS Medical Can Help
+                            Why Choose IMAS Medical?
                         </h2>
-                        <p class="para">
-                            At IMAS Medical, we understand the urgency and importance of Seafarers Medical Assessments. Our services include:
-                        </p>
                         <ul>
                             <li>
-                                <strong>Immediate Response: </strong>
-                                We offer prompt appointment scheduling, including evenings and weekends, to ensure you get your assessment without delay.
+                                <strong>Expertise:</strong>
+                                Our team consists of highly skilled medical professionals with expertise in pre-employment
+                                medical assessments and occupational health.
                             </li>
                             <li>
-                                <strong>Qualified Doctors: </strong>
-                                Our GMC-registered doctors are experienced in conducting thorough seafarer medical examinations in accordance with regulatory standards.
+                                <strong>Industry Compliance:</strong>
+                                We adhere to industry standards and guidelines to ensure that our pre-employment medical
+                                assessments are comprehensive, reliable, and legally compliant.
                             </li>
                             <li>
-                                <strong>Nationwide Coverage: </strong>
-                                We provide services across most areas of the UK, ensuring accessibility and convenience.
+                                <strong>Customised Solutions:</strong>
+                                We understand that every organisation has unique needs and requirements. That's why we offer
+                                customised pre-employment medical solutions tailored to meet the specific needs of our
+                                clients.
                             </li>
+
                             <li>
-                                <strong>Competitive Pricing: </strong>
-                                Our assessments are priced competitively, offering excellent value for comprehensive medical evaluations.
+                                <strong>Timely Service:</strong>
+                                We recognise the importance of timeliness in the recruitment process. Our efficient
+                                processes ensure that pre-employment medical assessments are conducted promptly, allowing
+                                employers to make informed hiring decisions without unnecessary delays.
                             </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
+
 
     <section class="cta-section bg-theme mb-30">
         <div class="pattern-layer lazy" style="background-image: url('{{ asset('assets/images/home/shape-2.png') }}');">
@@ -156,9 +163,14 @@
         <div class="auto-container">
             <div class="clearfix">
                 <div class="text">
-                    <h2 class="wow fadeInUp" data-wow-duration="2s">Book Your Seafarers Medical Assessment Today</h2>
+                    <h2 class="wow fadeInUp" data-wow-duration="2s">
+                        Get in Touch
+                    </h2>
                     <p class="cta_para wow fadeInUp" data-wow-duration="3s">
-                        Don’t let delays or long waiting lists hinder your career at sea. Contact IMAS Medical to book your Seafarers Medical Assessment and ensure you’re fit for duty. Your health and safety are our top priorities.
+                        If you're an employer looking to ensure the health and fitness of your prospective employees or
+                        would like to learn more about our pre-employment medical services, we encourage you to contact us
+                        today. Our dedicated team is here to support you in promoting a safe, healthy, and productive
+                        workforce.
                     </p>
                 </div>
 
@@ -172,7 +184,7 @@
 
     </section>
 
-   
+
 
     <section class="overflow-hidden cta-sec4">
         <div class="container">

@@ -231,7 +231,7 @@
                     <h2 class="wow fadeInUp" data-wow-duration="2s">Book Your Bus / Coach Drivers Medical Assessment Today
                     </h2>
                     <p class="cta_para wow fadeInUp" data-wow-duration="3s">
-                        Don’t let delays or long waiting lists hinder your career at sea. Contact Medicals Northwest to book
+                        Don’t let delays or long waiting lists hinder your career at sea. Contact IMAS Medical to book
                         your Bus / Coach Drivers Medical Assessment and ensure you’re fit for duty. Your health and safety
                         are
                         our top
@@ -240,7 +240,7 @@
                 </div>
 
                 <div class="btn-box pull-right wow fadeInUp" data-wow-duration="4s">
-                    <a href="javascript:void(0);" class="th-btn style4">Book an Appointment</a>
+                    <a href="{{ Route('book-medical') }}" class="th-btn style4">Book an Appointment</a>
                 </div>
 
             </div>
@@ -265,8 +265,8 @@
                         </p>
                     </div>
                     <div class="flex_btn">
-                        <a href="javascript:void(0);" class="th-btn shadow-1">Book Appointment</a>
-                        <a href="javascript:void(0);" class="th-btn style2 shadow-1 text-dark">Get Free Consulting</a>
+                        <a href="{{ Route('booking') }}" class="th-btn shadow-1">Book Appointment</a>
+                        <a href="tel:+44 7968 999683" class="th-btn style2 shadow-1 text-dark">Get Free Consulting</a>
                     </div>
                 </div>
                 <div class="col-xl-5">

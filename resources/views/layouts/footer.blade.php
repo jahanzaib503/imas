@@ -10,13 +10,13 @@
                     </p>
                     <ul class="footer_list">
                         <li>
-                            <a href="javscript:void(0);"><i class="fa-solid fa-location-dot me-2"></i> 123 dummy address</a>
+                            <a href="javscript:void(0);"><i class="fa-solid fa-location-dot me-2"></i> 173 Stanley Road Cheadle SK8 6RF</a>
                         </li>
                         <li>
                             <a href="mailto:info@imasmedical.com"><i class="fa-solid fa-envelope me-2"></i> info@imasmedical.com</a>
                         </li>
                         <li>
-                            <a href="tel:+123 456 7891"><i class="fa-solid fa-phone me-2"></i> +123 456 7891</a>
+                            <a href="tel:+44 7968 999683"><i class="fa-solid fa-phone me-2"></i> +44 7968 999683</a>
                         </li>
                     </ul>
                 </div>
@@ -27,22 +27,22 @@
                 </div>
                 <ul class="footer_list">
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> About Us</a>
+                        <a href="{{ Route('about-us') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> About Us</a>
                     </li>
                     <li>
                         <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Latest News & Updates</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Terms and Conditions</a>
+                        <a href="{{ Route('terms-conditions') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Terms and Conditions</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Privacy Policy</a>
+                        <a href="{{ Route('privacy-policy') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Privacy Policy</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> GDPR Policy</a>
+                        <a href="{{ Route('gdpr-policy') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> GDPR Policy</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Customer Support</a>
+                        <a href="{{ Route('customer-support') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Customer Support</a>
                     </li>
                     <li>
                         <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Download Forms</a>
@@ -55,25 +55,25 @@
                 </div>
                 <ul class="footer_list">
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Hackey Carriage Driver Medical Assessment</a>
+                        <a href="{{ Route('taxi-driver-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Hackey Carriage Driver Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Private Hire Taxi Driver Medical Assessment</a>
+                        <a href="{{ Route('taxi-driver-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Private Hire Taxi Driver Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> HGV Lorry Driver Medical Assessment</a>
+                        <a href="{{ Route('hgv-driver-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> HGV Lorry Driver Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> LGV Lorry Driver Medical Assessment</a>
+                        <a href="{{ Route('hgv-driver-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> LGV Lorry Driver Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Ambulance Driver Medical Assessment</a>
+                        <a href="{{ Route('ambulance-driver-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Ambulance Driver Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Reach Truck / Forklift Operators Medical Assessment</a>
+                        <a href="{{ Route('forklift-operator-medical') }};"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Reach Truck / Forklift Operators Medical Assessment</a>
                     </li>
                     <li>
-                        <a href="javscript:void(0);"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Crane Operators Medical Assessment</a>
+                        <a href="{{ Route('crane-operators-medical') }}"><i class="fa-solid fa-chevron-right fa-sm me-2"></i> Crane Operators Medical Assessment</a>
                     </li>
                 </ul>
             </div>
@@ -101,6 +101,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="{{ asset('assets/js/custom.js') }}"></script>
 
 </body>

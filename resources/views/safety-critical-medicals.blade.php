@@ -1,40 +1,33 @@
 @extends('layouts.main')
 @section('content')
-    <section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/seafarers_medical.jpg') }}')">
+    <section class="inner_banner"
+        style="background-image: url('{{ asset('assets/images/banner/safety-critical-medicals.jpg') }}')">
         <div class="container">
             <div class="inner_banner_content">
-                <h1>SEAFARERS MEDICAL</h1>
+                <h1>
+                    Safety Critical Medicals
+                </h1>
                 <ul class="pagination">
                     <li>
                         <a class="first" href="{{ Route('index') }}">Home</a>
                     </li>
-                    <li>Seafarers Medical Assessments</li>
+                    <li>
+                        Safety Critical Medicals
+                    </li>
                 </ul>
             </div>
         </div>
     </section>
 
-
     <section class="inner_sections">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="content wow fadeInLeft" data-wow-duration="1s">
-                        <h2 class="heading">
-                            What is a Seafarers Medical Assessment?
-                        </h2>
-                        <p class="para">
-                            A Seafarers Medical Assessment is a comprehensive medical examination required for individuals
-                            working at sea. It ensures that seafarers are medically fit to perform their duties without
-                            compromising their health or the safety of others on board. These assessments are typically
-                            conducted according to the standards set by the Maritime and Coastguard Agency (MCA) and other
-                            relevant regulatory bodies.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers1.jpg') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
-                </div>
+            <div class="caution_text">
+                <h3>
+                    At IMAS Medical, we recognize the vital importance of ensuring that individuals in safety critical roles
+                    are fit and healthy to perform their duties effectively and safely. That's why we offer specialised
+                    safety critical medical assessments designed to evaluate the health and fitness of individuals entering
+                    or currently employed in safety critical positions.
+                </h3>
             </div>
         </div>
     </section>
@@ -44,37 +37,26 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers2.jpg') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/safety1.jpg') }}" alt=""
+                        class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">
                         <h2 class="heading">
-                            Why is it Important?
+                            Our Approach
                         </h2>
                         <p class="para">
-                            Maintaining a valid Seafarers Medical Certificate is crucial for several reasons:
+                            Our approach to safety critical medicals is centred on meticulous evaluation, adherence to
+                            regulatory standards, and a commitment to promoting workplace safety. We understand the unique
+                            risks and responsibilities associated with safety critical roles, and we strive to provide
+                            comprehensive assessments that address the specific health requirements of these positions.
                         </p>
-                        <ul>
-                            <li>
-                                <strong>Safety: </strong>
-                                Ensures the health and safety of the seafarer and their colleagues by identifying any
-                                medical conditions that could impair their ability to work safely at sea.
-                            </li>
-                            <li>
-                                <strong>Compliance: </strong>
-                                Meets legal and regulatory requirements, allowing seafarers to work on vessels without any legal impediments.
-                            </li>
-                            <li>
-                                <strong>Prevention: </strong>
-                                Early detection of health issues that could become serious if left untreated, ensuring long-term health and well-being.
-                            </li>
-                        </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
 
     <section class="inner_sections">
         <div class="container">
@@ -82,73 +64,98 @@
                 <div class="col-lg-6">
                     <div class="content wow fadeInLeft" data-wow-duration="1s">
                         <h2 class="heading">
-                            Implications of Not Having It Done
+                            What We Offer
                         </h2>
-                        <p class="para">
-                            Failing to obtain or renew a Seafarers Medical Certificate can have significant consequences:
-                        </p>
-                        <ul>
+                        <ol>
                             <li>
-                                <strong>Employment Restrictions: </strong>
-                                Without a valid certificate, seafarers are not permitted to work on most vessels, leading to potential job loss or suspension.
+                                <strong>Thorough Health Assessments:</strong> <br>
+                                Our experienced medical professionals conduct thorough health assessments to evaluate
+                                various aspects of the candidate's health and fitness. This includes comprehensive physical
+                                examinations, as well as assessments of medical history, lifestyle factors, and any
+                                pre-existing conditions that may impact their ability to perform safety critical duties.
                             </li>
                             <li>
-                                <strong>Legal Issues: </strong>
-                                Non-compliance with maritime regulations can result in legal penalties for both the individual and their employer.
+                                <strong>Job-Specific Evaluations:</strong> <br>
+                                We recognize that safety critical roles vary widely in their requirements and
+                                responsibilities. That's why we tailor our assessments to address the specific demands of
+                                each job role, ensuring that candidates are medically and physically capable of meeting the
+                                unique challenges associated with their position.
                             </li>
                             <li>
-                                <strong>Safety Risks: </strong>
-                                Unaddressed health issues can lead to accidents or emergencies at sea, putting the entire crew at risk.
+                                <strong>Risk Identification and Mitigation:</strong> <br>
+                                Our assessments include a detailed analysis of potential health risks or conditions that
+                                could impact an individual's ability to safely perform their duties. We work closely with
+                                employers to identify and mitigate these risks through appropriate accommodations,
+                                adjustments, or preventive measures.
                             </li>
-                        </ul>
+
+                            <li>
+                                <strong>Fitness for Duty Determination:</strong> <br>
+                                Based on the findings from the safety critical medical assessment, we provide employers with
+                                a clear determination of the candidate's fitness for duty. This enables employers to make
+                                informed decisions regarding the individual's suitability for the safety critical role.
+                            </li>
+                            <li>
+                                <strong>Ongoing Monitoring and Support:</strong> <br>
+                                We understand that maintaining fitness for safety critical roles is an ongoing process.
+                                That's why we offer regular monitoring and support to ensure that individuals remain healthy
+                                and fit for duty throughout their employment.
+                            </li>
+                        </ol>
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers3.jpg') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/safety2.jpg') }}" alt=""
+                        class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
+
             </div>
         </div>
     </section>
-
 
     <section class="inner_sections">
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers4.jpg') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/why_choose.webp') }}" alt=""
+                        class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">
                         <h2 class="heading">
-                            How IMAS Medical Can Help
+                            Why Choose IMAS Medical?
                         </h2>
-                        <p class="para">
-                            At IMAS Medical, we understand the urgency and importance of Seafarers Medical Assessments. Our services include:
-                        </p>
                         <ul>
                             <li>
-                                <strong>Immediate Response: </strong>
-                                We offer prompt appointment scheduling, including evenings and weekends, to ensure you get your assessment without delay.
+                                <strong>Expertise:</strong>
+                                Our team consists of highly skilled medical professionals with expertise in safety critical
+                                medical assessments and occupational health.
                             </li>
                             <li>
-                                <strong>Qualified Doctors: </strong>
-                                Our GMC-registered doctors are experienced in conducting thorough seafarer medical examinations in accordance with regulatory standards.
+                                <strong>Regulatory Compliance:</strong>
+                                We adhere to regulatory standards and guidelines to ensure that our safety critical medical
+                                assessments meet the highest standards of accuracy, reliability, and legality.
                             </li>
                             <li>
-                                <strong>Nationwide Coverage: </strong>
-                                We provide services across most areas of the UK, ensuring accessibility and convenience.
+                                <strong>Customised Solutions:</strong>
+                                We understand the unique needs and challenges of safety critical roles, and we offer
+                                customised medical solutions tailored to meet the specific requirements of each client.
                             </li>
+
                             <li>
-                                <strong>Competitive Pricing: </strong>
-                                Our assessments are priced competitively, offering excellent value for comprehensive medical evaluations.
+                                <strong>Commitment to Safety:</strong>
+                                At Medicals Northwest, safety is our top priority. We are dedicated to helping employers
+                                promote a safe and healthy work environment by ensuring that individuals in safety critical
+                                roles are fit and capable of performing their duties safely and effectively.
                             </li>
                         </ul>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
+
+
 
     <section class="cta-section bg-theme mb-30">
         <div class="pattern-layer lazy" style="background-image: url('{{ asset('assets/images/home/shape-2.png') }}');">
@@ -156,9 +163,14 @@
         <div class="auto-container">
             <div class="clearfix">
                 <div class="text">
-                    <h2 class="wow fadeInUp" data-wow-duration="2s">Book Your Seafarers Medical Assessment Today</h2>
+                    <h2 class="wow fadeInUp" data-wow-duration="2s">
+                        Get in Touch
+                    </h2>
                     <p class="cta_para wow fadeInUp" data-wow-duration="3s">
-                        Don’t let delays or long waiting lists hinder your career at sea. Contact IMAS Medical to book your Seafarers Medical Assessment and ensure you’re fit for duty. Your health and safety are our top priorities.
+                        If you're an employer looking to ensure the health and fitness of individuals in safety critical
+                        roles, or would like to learn more about our safety critical medical services, we encourage you to
+                        contact us today. Our experienced team is here to support you in promoting workplace safety and
+                        protecting the well-being of your employees.
                     </p>
                 </div>
 
@@ -172,7 +184,7 @@
 
     </section>
 
-   
+
 
     <section class="overflow-hidden cta-sec4">
         <div class="container">

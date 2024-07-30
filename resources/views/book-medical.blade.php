@@ -1,195 +1,209 @@
 @extends('layouts.main')
 @section('content')
-<section class="home_banner">
+<section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/seafarers_medical.jpg') }}')">
     <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7">
-                <div class="content">
-                    <h1 class="hero-title2 wow fadeInLeft" data-wow-duration="3s">
-                        <span class="title1">Caring for <span class="line-text">Health</span></span>
-                        <span class="title2">Caring for You</span>
-                    </h1>
-                    <p class="wow fadeInUp" data-wow-duration="3s">
-                        With qualified and experienced doctors on board, your Medical assessment will be completed
-                        with confidence and priority at IMAS.
-                    </p>
-                    <div class="flex_btn wow fadeInUp" data-wow-duration="4s">
-                        <a href="{{ Route('contact-us') }}" class="th-btn">Contact Us</a>
-                        <a href="{{ Route('book-medical') }}" class="th-btn style4 wow fadeInUp">View All Services</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-5">
-                <div class="img_sec wow fadeInRight" data-wow-duration="4s">
-                    <img src="{{ asset('assets/images/home/hero.png') }}" alt="">
-                </div>
-            </div>
+        <div class="inner_banner_content">
+            <h1>
+                Book Your Medical Assessment
+            </h1>
+            <ul class="pagination">
+                <li>
+                    <a class="first" href="{{ Route('index') }}">Home</a>
+                </li>
+                <li>Book Your Medical Assessment</li>
+            </ul>
         </div>
     </div>
 </section>
 
-
-<section class="mb-30 mt-30">
-    <div class="space" id="about-sec">
-        <div class="shape-mockup" data-top="0" data-right="0"><img src="{{ asset('assets/images/home/pattern_shape_1.png') }}"
-                alt="shape"></div>
-        <div class="shape-mockup jump" data-bottom="10%" data-right="3%"><img
-                src="{{ asset('assets/images/home/medicine_1.png') }}" alt="shape"></div>
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-6 mb-30 mb-xl-0">
-                    <div class="img-box1 wow fadeInLeft" data-wow-duration="2s">
-                        <div class="img1">
-                            <img src="{{ asset('assets/images/home/about_1_3.png') }}" alt="About">
-                        </div>
-                        <div class="about-info">
-                            <h3 class="box-title">Dr. Esita Jabed</h3>
-                            <p class="box-text">Mention the languages <br> in which the staff.</p>
-                            <div class="box-review">
-                                <i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i
-                                    class="fa-sharp fa-solid fa-star"></i><i
-                                    class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i>
-                            </div>
-                            <a href="tel:+44 7968 999683" class="box-link"><i class="fa-solid fa-phone"></i> +123 456
-                                7896</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-xl-6">
-                    <div class="ps-xxl-4 ms-xl-2 text-center text-xl-start">
-                        <div class="title-area mb-32 wow fadeInRight" data-wow-duration="2s">
-                            <span class="sub-title"><img src="{{ asset('assets/images/home/title_icon.svg') }}" alt="shape">About
-                                Us Company</span>
-                            <h2 class="sec-title">Affordable Health Care Solutions</h2>
-                            <p class="sec-text">A brief statement outlining the purpose and mission of the clinic.
-                                This can include the commitment to patient care, community health, and any
-                                specifical goals for our values.</p>
-                        </div>
-                        <div class="mb-30 mt-n1">
-                            <div class="checklist style2 list-two-column wow fadeInUp" data-wow-duration="4s">
-                                <ul>
-                                    <li><i class="fas fa-heart-pulse"></i> Medical Professionals</li>
-                                    <li><i class="fas fa-heart-pulse"></i> Facilities and Equipment</li>
-                                    <li><i class="fas fa-heart-pulse"></i> Emergency Care</li>
-                                    <li><i class="fas fa-heart-pulse"></i> Medical Consulting</li>
-                                    <li><i class="fas fa-heart-pulse"></i> Services Offered</li>
-                                    <li><i class="fas fa-heart-pulse"></i> Specializations</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="mt-4 wow fadeInUp" data-wow-duration="4s">
-                            <a href="javascript:void(0);" class="th-btn">More About Us</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="mb-30">
+<section class="assessment_cards_section">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card service_cards wow fadeInUp" data-wow-delay="100ms">
+            <div class="col-lg-4">
+                <div class="card assessment_card wow fadeInUp" data-wow-delay="100ms">
                     <div class="card-header">
-                        <i class="fa-solid fa-taxi"></i>
+                        <a href="{{ Route('booking') }}">
+                            <img src="{{ asset('assets/images/inner-images/taxi_assessment.jpg') }}" alt="">
+                        </a>
                     </div>
                     <div class="card-body">
-                        <h3>Taxi Driver Medicals</h3>
-                        <p>
-                            A taxi or private hire medical for £50; an assessment that all drivers must pass before
-                            being granted their licence to operate. Approved by your local council. i.e. Manchester,
-                            Knowsley Wolverhampton, Oldham, Rochdale and more.
-                        </p>
+                        <a class="heading">
+                            Taxi Driver Medical Assessment
+                        </a>
+                        <div class="book_price_flex">
+                            <p class="price">
+                                £50
+                            </p>
+    
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                                Book Now
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card service_cards wow fadeInUp" data-wow-delay="200ms">
+            <div class="col-lg-4">
+                <div class="card assessment_card wow fadeInUp" data-wow-delay="200ms">
                     <div class="card-header">
-                        <i class="fa-solid fa-truck"></i>
+                        <a href="{{ Route('booking') }};">
+                            <img src="{{ asset('assets/images/inner-images/hgv_assessment.jpg') }}" alt="">
+                        </a>
                     </div>
                     <div class="card-body">
-                        <h3>D4 Driver Medicals</h3>
-                        <p>
-                            D4 medicals from £45, an assessment that all drivers must pass before being granted their group 2 license. HGV Drivers, Bus Drivers, Coach Drivers and more.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card service_cards wow fadeInUp" data-wow-delay="300ms">
-                    <div class="card-header">
-                        <i class="fa-solid fa-ship"></i>
-                    </div>
-                    <div class="card-body">
-                        <h3>Other Medicals</h3>
-                        <p>
-                            Anything medical, we probably do it, call us today to speak to our team and find out more.
-                        </p>
-                        <ul>
-                            <li>Seafarers Medicals</li>
-                            <li>Plant/Machinery Medicals</li>
-                            <li>Pre-Employment Medicals</li>
-                            <li>Safety Critical Medicals</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card service_cards wow fadeInUp" data-wow-delay="400ms">
-                    <div class="card-header">
-                        <i class="fa-solid fa-person-swimming"></i>
-                    </div>
-                    <div class="card-body">
-                        <h3>Sports Medicals</h3>
-                        <p>
-                            Sports Medicals including boxing medicals, pre-fight medicals, post-fight medicals, ringside medical assistance, football medicals, and more.  Call our team today to enquire about all our sport services.
-                        </p>
+                        <a class="heading">
+                            HGV/LGV Driver Medical Assessment
+                        </a>
+                        <div class="book_price_flex">
+                            <p class="price">
+                                £45
+                            </p>
+    
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                                Book Now
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card service_cards wow fadeInUp" data-wow-delay="500ms">
+            <div class="col-lg-4">
+                <div class="card assessment_card wow fadeInUp" data-wow-delay="300ms">
                     <div class="card-header">
-                        <i class="fa-solid fa-truck-medical"></i>
+                        <a href="{{ Route('booking') }};">
+                            <img src="{{ asset('assets/images/inner-images/seafarers2.jpg') }}" alt="">
+                        </a>
                     </div>
                     <div class="card-body">
-                        <h3>Occupational Health</h3>
-                        <p>
-                            Occupational Health services to ensure your health at work is prioritised. We offer the following services:
-                        </p>
-                        <ul>
-                            <li>Pre-Employment Screening</li>
-                            <li>Health Surveillance</li>
-                            <li>Wellbeing Screening</li>
-                            <li>Sickness Referrals</li>
-                        </ul>
+                        <a class="heading">
+                            Seafarer Medical Assessment
+                        </a>
+                        <div class="book_price_flex">
+                            <p class="price">
+                                £75
+                            </p>
+    
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                                Book Now
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="card service_cards wow fadeInUp" data-wow-delay="600ms">
+            <div class="col-lg-4">
+                <div class="card assessment_card wow fadeInUp" data-wow-delay="400ms">
                     <div class="card-header">
-                        <i class="fa-solid fa-house-medical"></i>
+                        <a href="{{ Route('booking') }};">
+                            <img src="{{ asset('assets/images/banner/bus-driver-medical.webp') }}" alt="">
+                        </a>
                     </div>
                     <div class="card-body">
-                        <h3> Private Health Services</h3>
-                        <p>
-                            Our expert doctors range from qualified General Practitioners to Hospital Specialists
-                        </p>
-                        <ul>
-                            <li>Vitamin B12</li>
-                            <li>Weight Loss Programmes</li>
-                            <li>Hyperhidrosis Treatment</li>
-                            <li>Baby Circumcisions</li>
-                            <li>Virtual GP</li>
-                        </ul>
+                        <a class="heading">
+                            Bus / Coach Drivers Medical Assessment
+                        </a>
+                        <div class="book_price_flex">
+                            <p class="price">
+                                £45
+                            </p>
+    
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card assessment_card wow fadeInUp" data-wow-delay="500ms">
+                    <div class="card-header">
+                        <a href="{{ Route('booking') }};">
+                            <img src="{{ asset('assets/images/inner-images/train1.webp') }}" alt="">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a class="heading">
+                            Train / Tram Drivers Medical Assessment
+                        </a>
+                        <div class="book_price_flex">
+                            <p class="price">
+                                £45
+                            </p>
+    
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card assessment_card wow fadeInUp" data-wow-delay="600ms">
+                    <div class="card-header">
+                        <a href="{{ Route('booking') }};">
+                            <img src="{{ asset('assets/images/inner-images/ambulance1.jpg') }}" alt="">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a class="heading">
+                            Ambulance Drivers Medical Assessment
+                        </a>
+                        <div class="book_price_flex">
+                            <p class="price">
+                                £45
+                            </p>
+    
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card assessment_card wow fadeInUp" data-wow-delay="700ms">
+                    <div class="card-header">
+                        <a href="{{ Route('booking') }};">
+                            <img src="{{ asset('assets/images/inner-images/motorhome1.jpg') }}" alt="">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a class="heading">
+                            Motorhome Drivers Medical Assessment
+                        </a>
+                        <div class="book_price_flex">
+                            <p class="price">
+                                £45
+                            </p>
+    
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                                Book Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card assessment_card wow fadeInUp" data-wow-delay="800ms">
+                    <div class="card-header">
+                        <a href="{{ Route('booking') }};">
+                            <img src="{{ asset('assets/images/inner-images/why_choose.webp') }}" alt="">
+                        </a>
+                    </div>
+                    <div class="card-body">
+                        <a class="heading">
+                            Safety Critical Medical
+                        </a>
+                        <div class="book_price_flex">
+                            <p class="price">
+                                £80
+                            </p>
+    
+                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                                Book Now
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -197,7 +211,7 @@
     </div>
 </section>
 
-<section class="cta-section bg-theme mb-30">
+{{-- <section class="cta-section bg-theme mb-30">
     <div class="pattern-layer lazy" style="background-image: url('{{ asset('assets/images/home/shape-2.png') }}');"></div>
     <div class="auto-container">
         <div class="clearfix">
@@ -216,7 +230,7 @@
 
     </div>
 
-</section>
+</section> --}}
 
 <section class="space" data-bg-src="{{ asset('assets/images/home/process_bg_1.jpg') }}">
     <div class="container">
