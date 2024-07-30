@@ -13,20 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 Route::get('/', function () {
     return view('index');
 })->name('index');
 
-// Route::get('/signin', function () {
-//     return view('login');
-// })->name('login');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/signup', function () {
-    return view('signup');
-})->name('signup');
+// Route::get('/signup', function () {
+//     return view('signup');
+// })->name('signup');
 
 Route::get('/seafarers-medical', function () {
     return view('seafarers-medical');
@@ -36,10 +31,18 @@ Route::get('/ambulance-driver-medical', function () {
     return view('ambulance-driver-medical');
 })->name('ambulance-driver-medical');
 
+Route::get('/taxi-driver-medical', function () {
+    return view('taxi-driver-medical');
+})->name('taxi-driver-medical');
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
+
+
+Route::get('/hgv-driver-medical', function () {
+    return view('hgv-driver-medical');
+})->name('hgv-driver-medical');
 
 
 Route::get('/crane-operators-medical', function () {
@@ -65,3 +68,63 @@ Route::get('/motorhome-drivers-medical', function () {
 Route::get('/sports-medicals', function () {
     return view('sports-medicals');
 })->name('sports-medicals');
+
+Route::get('/sickness-referrals', function () {
+    return view('sickness-referrals');
+})->name('sickness-referrals');
+
+Route::get('/health-surveillance', function () {
+    return view('health-surveillance');
+})->name('health-surveillance');
+
+Route::get('/pre-employment-medicals', function () {
+    return view('pre-employment-medicals');
+})->name('pre-employment-medicals');
+
+Route::get('/safety-critical-medicals', function () {
+    return view('safety-critical-medicals');
+})->name('safety-critical-medicals');
+
+Route::get('/book-medical', function () {
+    return view('book-medical');
+})->name('book-medical');
+
+Route::get('/terms-conditions', function () {
+    return view('terms-conditions');
+})->name('terms-conditions');
+
+Route::get('/privacy-policy', function () {
+    return view('privacy-policy');
+})->name('privacy-policy');
+
+Route::get('/booking', function () {
+    return view('booking');
+})->name('booking');
+
+Route::get('/customer-support', function () {
+    return view('customer-support');
+})->name('customer-support');
+
+Route::get('/gdpr-policy', function () {
+    return view('gdpr-policy');
+})->name('gdpr-policy');
+
+Route::get('/contact-us', function () {
+    return view('contact-us');
+})->name('contact-us');
+
+Route::get('/about-us', function () {
+    return view('about-us');
+})->name('about-us');
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard');
+
+Route::get('/admin/inquiries', function () {
+    return view('admin.inquiries');
+})->name('admin.inquiries');
+
+Route::get('/admin/blogs', function () {
+    return view('admin.blogs');
+})->name('admin.blogs');
