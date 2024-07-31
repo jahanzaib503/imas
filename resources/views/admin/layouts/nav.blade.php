@@ -22,14 +22,14 @@
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);" class="{{ Request::is('admin/calendar') ? ' active' : '' }}">
+                                <a href="{{ route('admin.calendar') }}" class="{{ Request::is('admin/calendar') ? ' active' : '' }}">
                                     <div class="parent-icon"><i class="fa-solid fa-table-list"></i>
                                     </div>
                                     <div class="menu-title">Calendar</div>
                                 </a>
                             </li>
                             <li>
-                                <a href="javascript:void(0);" class="{{ Request::is('admin/bookings') ? ' active' : '' }}">
+                                <a href="{{ route('admin.bookings') }}" class="{{ Request::is('admin/bookings') ? ' active' : '' }}">
                                     <div class="parent-icon"><i class="fa-solid fa-table-list"></i>
                                     </div>
                                     <div class="menu-title">Bookings</div>

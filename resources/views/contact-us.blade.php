@@ -47,23 +47,23 @@
                 <div class="shadow-lg contact_form">
                     <form action="" id="contact_us">
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingName"
-                                placeholder="Name" required>
-                            <label for="floatingName">Name</label>
+                            <input type="text" class="form-control" id="name"
+                                placeholder="Name" name="name" required>
+                            <label for="name">Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="floatingEmail"
-                                placeholder="name@example.com" required>
-                            <label for="floatingEmail">Email address</label>
+                            <input type="email" class="form-control" id="email"
+                                placeholder="name@example.com" name="email" required>
+                            <label for="email">Email address</label>
                         </div>
                         <div class="form-floating">
-                            <input type="tel" class="form-control" id="floatingPhone"
-                                placeholder="Phone" required>
-                            <label for="floatingPhone">Phone</label>
+                            <input type="tel" class="form-control" id="phone"
+                                placeholder="Phone" id="phone" required>
+                            <label for="phone">Phone</label>
                         </div>
                         <div class="form-floating">
-                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
-                            <label for="floatingTextarea2">Message</label>
+                            <textarea class="form-control" placeholder="Leave a comment here" name="message" id="message" style="height: 100px"></textarea>
+                            <label for="message">Message</label>
                         </div>
 
                         <div class="form_btn">

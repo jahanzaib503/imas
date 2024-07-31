@@ -25,10 +25,10 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-   // Initialize datepicker
 $(document).ready(function() {
-    // Initialize datepicker with Flatpickr
-    $('#appointment_date').flatpickr({
+    // Initialize datepicker with Flatpickr in inline mode
+    $('#calendar_container').flatpickr({
+        inline: true,
         dateFormat: "Y-m-d",
         minDate: "today", // Prevent selecting past dates
         disable: [
@@ -37,38 +37,13 @@ $(document).ready(function() {
             }
         ],
         onChange: function(selectedDates, dateStr, instance) {
-            updateTimeslots(dateStr);
+            displayFormattedDate(selectedDates[0]);
         }
     });
 
-    function updateTimeslots(dateStr) {
-        var timeSlots = [];
-        var startTime = 9 * 60; // 9:00 AM in minutes
-        var endTime = 17 * 60; // 5:00 PM in minutes
-        var now = new Date();
-        var selectedDate = new Date(dateStr);
-
-        for (var time = startTime; time <= endTime; time += 30) {
-            var hours = Math.floor(time / 60);
-            var minutes = time % 60;
-            var period = hours < 12 ? 'AM' : 'PM';
-            hours = hours % 12 || 12;
-            var timeString = (hours < 10 ? '0' + hours : hours) + ':' + (minutes < 10 ? '0' + minutes : minutes) + ' ' + period;
-
-            if (selectedDate.toDateString() === now.toDateString()) {
-                var currentTime = now.getHours() * 60 + now.getMinutes();
-                if (time > currentTime) {
-                    timeSlots.push('<option value="' + timeString + '">' + timeString + '</option>');
-                }
-            } else {
-                timeSlots.push('<option value="' + timeString + '">' + timeString + '</option>');
-            }
-        }
-
-        $('#appointment_time').empty().append(timeSlots.join(''));
+    function displayFormattedDate(date) {
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var formattedDate = date.toLocaleDateString('en-US', options);
+        $('.selected_date_display').text(formattedDate);
     }
-
-    // Populate time slots initially
-    var today = new Date().toISOString().split('T')[0];
-    updateTimeslots(today);
 });

@@ -95,7 +95,6 @@
                                     </p>
                                     <p class="test_date">
                                         <div class="selected_date_display"></div>
-                                        
                                     </p>
                                     <p>
                                         Warrington, WA5 7XQ
@@ -118,7 +117,7 @@
                                 <option value="">Choose Time Slot</option>
                             </select>
                         </div> --}}
-                        <button type="submit" class="btn theme-btn">Book Appointment</button>
+                        <a href="{{ Route('booking-form') }}" class="btn theme-btn">Next</a>
                     </form>
                 </div>
             </div>

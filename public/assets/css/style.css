@@ -1421,3 +1421,54 @@ ul.contact_list li a:hover {
     margin: 30px 0px;
     text-align: center;
 }
+.radio-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.radio-button input {
+    display: none;
+}
+
+.radio-button input + .radio-button-label{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+}
+
+.radio-button input:checked + .radio-button-label {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: white;
+}
+
+.booking_details p {
+    margin-bottom: 0;
+}
+
+.booking_details p.test_date {
+    font-size: 18px;
+}
+
+.selected_date_display {
+    font-size: 18px;
+}
+.flatpickr-day.selected, .flatpickr-day.startRange, .flatpickr-day.endRange, .flatpickr-day.selected.inRange, .flatpickr-day.startRange.inRange, .flatpickr-day.endRange.inRange, .flatpickr-day.selected:focus, .flatpickr-day.startRange:focus, .flatpickr-day.endRange:focus, .flatpickr-day.selected:hover, .flatpickr-day.startRange:hover, .flatpickr-day.endRange:hover, .flatpickr-day.selected.prevMonthDay, .flatpickr-day.startRange.prevMonthDay, .flatpickr-day.endRange.prevMonthDay, .flatpickr-day.selected.nextMonthDay, .flatpickr-day.startRange.nextMonthDay, .flatpickr-day.endRange.nextMonthDay{
+    background: var(--primary);
+}
+.client_details h2 {
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--primary);
+    width: fit-content;
+}
+
+.client_details .form-label {
+    font-size: 15px;
+}

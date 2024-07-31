@@ -58,6 +58,10 @@ Route::get('/booking', function () {
     return view('booking');
 })->name('booking');
 
+Route::get('/booking-form', function () {
+    return view('booking-form');
+})->name('booking-form');
+
 Route::get('/customer-support', function () {
     return view('customer-support');
 })->name('customer-support');
@@ -73,3 +77,28 @@ Route::get('/contact-us', function () {
 Route::get('/about-us', function () {
     return view('about-us');
 })->name('about-us');
+
+Route::get('/admin/dashboard', function () {
+    return view('admin.dashboard');
+})->name('admin.dashboard');
+
+Route::get('/admin/blogs', function () {
+    return view('admin.blogs');
+})->name('admin.blogs');
+
+Route::get('/admin/inquiries', function () {
+    return view('admin.inquiries');
+})->name('admin.inquiries');
+
+Route::get('/admin/bookings', function () {
+    return view('admin.bookings');
+})->name('admin.bookings');
+
+Route::get('/admin/bookings-details', function () {
+    return view('admin.bookings-details');
+})->name('admin.bookings-details');
+
+Route::get('/admin/calendar', function () {
+    return view('admin.calendar');
+})->name('admin.calendar');
+

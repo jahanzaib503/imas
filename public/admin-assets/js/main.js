@@ -1,12 +1,11 @@
-$(document).ready(function() {
-    var table = $('#example2').DataTable({
-        lengthChange: false,
-        buttons: ['copy', 'excel', 'pdf', 'print'],
-        order: [
-            [10, 'desc']
-        ]
-    });
 
-    table.buttons().container()
-        .appendTo('#example2_wrapper');
+
+$(document).ready(function() {
+    // Initialize datepicker with Flatpickr in inline mode
+    $('#calendar_container').flatpickr({
+        inline: true,
+        dateFormat: "Y-m-d",
+        minDate: "today", // Prevent selecting past dates
+        
+    });
 });

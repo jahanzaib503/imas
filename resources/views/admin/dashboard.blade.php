@@ -5,7 +5,7 @@
             <div class="card">
                 <div class="row">
                     <div class="col-md-3">
-                        <a class="datacard my-3" href="javascript:void(0);">
+                        <a class="datacard my-3" href="{{ route('admin.bookings') }}">
                             <span class="h4 text-light">Bookings</span>
                             <div class="numbers">
                                 <p>7</p>
@@ -16,7 +16,7 @@
                         </a>
                     </div>
                     <div class="col-md-3">
-                        <a class="datacard my-3" href="javascript:void(0);">
+                        <a class="datacard my-3" href="{{ route('admin.inquiries') }}">
                             <span class="h4 text-light">Inquiries</span>
                             <div class="numbers">
                                 <p>2</p>
