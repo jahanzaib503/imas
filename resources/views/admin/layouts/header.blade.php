@@ -48,21 +48,21 @@
                             <img src="{{ Auth::user()->photo ? asset('storage/' . Auth::user()->photo) : 'https://via.placeholder.com/200' }}" class="user-img"
                                 alt="user avatar">
                             <div class="user-info ps-3">
-                                <p class="user-name mb-0">{{ Auth::user()->full_name }}</p>
+                                <p class="user-name mb-0">{{ Auth::user()->name }}</p>
                                 <!-- You can display other user info here -->
                             </div>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
                             <li>
-                                <a class="dropdown-item" href="{{ route('user.profile') }}">
-                                    <span>Profile</span>
+                                <a class="dropdown-item" href="{{ route('admin.dashboard') }}">
+                                    <span>Dashboard</span>
                                 </a>
                             </li>
                             <li>
                                 <div class="dropdown-divider mb-0"></div>
                             </li>
                             <li>
-                                <a class="dropdown-item" href="{{ route('user.logout') }}">Logout</a>
+                                <a class="dropdown-item" href="{{ route('logout') }}">Logout</a>
                             </li>
                         </ul>
                     </div>

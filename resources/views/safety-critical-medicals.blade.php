@@ -175,7 +175,7 @@
                 </div>
 
                 <div class="btn-box pull-right wow fadeInUp" data-wow-duration="4s">
-                    <a href="{{ Route('book-medical') }}" class="th-btn style4">Book an Appointment</a>
+                    <a href="{{ getBookingUrl($medical_info['id'], $medical_info['name'], $medical_info['price']) }}" class="th-btn style4">Book an Appointment</a>
                 </div>
 
             </div>
@@ -200,7 +200,7 @@
                         </p>
                     </div>
                     <div class="flex_btn">
-                        <a href="{{ Route('booking') }}" class="th-btn shadow-1">Book Appointment</a>
+                        <a href="{{ getBookingUrl($medical_info['id'], $medical_info['name'], $medical_info['price']) }}" class="th-btn shadow-1">Book Appointment</a>
                         <a href="tel:+44 7968 999683" class="th-btn style2 shadow-1 text-dark">Get Free Consulting</a>
                     </div>
                 </div>
