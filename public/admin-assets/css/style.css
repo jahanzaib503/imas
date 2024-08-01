@@ -690,6 +690,7 @@ td {
     background: #141b25;
     color: var(--white);
     padding: 15px;
+    z-index: 1;
 }
 
 blockquote {

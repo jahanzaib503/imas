@@ -117,7 +117,7 @@
                                 <option value="">Choose Time Slot</option>
                             </select>
                         </div> --}}
-                        <a href="{{ Route('booking-form') }}" class="btn theme-btn">Next</a>
+                        <a href="#" id="submitBtn" class="btn theme-btn">Next</a>
                     </form>
                 </div>
             </div>
@@ -125,4 +125,26 @@
     </div>
 </section>
 
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    document.getElementById('submitBtn').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default form submission
+        Swal.fire({
+            title: 'This is dummy heading',
+            text: 'This is dummy text',
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonText: 'Yes, proceed',
+            cancelButtonText: 'No, cancel',
+        }).then((result) => {
+            if (result.isConfirmed) {
+                // If user clicks "Yes, proceed", submit the form
+                document.getElementById('id').submit();
+            } else {
+                // If user clicks "No, cancel", do nothing
+                // You can add more handling here if needed
+            }
+        });
+    });
+</script>
 @endsection
