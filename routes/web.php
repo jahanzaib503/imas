@@ -102,3 +102,7 @@ Route::get('/admin/calendar', function () {
     return view('admin.calendar');
 })->name('admin.calendar');
 
+Route::get('/admin/add-blog', function () {
+    return view('admin.add-blog');
+})->name('admin.add-blog');
+

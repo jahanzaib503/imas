@@ -91,9 +91,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <div class="col-12 d-flex justify-content-end">
-                                    <a href="javascript:void(0);" class="btn theme_btn">Action Button</a>
-                                </div>
+                               
                             </div>
                         </form>
                     </div>

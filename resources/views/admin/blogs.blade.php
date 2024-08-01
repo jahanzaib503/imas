@@ -3,9 +3,13 @@
     <div class="page-wrapper">
         <div class="page-content">
             <div class="card">
-                {{-- <div class="card-header text-end">
-                    <h5>January</h5>
-                </div> --}}
+                <div class="card-header">
+                    <div class="row">
+                        <div class="col-12 d-flex justify-content-end">
+                            <a href="{{ route('admin.add-blog') }}" class="btn theme_btn">Add Blog</a>
+                        </div>
+                    </div>
+                </div>
                 <div class="card-body">
                     <div class="table-responsive">
                         <table id="blogs" class="table table-striped table-bordered">
