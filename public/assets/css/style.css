@@ -1449,6 +1449,14 @@ ul.contact_list li a:hover {
     color: white;
 }
 
+.boxStyle {
+    background: var(--white);
+    box-shadow: 0 0 20px #0002;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    margin-bottom: 2rem;
+}
+
 .booking_details p {
     margin-bottom: 0;
 }
@@ -1471,4 +1479,45 @@ ul.contact_list li a:hover {
 
 .client_details .form-label {
     font-size: 15px;
+}
+
+.inner-page-image{
+    width: 100%;
+    max-width: 950px;
+    max-height: 400px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 40px auto;
+}
+.boxStyle .sec-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+span.underline {
+    text-decoration: underline;
+}
+span.list-item-bold {
+    font-weight: 700;
+}
+a.main-sec-clr {
+    text-decoration: underline;
+}
+
+.boxStyle a{
+    color: var(--secondary);
+    margin-left: 3px;
+}
+.boxStyle a:hover{
+    color: var(--primary);
+}
+p.main-sec-list-heading {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--primary);
+}
+.offcanvas.show a.dropdown-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

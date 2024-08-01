@@ -78,6 +78,14 @@ Route::get('/about-us', function () {
     return view('about-us');
 })->name('about-us');
 
+Route::get('/blogs', function () {
+    return view('blogs');
+})->name('blogs');
+
+Route::get('/blog-details', function () {
+    return view('blog-details');
+})->name('blog-details');
+
 Route::get('/admin/dashboard', function () {
     return view('admin.dashboard');
 })->name('admin.dashboard');

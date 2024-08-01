@@ -301,7 +301,7 @@
             <div class="col-lg-4">
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="200ms">
                     <div class="post-image">
-                        <a href="javscript:void(0);">
+                        <a href="{{ route('blog-details') }}">
                             <img src="{{ asset('assets/images/home/blog_1.jpg') }}" alt="image">
                         </a>
                         <div class="date">
@@ -310,8 +310,8 @@
                     </div>
 
                     <div class="post-content">
-                        <h3><a href="javscript:void(0);">Taxi Medicals in Manchester: Everything You Need to Know</a></h3>
-                        <a href="javscript:void(0);" class="details-btn">Read Story</a>
+                        <h3><a href="{{ route('blog-details') }}">Taxi Medicals in Manchester: Everything You Need to Know</a></h3>
+                        <a href="{{ route('blog-details') }}" class="details-btn">Read Story</a>
                     </div>
                 </div>
             </div>
@@ -319,7 +319,7 @@
             <div class="col-lg-4">
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="300ms">
                     <div class="post-image">
-                        <a href="javscript:void(0);">
+                        <a href="{{ route('blog-details') }}">
                             <img src="{{ asset('assets/images/home/blog_2.jpg') }}" alt="image">
                         </a>
                         <div class="date">
@@ -328,8 +328,8 @@
                     </div>
 
                     <div class="post-content">
-                        <h3><a href="javscript:void(0);">Checklist for Obtaining a HGV Driver's License</a></h3>
-                        <a href="javscript:void(0);" class="details-btn">Read Story</a>
+                        <h3><a href="{{ route('blog-details') }}">Checklist for Obtaining a HGV Driver's License</a></h3>
+                        <a href="{{ route('blog-details') }}" class="details-btn">Read Story</a>
                     </div>
                 </div>
             </div>
@@ -337,7 +337,7 @@
             <div class="col-lg-4">
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="400ms">
                     <div class="post-image">
-                        <a href="javscript:void(0);">
+                        <a href="{{ route('blog-details') }}">
                             <img src="{{ asset('assets/images/home/blog_3.jpg') }}" alt="image">
                         </a>
                         <div class="date">
@@ -346,9 +346,15 @@
                     </div>
 
                     <div class="post-content">
-                        <h3><a href="javscript:void(0);">The Crisis of Wait Times for Doctor's Appointments in the UK</a></h3>
-                        <a href="javscript:void(0);" class="details-btn">Read Story</a>
+                        <h3><a href="{{ route('blog-details') }}">The Crisis of Wait Times for Doctor's Appointments in the UK</a></h3>
+                        <a href="{{ route('blog-details') }}" class="details-btn">Read Story</a>
                     </div>
+                </div>
+            </div>
+
+            <div class="col-12 mt-5">
+                <div class="d-flex justify-content-center align-items-center wow fadeInUp" data-wow-duration="4s">
+                    <a href="{{ Route('blogs') }}" class="th-btn">View more</a>
                 </div>
             </div>
         </div>
