@@ -22,22 +22,12 @@
             <div class="col-md-12">
                 <div class="appointment_form">
                     <h2>Schedule Your Appointment</h2>
-                    <form>
+                    
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group mb-4">
                                     <label for="assessment">Select Assessment</label>
-                                    <select id="assessment" class="form-select">
-                                        <option value="">Select Assessment</option>
-                                        <option value="Taxi Driver Medical Assessment">Taxi Driver Medical Assessment</option>
-                                        <option value="HGV/LGV Driver Medical Assessment">HGV/LGV Driver Medical Assessment</option>
-                                        <option value="Seafarer Medical Assessment">Seafarer Medical Assessment</option>
-                                        <option value="Bus/ Coach Drivers Medical Assessment">Bus/ Coach Drivers Medical Assessment</option>
-                                        <option value="Train / Tram Drivers Medical Assessment">Train / Tram Drivers Medical Assessment</option>
-                                        <option value="Ambulance Drivers Medical Assessment">Ambulance Drivers Medical Assessment</option>
-                                        <option value="Motorhome Drivers Medical Assessment">Motorhome Drivers Medical Assessment</option>
-                                        <option value="Safety Critical Medical">Safety Critical Medical</option>
-                                    </select>
+                                    {!! generateMedicalSelectBox() !!}
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -58,7 +48,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="form-group mb-4">
-                                    <input type="hidden" id="appointment_date" class="form-control">
+                                    <input type="hidden" id="appointment_date" class="form-control appointment_date" value="">
                                     <div id="calendar_container"></div>
                                 </div>
                             </div>
@@ -90,39 +80,152 @@
                             <div class="col-md-4">
                                 <div class="booking_details">
                                     <h5>Service Details</h5>
-                                    <p class="test_date">
-                                        Taxi Driver Medical Assessment
+                                    <p class="test_name">
+                                        <span id="service_name">Taxi Driver Medical Assessment</span>
                                     </p>
                                     <p class="test_date">
                                         <div class="selected_date_display"></div>
                                     </p>
-                                    <p>
+                                    <p class="test_time">
+                                        <div id="selected_time_display"></div>
+                                    </p>
+                                    <p id="service_duration">
+                                        30 min duration
+                                    </p>
+                                    <p id="service_location">
                                         Warrington, WA5 7XQ
                                     </p>
-                                    <p>
-                                        Medical Doctor
-                                    </p>
-                                    <p>
-                                        30 min
-                                    </p>
-                                    <p>
+                                   
+                                    <p id="service_price">
                                         £50
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        {{-- <div class="form-group mb-4">
-                            <label for="appointment_time">Select Time</label>
-                            <select id="appointment_time" class="form-control">
-                                <option value="">Choose Time Slot</option>
-                            </select>
-                        </div> --}}
-                        <a href="{{ Route('booking-form') }}" class="btn theme-btn">Next</a>
-                    </form>
+                        <a href="{{ Route('booking-form') }}" class="btn theme-btn" id="nextButton">Next</a>
+                    
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+
+    // The code for getting values from params
+    
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    const name = params.get('name');
+    const price = params.get('price');
+    if (id) {
+        const assessmentSelect = document.getElementById('assessment');
+        assessmentSelect.value = id;
+        const option = assessmentSelect.querySelector(`option[value="${id}"]`);
+        if (option) {
+            const serviceName = option.textContent;
+            document.getElementById('service_name').textContent = serviceName;
+            document.getElementById('service_price').textContent = `£${price || '50'}`; // Default price if not provided
+        }
+        assessmentSelect.disabled = true;
+    }
+
+    // The Code for default behaviour
+    
+    document.getElementById('location').addEventListener('change', function() {
+        const location = this.value;
+        const locationElement = document.getElementById('service_location');
+        if (locationElement) {
+            locationElement.textContent = location;
+        }
+    });
+
+    document.querySelectorAll('input[name="radio"]').forEach(radio => {
+        radio.addEventListener('change', function() {
+            if (this.checked) {
+                const selectedTime = this.value;
+                document.getElementById('selected_time_display').textContent = `${selectedTime}`;
+            }
+        });
+    });
+
+    // The code to send data to next route
+
+    document.getElementById('assessment').addEventListener('change', function() {
+        const selectedAssessment = this.options[this.selectedIndex].textContent;
+        const selectedOption = this.options[this.selectedIndex];
+        const detailsElement = document.querySelector('.booking_details .test_name');
+        const priceElement = document.getElementById('service_price');
+        const selectedPrice = selectedOption.getAttribute('data-price');
+        
+        if (detailsElement) {
+            detailsElement.textContent = selectedAssessment;
+        }
+        if (priceElement) {
+            priceElement.textContent = selectedPrice ? `£${selectedPrice}` : '£0';
+        }   
+    });
+
+    document.querySelector('.btn.theme-btn').addEventListener('click', function(event) {
+        event.preventDefault();
+
+        const assessment = document.getElementById('assessment').value;
+        const location = document.getElementById('location').value;
+        const date = document.getElementById('appointment_date').value;
+        const time = document.querySelector('input[name="radio"]:checked') ? document.querySelector('input[name="radio"]:checked').value : '';
+        const priceText = document.getElementById('service_price').textContent;
+        const price = priceText ? priceText.replace('£', '').trim() : '0';
+
+        let errorMessage = '';
+        if (!assessment) errorMessage += 'Assessment is required.\n';
+        if (!location) errorMessage += 'Location is required.\n';
+        if (!date) errorMessage += 'Date is required.\n';
+        if (!time) errorMessage += 'Time is required.\n';
+        if (!price) errorMessage += 'Price is required.\n';
+
+        if (errorMessage) {
+            alert(errorMessage.trim());
+            return;
+        }
+
+        const form = document.createElement('form');
+        form.method = 'POST';
+        form.action = '{{ route('booking-form') }}';
+
+        const csrfMeta = document.querySelector('meta[name="csrf-token"]');
+        if (csrfMeta) {
+            const csrfToken = csrfMeta.getAttribute('content');
+            const csrfField = document.createElement('input');
+            csrfField.type = 'hidden';
+            csrfField.name = '_token';
+            csrfField.value = csrfToken;
+            form.appendChild(csrfField);
+        }
+        const fields = {
+            'assessment': assessment,
+            'location': location,
+            'date': date,
+            'time': time,
+            'price': price
+        };
+
+        for (const [name, value] of Object.entries(fields)) {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = name;
+            input.value = value;
+            form.appendChild(input);
+        }
+        document.body.appendChild(form);
+        form.submit();
+    });
+
+
+
+ 
+});
+</script>
 
 @endsection

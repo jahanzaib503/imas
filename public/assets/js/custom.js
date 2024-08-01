@@ -45,5 +45,8 @@ $(document).ready(function() {
         var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         var formattedDate = date.toLocaleDateString('en-US', options);
         $('.selected_date_display').text(formattedDate);
+        //var originalDate = date.toLocaleDateString('en-GB');
+        $('.appointment_date').val(formattedDate);
     }
+    
 });
