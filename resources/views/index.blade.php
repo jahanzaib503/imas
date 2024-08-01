@@ -21,7 +21,7 @@
             </div>
             <div class="col-lg-5">
                 <div class="img_sec wow fadeInRight" data-wow-duration="4s">
-                    <img src="{{ asset('assets/images/home/hero.png') }}" alt="">
+                    <img src="{{ asset('assets/images/home/Website_1.png') }}" alt="">
                 </div>
             </div>
         </div>
