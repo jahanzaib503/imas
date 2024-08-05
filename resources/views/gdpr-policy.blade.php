@@ -82,7 +82,7 @@
             <p class="main-sec-list-heading2 wow fadeInUp" data-wow-duration="1s">We enter into Data Processing Agreements (DPAs) with all third-party service providers who process personal data on our behalf. These agreements ensure that our partners comply with GDPR and uphold the same standards of data protection that we adhere to.</p>
 
             <p class="main-sec-list-heading wow fadeInUp" data-wow-duration="1s">Training and Awareness</p>
-            <p class="main-sec-list-heading2 wow fadeInUp" data-wow-duration="1s">Our staff undergo regular training to stay informed about GDPR requirements and best practices in data protection. This ensures that everyone at Medicals Northwest understands their role in maintaining compliance and safeguarding personal data.</p>
+            <p class="main-sec-list-heading2 wow fadeInUp" data-wow-duration="1s">Our staff undergo regular training to stay informed about GDPR requirements and best practices in data protection. This ensures that everyone at IMAS Medical understands their role in maintaining compliance and safeguarding personal data.</p>
 
             <p class="main-sec-list-heading2 wow fadeInUp" data-wow-duration="1s">Contact Us</p>
             <p class="main-sec-list-heading2 wow fadeInUp" data-wow-duration="1s">If you have any questions or concerns about our GDPR compliance or how we handle your personal data, please contact our Data Protection Officer (DPO):</p>

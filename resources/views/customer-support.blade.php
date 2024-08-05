@@ -87,7 +87,7 @@
             <p class="main-sec-list-heading2 cs-para wow fadeInUp" data-wow-duration="1s">As of September 2021, you must bring your medical summary for the following councils: Blackburn, Burnley, Cheshire West & Chester, Liverpool, Manchester, North Warwickshire, Oldham, Rochdale, Salford, Sefton, Shropshire, St Helen’s, Stockport, Trafford, and Walsall.</p>
 
             <p class="main-sec-list-heading wow fadeInUp" data-wow-duration="1s">What is your cancellation policy?</p>
-            <p class="main-sec-list-heading2 cs-para wow fadeInUp" data-wow-duration="1s">You must provide us with at least 24hrs notice. Deposit is non-refundable unless the cancellation has been made by Medicals Northwest.</p>
+            <p class="main-sec-list-heading2 cs-para wow fadeInUp" data-wow-duration="1s">You must provide us with at least 24hrs notice. Deposit is non-refundable unless the cancellation has been made by IMAS Medical.</p>
             
         </div>
     </section>
