@@ -49,7 +49,7 @@
                 <li class="list-name wow fadeInUp" data-wow-duration="1s"><span class="list-head wow fadeInUp" data-wow-duration="1s">Driver Medical Terms & Conditions</span>
                     <ol>
                         <li>It is the responsibility of the driver to ensure the correct medical has been booked.</li>
-                        <li>In the event that Medicals Northwest is unable to carry out the medical as planned, we will
+                        <li>In the event that IMAS Medical is unable to carry out the medical as planned, we will
                             only be liable to issue a full refund of the booking made.</li>
                         <li>If the correct items are not brought, the doctor will be NOT be able to carry out the
                             medical
@@ -68,7 +68,7 @@
                         <li>- Proof of identity (Photographic ID; Driving License is preferred)</li>
                         <li>- Medical summary.</li>
                         <li>In the unfortunate circumstances you fail your medical upon submitting it to the relevant
-                            Licensing Authority, Medicals Northwest will accept no responsibility or be held liable for
+                            Licensing Authority, IMAS Medical will accept no responsibility or be held liable for
                             any
                             consequential loss (including monetary).</li>
                         <li>If the doctor feels that you are not fit to drive according to the standards set by the
@@ -80,11 +80,11 @@
                             will be required to book a further medical at the standard cost. Any losses due to the
                             failure of a
                             medical assessment are the responsibility of the driver.</li>
-                        <li>The driver must inform Medicals Northwest of any cancellation or rearrangement requests with
+                        <li>The driver must inform IMAS Medical of any cancellation or rearrangement requests with
                             more than 24 hours’ notice of their medical. Any requests outside this timeframe will not be
                             accepted and any medical costs will be incurred by the driver.</li>
                         <li>If the driver does not attend their medical appointment and no prior notice (of at least 24
-                            hours) is provided to Medicals Northwest, a payment request will be sent to the driver. This
+                            hours) is provided to IMAS Medical, a payment request will be sent to the driver. This
                             is to
                             cover any costs occurred. This will escalated accordingly and may be passed on to a debt
                             collection

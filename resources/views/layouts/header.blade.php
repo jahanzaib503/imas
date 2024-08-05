@@ -9,7 +9,7 @@
     <meta name="twitter:description"
         content="Manchester's trusted Taxi Medical and HGV Medical assessment service provider. With qualified and experienced doctors on board, your Taxi Medical assessment will be completed in confidence and priority at IMAS" />
 
-    <title>IMAS Medical| Medicals from £45 - Taxi | D4 | Pre-Employment | Safety Critical</title>
+    <title>IMAS Medical | Medicals from £45 - Taxi | D4 | Pre-Employment | Safety Critical</title>
     <link rel="icon" href="{{ asset('assets/images/favicon.png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />

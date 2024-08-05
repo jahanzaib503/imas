@@ -237,54 +237,66 @@
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title wow fadeInUp" data-wow-duration="1s">
-                    <img src="{{ asset('assets/images/home/title_icon.svg') }}" alt="Icon"> Process Steps
+                    <img src="{{ asset('assets/images/home/title_icon.svg') }}" alt="Icon"> Requirements
                 </span>
                 <h2 class="sec-title mb-30 wow fadeInUp" data-wow-duration="2s">
-                    Our 4 Simple Steps to Completing Your Assessment
+                    What You Need to Bring to Your Medical Assessment
                 </h2>
             </div>
-            <div class="process-card-wrap">
-                <div class="process-card wow fadeInUp" data-wow-delay="200ms">
-                    <div class="box-img">
-                        <div class="img">
-                            <img src="{{ asset('assets/images/home/appointment.jpg') }}" alt="Book Appointment">
+            <div class="row three_cards">
+                <div class="col-lg-4">
+                    <div class="process-card wow fadeInUp" data-wow-delay="200ms">
+                        <div class="box-img">
+                            <div class="img">
+                                <img src="{{ asset('assets/images/inner-images/ambulance3.webp') }}" alt="Photographic ID">
+                            </div>
+                            <p class="box-number">01</p>
                         </div>
-                        <p class="box-number">01</p>
+                        <h3 class="box-title">Photographic ID</h3>
+                        <p class="box-text">
+                            Please bring one of the following:
+                            <br>
+                            - Current UK Driver’s License
+                            <br>
+                            - Current UK Passport
+                        </p>
                     </div>
-                    <h3 class="box-title">Book Your Appointment</h3>
-                    <p class="box-text">Easily book your appointment online using our convenient booking form.</p>
                 </div>
-                <div class="process-card wow fadeInUp" data-wow-delay="300ms">
-                    <div class="box-img">
-                        <div class="img">
-                            <img src="{{ asset('assets/images/home/email_booking.jpg') }}" alt="Email Confirmation">
+                <div class="col-lg-4">
+                    <div class="process-card wow fadeInUp" data-wow-delay="300ms">
+                        <div class="box-img">
+                            <div class="img">
+                                <img src="{{ asset('assets/images/inner-images/ambulance4.webp') }}" alt="Prescriptions/Glasses">
+                            </div>
+                            <p class="box-number">02</p>
                         </div>
-                        <p class="box-number">02</p>
+                        <h3 class="box-title">Prescriptions/Glasses</h3>
+                        <p class="box-text">
+                            Ensure you have:
+                            <br>
+                            - Any relevant prescriptions
+                            <br>
+                            - Glasses (for reading and distance)
+                        </p>
                     </div>
-                    <h3 class="box-title">Check Your Email for Confirmation</h3>
-                    <p class="box-text">Receive and review your booking confirmation sent to your email immediately.</p>
                 </div>
-                <div class="process-card wow fadeInUp" data-wow-delay="400ms">
-                    <div class="box-img">
-                        <div class="img">
-                            <img src="{{ asset('assets/images/home/attend_appointment.jpg') }}" alt="Attend Appointment">
+                <div class="col-lg-4">
+                    <div class="process-card wow fadeInUp" data-wow-delay="400ms">
+                        <div class="box-img">
+                            <div class="img">
+                                <img src="{{ asset('assets/images/home/attend_appointment.jpg') }}" alt="Medical Records">
+                            </div>
+                            <p class="box-number">03</p>
                         </div>
-                        <p class="box-number">03</p>
+                        <h3 class="box-title">Medical Records and Current Medication</h3>
+                        <p class="box-text">
+                            Please bring:
+                            <br>
+                            - A full medical summary
+                            <br>
+                            - Details of current medications
+                        </p>
                     </div>
-                    <h3 class="box-title">Attend Your Appointment</h3>
-                    <p class="box-text">Meet with our experienced doctor and bring your medical forms to the appointment.
-                    </p>
-                </div>
-                <div class="process-card wow fadeInUp" data-wow-delay="500ms">
-                    <div class="box-img">
-                        <div class="img">
-                            <img src="{{ asset('assets/images/home/review_submit.jpg') }}" alt="Review and Submit">
-                        </div>
-                        <p class="box-number">04</p>
-                    </div>
-                    <h3 class="box-title">Review and Submit Your Medical Assessment</h3>
-                    <p class="box-text">Review your completed assessment and submit it with your driver's medical
-                        application.</p>
                 </div>
             </div>
         </div>
@@ -295,103 +307,26 @@
         <div class="container z-index-common">
             <div class="row align-items-center justify-content-center text-center text-xl-start">
                 <div class="col-xl-7 col-lg-9 space-extra wow fadeInLeft" data-wow-duration="1s">
-                    <div class="title-area mb-30">
-                        <h2 class="sec-title text-white">Approved Medical Provider</h2>
-                        <p class="sec-text text-white">
-                            IMAS Medical is a trusted provider for numerous local authorities
-                            across the Northwest, holding multiple commercial contracts with councils. With over 10
-                            locations, we are dedicated to delivering exceptional service and have built a solid reputation
-                            for both quality and customer care. When you choose us for your taxi medical, you can be
-                            confident that you are partnering with an experienced and reputable provider.
+                    <div class="title-area mb-30 text-light">
+                        <h2 class="sec-title">Certified Medical Provider</h2>
+                        <p class="sec-text">
+                            IMAS Medical is a trusted partner for numerous local authorities across the Northwest and holds several commercial contracts with councils. With over 10 locations, we are dedicated to providing outstanding service and have earned a solid reputation for quality and customer care. When you choose us for your taxi medical, you can be assured of working with a reputable and experienced provider.
                         </p>
                     </div>
                     <div class="flex_btn">
-                        <a href="{{ Route('booking') }}" class="th-btn shadow-1">Book Appointment</a>
-                        <a href="tel:+44 7968 999683" class="th-btn style2 shadow-1 text-dark">Get Free Consulting</a>
+                        <a href="{{ Route('booking') }}" class="th-btn shadow-1">Schedule Your Appointment</a>
+                        <a href="tel:+44 7968 999683" class="th-btn style2 shadow-1 text-dark">Request Free Consultation</a>
                     </div>
                 </div>
                 <div class="col-xl-5">
                     <div class="img-box2 wow fadeInRight" data-wow-duration="2s">
-                        <img src="{{ asset('assets/images/home/cta_1.png') }}" alt="image">
+                        <img src="{{ asset('assets/images/home/cta_1.png') }}" alt="Medical Services">
                     </div>
                 </div>
             </div>
         </div>
     </section>
+    
 
-    <section class="blog_section">
-        <div class="container">
-            <div class="title-area text-center">
-                <span class="sub-title wow fadeInUp" data-wow-duration="1s"><img
-                        src="{{ asset('assets/images/home/title_icon.svg') }}" alt="Icon">Insights and Updates from
-                    IMAS Medical</span>
-                <h2 class="sec-title mb-30 wow fadeInUp" data-wow-duration="2s">Stay Informed with the Latest News, Tips,
-                    and Health Advice</h2>
-            </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="single-blog-post wow fadeInUp" data-wow-delay="200ms">
-                        <div class="post-image">
-                            <a href="{{ route('blog-details') }}">
-                                <img src="{{ asset('assets/images/home/blog_1.jpg') }}" alt="image">
-                            </a>
-                            <div class="date">
-                                <span>July 12, 2024</span>
-                            </div>
-                        </div>
-
-                        <div class="post-content">
-                            <h3><a href="{{ route('blog-details') }}">Taxi Medicals in Manchester: Everything You Need to
-                                    Know</a></h3>
-                            <a href="{{ route('blog-details') }}" class="details-btn">Read Story</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="single-blog-post wow fadeInUp" data-wow-delay="300ms">
-                        <div class="post-image">
-                            <a href="{{ route('blog-details') }}">
-                                <img src="{{ asset('assets/images/home/blog_2.jpg') }}" alt="image">
-                            </a>
-                            <div class="date">
-                                <span>July 12, 2024</span>
-                            </div>
-                        </div>
-
-                        <div class="post-content">
-                            <h3><a href="{{ route('blog-details') }}">Checklist for Obtaining a HGV Driver's License</a>
-                            </h3>
-                            <a href="{{ route('blog-details') }}" class="details-btn">Read Story</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="single-blog-post wow fadeInUp" data-wow-delay="400ms">
-                        <div class="post-image">
-                            <a href="{{ route('blog-details') }}">
-                                <img src="{{ asset('assets/images/home/blog_3.jpg') }}" alt="image">
-                            </a>
-                            <div class="date">
-                                <span>July 12, 2024</span>
-                            </div>
-                        </div>
-
-                        <div class="post-content">
-                            <h3><a href="{{ route('blog-details') }}">The Crisis of Wait Times for Doctor's Appointments
-                                    in the UK</a></h3>
-                            <a href="{{ route('blog-details') }}" class="details-btn">Read Story</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-12 mt-5">
-                    <div class="d-flex justify-content-center align-items-center wow fadeInUp" data-wow-duration="4s">
-                        <a href="{{ Route('blogs') }}" class="th-btn">View more</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+   
 @endsection

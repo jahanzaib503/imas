@@ -4,13 +4,13 @@
     <div class="container">
         <div class="inner_banner_content">
             <h1 class="text-center">
-                Download Your Council Taxi Medical Forms Directly from Medicals Northwest
+                Download Your Council Taxi Medical Forms Directly from IMAS Medical
             </h1>
             <ul class="pagination">
                 <li>
                     <a class="first" href="{{ Route('index') }}">Home</a>
                 </li>
-                <li>Download Your Council Taxi Medical Forms Directly from Medicals Northwest</li>
+                <li>Download Your Council Taxi Medical Forms Directly from IMAS Medical</li>
             </ul>
         </div>
     </div>
@@ -21,18 +21,18 @@
         <div class="boxStyle">
 
             <div class="sec-image">
-                <img src="{{ asset('assets/images/home/blog_1.jpg') }}" alt="" class="inner-page-image wow fadeInUp"
+                <img src="{{ asset('assets/images/inner-images/taxi2.jpg') }}" alt="" class="inner-page-image wow fadeInUp"
                     data-wow-duration="1s">
             </div>
 
 
             <div class="content-wrapper">
                 <p class="main-sec-list-heading wow fadeInUp" data-wow-duration="1s">
-                    Download Your Council Taxi Medical Forms Directly from Medicals Northwest
+                    Download Your Council Taxi Medical Forms Directly from IMAS Medical
                 </p>
                 <p class="main-sec-bottom-para wow fadeInUp" data-wow-duration="1s">
                     Applying for or renewing your taxi driver’s license can be a complex process, especially when it
-                    comes to gathering all the necessary paperwork. At Medicals Northwest, we aim to make this
+                    comes to gathering all the necessary paperwork. At IMAS Medical, we aim to make this
                     process
                     as seamless as possible for you. We are excited to announce that you can now download all the
                     essential council taxi medical forms directly from our website, including the Knowsley Council
@@ -84,7 +84,7 @@
                 </ol>
 
                 <p class="main-sec-list-heading wow fadeInUp" data-wow-duration="1s">
-                    Why Choose Medicals Northwest for Your Medical Assessment
+                    Why Choose IMAS Medical for Your Medical Assessment
                 </p>
 
                 <ul class="main-sec-list2 list-style-dot wow fadeInUp" data-wow-duration="1s">
@@ -108,7 +108,7 @@
                     to
                     gather your paperwork. Download your Knowsley Council taxi medical form from our website and
                     book
-                    your medical assessment with Medicals Northwest. Our goal is to make the process as smooth and
+                    your medical assessment with IMAS Medical. Our goal is to make the process as smooth and
                     efficient as possible so you can get back on the road.
                 </p>
 
@@ -129,7 +129,7 @@
                 <p class="main-sec-bottom-para wow fadeInUp" data-wow-duration="1s">
                     Ensure your taxi driver’s license application or renewal process goes smoothly by downloading
                     your
-                    necessary forms and booking your medical assessment with Medicals Northwest today.
+                    necessary forms and booking your medical assessment with IMAS Medical today.
                 </p>
             </div>
         </div>

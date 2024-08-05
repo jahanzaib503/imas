@@ -27,7 +27,7 @@
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="200ms">
                     <div class="post-image">
                         <a href="{{ route('blog-details') }}">
-                            <img src="{{ asset('assets/images/home/blog_1.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/images/inner-images/taxi2.jpg') }}" alt="image">
                         </a>
                         <div class="date">
                             <span>July 12, 2024</span>
@@ -36,7 +36,7 @@
 
                     <div class="post-content">
                         <h3><a href="{{ route('blog-details') }}">
-                            Download Your Council Taxi Medical Forms Directly from Medicals Northwest
+                            Download Your Council Taxi Medical Forms Directly from IMAS Medical
                         </a></h3>
                         <a href="{{ route('blog-details') }}" class="details-btn">Read Story</a>
                     </div>
@@ -47,7 +47,7 @@
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="300ms">
                     <div class="post-image">
                         <a href="{{ route('blog-details') }}">
-                            <img src="{{ asset('assets/images/home/blog_2.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/images/inner-images/hgv1.jpg') }}" alt="image">
                         </a>
                         <div class="date">
                             <span>July 12, 2024</span>
@@ -65,7 +65,7 @@
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="400ms">
                     <div class="post-image">
                         <a href="{{ route('blog-details') }}">
-                            <img src="{{ asset('assets/images/home/blog_3.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/images/inner-images/why_choose.webp') }}" alt="image">
                         </a>
                         <div class="date">
                             <span>July 12, 2024</span>
@@ -83,7 +83,7 @@
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="200ms">
                     <div class="post-image">
                         <a href="{{ route('blog-details') }}">
-                            <img src="{{ asset('assets/images/home/blog_1.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/images/inner-images/taxi2.jpg') }}" alt="image">
                         </a>
                         <div class="date">
                             <span>July 12, 2024</span>
@@ -92,7 +92,7 @@
 
                     <div class="post-content">
                         <h3><a href="{{ route('blog-details') }}">
-                            Download Your Council Taxi Medical Forms Directly from Medicals Northwest
+                            Download Your Council Taxi Medical Forms Directly from IMAS Medical
                         </a></h3>
                         <a href="{{ route('blog-details') }}" class="details-btn">Read Story</a>
                     </div>
@@ -103,7 +103,7 @@
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="300ms">
                     <div class="post-image">
                         <a href="{{ route('blog-details') }}">
-                            <img src="{{ asset('assets/images/home/blog_2.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/images/inner-images/hgv1.jpg') }}" alt="image">
                         </a>
                         <div class="date">
                             <span>July 12, 2024</span>
@@ -121,7 +121,7 @@
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="400ms">
                     <div class="post-image">
                         <a href="{{ route('blog-details') }}">
-                            <img src="{{ asset('assets/images/home/blog_3.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/images/inner-images/why_choose.webp') }}" alt="image">
                         </a>
                         <div class="date">
                             <span>July 12, 2024</span>
