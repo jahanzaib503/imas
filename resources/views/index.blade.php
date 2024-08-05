@@ -1,5 +1,17 @@
 @extends('layouts.main')
 @section('content')
+
+@if(session('success'))
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            Swal.fire({
+                title: 'Success',
+                text: '{{ session('success') }}',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        </script>
+    @endif
     <section class="home_banner">
         <div class="container">
             <div class="row align-items-center">
@@ -27,6 +39,8 @@
             </div>
         </div>
     </section>
+
+
 
 
     <section class="mb-30 mt-30">
@@ -394,4 +408,7 @@
             </div>
         </div>
     </section>
+
+
+    
 @endsection

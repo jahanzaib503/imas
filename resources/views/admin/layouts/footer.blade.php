@@ -12,7 +12,7 @@
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script>
-    @if(session('success'))
+        @if(session('success'))
            Swal.fire("Success!", "{{ session('success') }}", "success");
        @elseif(session('error'))
            Swal.fire("Error!", "{{ session('error') }}", "error");

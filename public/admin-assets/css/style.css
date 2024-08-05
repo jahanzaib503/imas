@@ -765,18 +765,18 @@ div:where(.swal2-container) div:where(.swal2-popup) {
     background: var(--primary);
 }
 
-.radio-container {
+.checkbox-container {
     display: flex;
     gap: 10px;
     flex-wrap: wrap;
     margin-top: 10px;
 }
 
-.radio-button input {
+.checkbox-button input {
     display: none;
 }
 
-.radio-button input + .radio-button-label{
+.checkbox-button input + .checkbox-button-label{
     display: inline-block;
     padding: 10px 20px;
     background-color: #f0f0f0;
@@ -787,8 +787,17 @@ div:where(.swal2-container) div:where(.swal2-popup) {
     text-align: center;
 }
 
-.radio-button input:checked + .radio-button-label {
+.checkbox-button input:checked + .checkbox-button-label {
     background-color: var(--primary);
     border-color: var(--primary);
     color: white;
+}
+.ui-widget.ui-widget-content{
+    width: 100%;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active{
+    text-align: center;
+}
+.flatpickr-calendar.animate.open{
+    display: none;
 }

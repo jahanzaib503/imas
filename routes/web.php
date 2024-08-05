@@ -4,16 +4,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\AdminController;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "web" middleware group. Make something great!
-|
-*/
+use App\Http\Controllers\TestEmailController;
+
+
+
+
+Route::get('/send-test-email', [TestEmailController::class, 'sendTestEmail']);
+
 Auth::routes(['register' => false]);
 Route::get('/', function () { return view('index'); })->name('index');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
@@ -42,6 +39,8 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin/bookings', [AdminController::class, 'bookings'])->name('admin.bookings');
     Route::get('/admin/bookings-details', [AdminController::class, 'bookingsDetails'])->name('admin.bookings-details');
     Route::get('/admin/calendar', [AdminController::class, 'calendar'])->name('admin.calendar');
+    Route::post('/store-calendars', [AdminController::class, 'store'])->name('calendars.store');
+    Route::get('/calendars/available-times', [AdminController::class, 'getAvailableTimes']);
     Route::get('/admin/add-blog', function () {
         return view('admin.add-blog');
     })->name('admin.add-blog');
@@ -50,6 +49,8 @@ Route::middleware(['auth'])->group(function () {
 
 Route::get('/booking', [MedicalController::class, 'booking'])->name('booking');
 Route::post('/booking-form', [MedicalController::class, 'bookingForm'])->name('booking-form');
+Route::post('/booking/store', [MedicalController::class, 'bookingStore'])->name('booking.store');
+Route::get('/booking-times', [MedicalController::class, 'getBookingTimes'])->name('booking-times');
 
 
 Route::get('/book-medical', function () {
@@ -64,13 +65,7 @@ Route::get('/privacy-policy', function () {
     return view('privacy-policy');
 })->name('privacy-policy');
 
-// Route::get('/booking', function () {
-//     return view('booking');
-// })->name('booking');
 
-Route::get('/booking-form', function () {
-    return view('booking-form');
-})->name('booking-form');
 
 Route::get('/customer-support', function () {
     return view('customer-support');
@@ -92,36 +87,6 @@ Route::get('/about-us', function () {
 // Route::get('/signup', function () {
 //     return view('signup');
 // })->name('signup');
-
-// Route::get('/admin/dashboard', function () {
-//     return view('admin.dashboard');
-// })->name('admin.dashboard');
-
-// Route::get('/admin/blogs', function () {
-//     return view('admin.blogs');
-// })->name('admin.blogs');
-
-// Route::get('/admin/inquiries', function () {
-//     return view('admin.inquiries');
-// })->name('admin.inquiries');
-
-// Route::get('/admin/bookings', function () {
-//     return view('admin.bookings');
-// })->name('admin.bookings');
-
-// Route::get('/admin/bookings-details', function () {
-//     return view('admin.bookings-details');
-// })->name('admin.bookings-details');
-
-// Route::get('/admin/calendar', function () {
-//     return view('admin.calendar');
-// })->name('admin.calendar');
-
-
-Route::get('/admin/add-blog', function () {
-    return view('admin.add-blog');
-})->name('admin.add-blog');
-
 
 Route::get('/blogs', function () {
     return view('blogs');

@@ -39,4 +39,34 @@ if (!function_exists('generateMedicalSelectBox')) {
     }
 }
 
+if (!function_exists('getAvailableTimesForDate')) {
+
+    function getAvailableTimesForDate($date)
+    {
+        
+        $dayOfWeek = date('l', strtotime($date));
+
+        $calendarTimes = DB::table('calendars')
+            ->where('day', $dayOfWeek)
+            ->pluck('time')
+            ->toArray();
+
+        $bookedTimes = DB::table('bookings')
+            ->where('date', $date)
+            ->pluck('time')
+            ->toArray();
+
+        $availableTimes = $calendarTimes;
+
+        $availableTimes = array_diff($availableTimes, $bookedTimes);
+        //dd($availableTimes);
+
+
+        return $availableTimes;
+    }
+}
+
+
+
+
 

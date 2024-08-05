@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Models\Booking;
+use Carbon\Carbon;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class MedicalController extends Controller
 {
@@ -160,9 +163,60 @@ class MedicalController extends Controller
 
     public function bookingForm(Request $request)
     {
-        dd($request->all());
-        return view('booking-form');
+        $assessment = $request->input('assessment');
+        $location = $request->input('location');
+        $date = $request->input('date');
+        $time = $request->input('time');
+        $price = $request->input('price');
+
+        return view('booking-form', compact('assessment', 'location', 'date', 'time', 'price'));
     }
+
+    public function bookingStore(Request $request)
+    {
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|email|max:255',
+            'dob' => 'required|date',
+            'assessment' => 'required|string|max:255',
+            'location' => 'required|string|max:255',
+            'date' => 'required|string',
+            'time' => 'required|string|max:10',
+            'price' => 'required|numeric',
+        ]);
+
+        $formattedDate = Carbon::parse($request->date)->format('Y-m-d');
+        
+        $booking = Booking::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'phone' => $request->phone,
+            'dob' => $request->dob,
+            'authority_apply' => $request->authority_apply,
+            'health_condition' => $request->health_condition,
+            'taxi_medical' => $request->taxi_medical,
+            'assessment' => $request->assessment,
+            'location' => $request->location,
+            'date' => $formattedDate,
+            'time' => $request->time,
+            'price' => $request->price,
+        ]);
+
+        Mail::to($booking->email)->send(new BookingConfirmationMail($booking));
+
+        return redirect()->route('index')->with('success', 'Your booking has been successfully created.');
+    }
+
+        // In your Controller
+    public function getBookingTimes(Request $request)
+    {
+        $date = $request->input('date');
+        $availableTimes = getAvailableTimesForDate($date);
+        return response()->json($availableTimes);
+    }
+
+
+
 
 
     

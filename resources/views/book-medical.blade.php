@@ -22,7 +22,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="100ms">
                     <div class="card-header">
-                        <a href="{{ Route('booking') }}">
+                        <a href="{{ getBookingUrl(3, 'Taxi Driver Medical Assessment', 50) }}">
                             <img src="{{ asset('assets/images/inner-images/taxi_assessment.jpg') }}" alt="">
                         </a>
                     </div>
@@ -35,7 +35,7 @@
                                 £50
                             </p>
     
-                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                            <a href="{{ getBookingUrl(3, 'Taxi Driver Medical Assessment', 50) }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -45,7 +45,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="200ms">
                     <div class="card-header">
-                        <a href="{{ Route('booking') }};">
+                        <a href="{{ getBookingUrl(4, 'HGV/LGV Driver Medical Assessment', 45) }}">
                             <img src="{{ asset('assets/images/inner-images/hgv_assessment.jpg') }}" alt="">
                         </a>
                     </div>
@@ -58,7 +58,7 @@
                                 £45
                             </p>
     
-                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                            <a href="{{ getBookingUrl(4, 'HGV/LGV Driver Medical Assessment', 45) }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -69,7 +69,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="300ms">
                     <div class="card-header">
-                        <a href="{{ Route('booking') }};">
+                        <a href="{{ getBookingUrl(1, 'Seafarer Medical Assessment', 75) }}">
                             <img src="{{ asset('assets/images/inner-images/seafarers2.jpg') }}" alt="">
                         </a>
                     </div>
@@ -82,7 +82,7 @@
                                 £75
                             </p>
     
-                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                            <a href="{{ getBookingUrl(1, 'Seafarer Medical Assessment', 75) }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -93,7 +93,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="400ms">
                     <div class="card-header">
-                        <a href="{{ Route('booking') }};">
+                        <a href="{{ getBookingUrl(7, 'Bus / Coach Drivers Medical Assessment', 45) }}">
                             <img src="{{ asset('assets/images/banner/bus-driver-medical.webp') }}" alt="">
                         </a>
                     </div>
@@ -106,7 +106,7 @@
                                 £45
                             </p>
     
-                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                            <a href="{{ getBookingUrl(7, 'Bus / Coach Drivers Medical Assessment', 45) }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -117,7 +117,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="500ms">
                     <div class="card-header">
-                        <a href="{{ Route('booking') }};">
+                        <a href="{{ getBookingUrl(8, 'Train / Tram Drivers Medical Assessment', 45) }}">
                             <img src="{{ asset('assets/images/inner-images/train1.webp') }}" alt="">
                         </a>
                     </div>
@@ -130,7 +130,7 @@
                                 £45
                             </p>
     
-                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                            <a href="{{ getBookingUrl(8, 'Train / Tram Drivers Medical Assessment', 45) }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -141,7 +141,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="600ms">
                     <div class="card-header">
-                        <a href="{{ Route('booking') }};">
+                        <a href="{{ getBookingUrl(2, 'Ambulance Drivers Medical Assessment', 45) }}">
                             <img src="{{ asset('assets/images/inner-images/ambulance1.jpg') }}" alt="">
                         </a>
                     </div>
@@ -154,7 +154,7 @@
                                 £45
                             </p>
     
-                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                            <a href="{{ getBookingUrl(2, 'Ambulance Drivers Medical Assessment', 45) }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -164,7 +164,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="700ms">
                     <div class="card-header">
-                        <a href="{{ Route('booking') }};">
+                        <a href="{{ getBookingUrl(9, 'Motorhome Drivers Medical Assessment', 45) }}">
                             <img src="{{ asset('assets/images/inner-images/motorhome1.jpg') }}" alt="">
                         </a>
                     </div>
@@ -177,7 +177,7 @@
                                 £45
                             </p>
     
-                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                            <a href="{{ getBookingUrl(9, 'Motorhome Drivers Medical Assessment', 45) }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -187,7 +187,7 @@
             <div class="col-lg-4">
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="800ms">
                     <div class="card-header">
-                        <a href="{{ Route('booking') }};">
+                        <a href="{{ getBookingUrl(14, 'Safety Critical Medical', 80) }}">
                             <img src="{{ asset('assets/images/inner-images/why_choose.webp') }}" alt="">
                         </a>
                     </div>
@@ -200,7 +200,7 @@
                                 £80
                             </p>
     
-                            <a href="{{ Route('booking') }}" class="btn card_btn">
+                            <a href="{{ getBookingUrl(14, 'Safety Critical Medical', 80) }}" class="btn card_btn">
                                 Book Now
                             </a>
                         </div>
@@ -210,6 +210,7 @@
         </div>
     </div>
 </section>
+
 
 {{-- <section class="cta-section bg-theme mb-30">
     <div class="pattern-layer lazy" style="background-image: url('{{ asset('assets/images/home/shape-2.png') }}');"></div>
