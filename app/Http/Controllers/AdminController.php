@@ -75,4 +75,37 @@ class AdminController extends Controller
     }
 
 
+    public function storeBlog(Request $request)
+    {
+        dd($request->all());
+        
+        $request->validate([
+            'title' => 'required|string|max:255',
+            'heading' => 'required|string|max:255',
+            'slug' => 'required|string|unique:blogs|max:255',
+            'meta_tags' => 'nullable|string|max:500',
+            'content' => 'required',
+            'logo_upload' => 'nullable|mimes:pdf,png,jpg,jpeg,webp,gif,bmp,tiff,doc,docx,xls,xlsx,ppt,pptx,heic',
+        ]);
+
+        $blog = new Blog();
+        $blog->title = $request->input('title');
+        $blog->heading = $request->input('heading');
+        $blog->slug = $request->input('slug');
+        $blog->meta_description = $request->input('meta_tags');
+        $blog->content = $request->input('content');
+
+        if ($request->hasFile('logo_upload')) {
+            $file = $request->file('logo_upload');
+            $filename = time() . '.' . $file->getClientOriginalExtension();
+            $file->storeAs('public/images', $filename);
+            $blog->image = $filename;
+        }
+
+        $blog->save();
+
+        return redirect()->route('admin.blogs')->with('success', 'Blog created successfully');
+    }
+
+
 }

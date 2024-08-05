@@ -34,23 +34,25 @@ Route::get('/safety-critical-medicals', [MedicalController::class, 'safetyCritic
 
 Route::middleware(['auth'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
-    Route::get('/admin/blogs', [AdminController::class, 'blogs'])->name('admin.blogs');
     Route::get('/admin/inquiries', [AdminController::class, 'inquiries'])->name('admin.inquiries');
     Route::get('/admin/bookings', [AdminController::class, 'bookings'])->name('admin.bookings');
     Route::get('/admin/bookings-details', [AdminController::class, 'bookingsDetails'])->name('admin.bookings-details');
     Route::get('/admin/calendar', [AdminController::class, 'calendar'])->name('admin.calendar');
     Route::post('/store-calendars', [AdminController::class, 'store'])->name('calendars.store');
     Route::get('/calendars/available-times', [AdminController::class, 'getAvailableTimes']);
+    Route::get('/admin/blogs', [AdminController::class, 'blogs'])->name('admin.blogs');
     Route::get('/admin/add-blog', function () {
         return view('admin.add-blog');
     })->name('admin.add-blog');
+    Route::post('/store-blog', [AdminController::class, 'storeBlog'])->name('blog.store');
 });
 
 
 Route::get('/booking', [MedicalController::class, 'booking'])->name('booking');
+Route::get('/booking-times', [MedicalController::class, 'getBookingTimes'])->name('booking-times');
 Route::post('/booking-form', [MedicalController::class, 'bookingForm'])->name('booking-form');
 Route::post('/booking/store', [MedicalController::class, 'bookingStore'])->name('booking.store');
-Route::get('/booking-times', [MedicalController::class, 'getBookingTimes'])->name('booking-times');
+
 
 
 Route::get('/book-medical', function () {
@@ -64,8 +66,6 @@ Route::get('/terms-conditions', function () {
 Route::get('/privacy-policy', function () {
     return view('privacy-policy');
 })->name('privacy-policy');
-
-
 
 Route::get('/customer-support', function () {
     return view('customer-support');
@@ -82,11 +82,6 @@ Route::get('/contact-us', function () {
 Route::get('/about-us', function () {
     return view('about-us');
 })->name('about-us');
-
-
-// Route::get('/signup', function () {
-//     return view('signup');
-// })->name('signup');
 
 Route::get('/blogs', function () {
     return view('blogs');
