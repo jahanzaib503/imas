@@ -8,7 +8,7 @@
                         <a class="datacard my-3" href="{{ route('admin.bookings') }}">
                             <span class="h4 text-light">Bookings</span>
                             <div class="numbers">
-                                <p>7</p>
+                                <p>{{ count_bookings() }}</p>
                                 <i class="fa-solid fa-calendar-check"></i>
                             </div>
                             <div class="go-corner">
@@ -19,7 +19,7 @@
                         <a class="datacard my-3" href="{{ route('admin.inquiries') }}">
                             <span class="h4 text-light">Inquiries</span>
                             <div class="numbers">
-                                <p>2</p>
+                                <p>{{ count_inquiries() }}</p>
                                 <i class="fa-solid fa-user"></i>
                             </div>
                             <div class="go-corner">

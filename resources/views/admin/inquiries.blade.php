@@ -1,16 +1,14 @@
-@extends('admin/layouts.main')
+@extends('admin.layouts.main')
 @section('content')
     <div class="page-wrapper">
         <div class="page-content">
             <div class="card">
-                {{-- <div class="card-header text-end">
-                    <h5>January</h5>
-                </div> --}}
                 <div class="card-body">
                     <div class="table-responsive">
                         <table id="inquiries" class="table table-striped table-bordered">
                             <thead class="table-dark">
                                 <tr>
+                                    <th>Sr.No</th>
                                     <th>Name</th>
                                     <th>Email</th>
                                     <th>Phone</th>
@@ -18,21 +16,23 @@
                                 </tr>
                             </thead>
                             <tbody>
-
-                                <tr>
-                                    <td>Dummy Name</td>
-                                    <td>abc@gmail.com</td>
-                                    <td>(132) 456 7891</td>
-                                    <td>This is dummy text, This is dummy text</td>
-                                </tr>
-                                {{-- <tr>
-                                    <td colspan="6">No records found.</td>
-                                </tr> --}}
+                                @forelse ($inquiries as $index => $inquiry)
+                                    <tr>
+                                        <td>{{ $inquiry->id }}</td>
+                                        <td>{{ $inquiry->name }}</td>
+                                        <td>{{ $inquiry->email }}</td>
+                                        <td>{{ $inquiry->phone }}</td>
+                                        <td>{{ $inquiry->message }}</td>
+                                    </tr>
+                                @empty
+                                    <tr>
+                                        <td colspan="5">No records found.</td>
+                                    </tr>
+                                @endforelse
                             </tbody>
                         </table>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -49,6 +49,7 @@
     <script>
         $(document).ready(function() {
             var table = $('#inquiries').DataTable({
+                order: [[0, 'desc']],
                 lengthChange: false,
                 buttons: ['copy', 'excel', 'pdf', 'print']
             });

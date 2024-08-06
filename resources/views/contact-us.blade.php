@@ -1,5 +1,17 @@
 @extends('layouts.main')
 @section('content')
+
+@if(session('success'))
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script>
+            Swal.fire({
+                title: 'Success',
+                text: '{{ session('success') }}',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            });
+        </script>
+    @endif
 <section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/seafarers_medical.jpg') }}')">
     <div class="container">
         <div class="inner_banner_content">
@@ -8,7 +20,7 @@
             </h1>
             <ul class="pagination">
                 <li>
-                    <a class="first" href="{{ Route('index') }}">Home</a>
+                    <a class="first" href="{{ route('index') }}">Home</a>
                 </li>
                 <li>Contact Us</li>
             </ul>
@@ -45,20 +57,18 @@
             </div>
             <div class="col-lg-7">
                 <div class="shadow-lg contact_form">
-                    <form action="" id="contact_us">
+                    <form action="{{ route('inquiry.store') }}" method="POST" id="contact_us">
+                        @csrf
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="name"
-                                placeholder="Name" name="name" required>
+                            <input type="text" class="form-control" id="name" placeholder="Name" name="name" required>
                             <label for="name">Name</label>
                         </div>
                         <div class="form-floating mb-3">
-                            <input type="email" class="form-control" id="email"
-                                placeholder="name@example.com" name="email" required>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" required>
                             <label for="email">Email address</label>
                         </div>
                         <div class="form-floating">
-                            <input type="tel" class="form-control" id="phone"
-                                placeholder="Phone" id="phone" required>
+                            <input type="tel" class="form-control" id="phone" placeholder="Phone" name="phone" required>
                             <label for="phone">Phone</label>
                         </div>
                         <div class="form-floating">

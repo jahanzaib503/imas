@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MedicalController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\HomeController;
 
 use App\Http\Controllers\TestEmailController;
 
@@ -12,7 +13,7 @@ use App\Http\Controllers\TestEmailController;
 Route::get('/send-test-email', [TestEmailController::class, 'sendTestEmail']);
 
 Auth::routes(['register' => false]);
-Route::get('/', function () { return view('index'); })->name('index');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 
@@ -36,7 +37,7 @@ Route::middleware(['auth'])->group(function () {
     Route::get('/admin/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');
     Route::get('/admin/inquiries', [AdminController::class, 'inquiries'])->name('admin.inquiries');
     Route::get('/admin/bookings', [AdminController::class, 'bookings'])->name('admin.bookings');
-    Route::get('/admin/bookings-details', [AdminController::class, 'bookingsDetails'])->name('admin.bookings-details');
+    Route::get('/admin/bookings-details/{id}', [AdminController::class, 'bookingsDetails'])->name('admin.bookings-details');
     Route::get('/admin/calendar', [AdminController::class, 'calendar'])->name('admin.calendar');
     Route::post('/store-calendars', [AdminController::class, 'store'])->name('calendars.store');
     Route::get('/calendars/available-times', [AdminController::class, 'getAvailableTimes']);
@@ -45,6 +46,9 @@ Route::middleware(['auth'])->group(function () {
         return view('admin.add-blog');
     })->name('admin.add-blog');
     Route::post('/store-blog', [AdminController::class, 'storeBlog'])->name('blog.store');
+    Route::get('admin/blogs/{id}/edit', [AdminController::class, 'editBlog'])->name('blog.edit');
+    Route::put('admin/blogs/{id}', [AdminController::class, 'updateBlog'])->name('blog.update');
+
 });
 
 
@@ -52,6 +56,10 @@ Route::get('/booking', [MedicalController::class, 'booking'])->name('booking');
 Route::get('/booking-times', [MedicalController::class, 'getBookingTimes'])->name('booking-times');
 Route::post('/booking-form', [MedicalController::class, 'bookingForm'])->name('booking-form');
 Route::post('/booking/store', [MedicalController::class, 'bookingStore'])->name('booking.store');
+Route::post('/store-inquiry', [AdminController::class, 'storeInquiry'])->name('inquiry.store');
+Route::get('/blogs', [HomeController::class, 'showBlogs'])->name('blogs');
+Route::get('/blog/{slug}', [HomeController::class, 'showBlogDetails'])->name('blog-details');
+
 
 
 
@@ -83,13 +91,11 @@ Route::get('/about-us', function () {
     return view('about-us');
 })->name('about-us');
 
-Route::get('/blogs', function () {
-    return view('blogs');
-})->name('blogs');
 
-Route::get('/blog-details', function () {
-    return view('blog-details');
-})->name('blog-details');
+
+// Route::get('/blog-details', function () {
+//     return view('blog-details');
+// })->name('blog-details');
 
 
 

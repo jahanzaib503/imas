@@ -14,7 +14,7 @@ class Booking extends Model
         'email',
         'phone',
         'dob',
-        'aurhority_apply',
+        'authority_apply',
         'health_condition',
         'taxi_medical',
         'assessment',

@@ -1,5 +1,22 @@
 <?php
 
+use App\Models\Booking;
+use App\Models\Inquiry;
+
+if (!function_exists('count_bookings')) {
+    function count_bookings()
+    {
+        return Booking::count();
+    }
+}
+
+if (!function_exists('count_inquiries')) {
+    function count_inquiries()
+    {
+        return Inquiry::count();
+    }
+}
+
 if (!function_exists('getBookingUrl')) {
     function getBookingUrl($id, $name, $price)
     {

@@ -5,9 +5,12 @@
     <meta charset="UTF-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="twitter:title" content="Medicals from £45 - Taxi | D4 | Pre-Employment | Safety Critical" />
-    <meta name="twitter:description"
-        content="Manchester's trusted Taxi Medical and HGV Medical assessment service provider. With qualified and experienced doctors on board, your Taxi Medical assessment will be completed in confidence and priority at IMAS" />
+    <meta name="twitter:title" content="@yield('metaTitle', 'IMAS Medicals')" />
+    <meta name="twitter:description" content="@yield('metaDescription', 'IMAS Medicals')" />
+
+    <title>@yield('metaTitle', 'IMAS Medicals')</title>
+    <meta name="description" content="@yield('metaDescription', 'IMAS Medicals')">
+
 
     <title>IMAS Medical | Medicals from £45 - Taxi | D4 | Pre-Employment | Safety Critical</title>
     <link rel="icon" href="{{ asset('assets/images/favicon.png') }}">
