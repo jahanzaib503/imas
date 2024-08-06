@@ -25,28 +25,4 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-$(document).ready(function() {
-    // Initialize datepicker with Flatpickr in inline mode
-    $('#calendar_container').flatpickr({
-        inline: true,
-        dateFormat: "Y-m-d",
-        minDate: "today", // Prevent selecting past dates
-        disable: [
-            function(date) {
-                return (date.getDay() === 0 || date.getDay() === 6); // Disable weekends
-            }
-        ],
-        onChange: function(selectedDates, dateStr, instance) {
-            displayFormattedDate(selectedDates[0]);
-        }
-    });
 
-    function displayFormattedDate(date) {
-        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-        var formattedDate = date.toLocaleDateString('en-US', options);
-        $('.selected_date_display').text(formattedDate);
-        //var originalDate = date.toLocaleDateString('en-GB');
-        $('.appointment_date').val(formattedDate);
-    }
-    
-});

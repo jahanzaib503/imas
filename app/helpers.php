@@ -1,5 +1,22 @@
 <?php
 
+use App\Models\Booking;
+use App\Models\Inquiry;
+
+if (!function_exists('count_bookings')) {
+    function count_bookings()
+    {
+        return Booking::count();
+    }
+}
+
+if (!function_exists('count_inquiries')) {
+    function count_inquiries()
+    {
+        return Inquiry::count();
+    }
+}
+
 if (!function_exists('getBookingUrl')) {
     function getBookingUrl($id, $name, $price)
     {
@@ -38,5 +55,35 @@ if (!function_exists('generateMedicalSelectBox')) {
         return $html;
     }
 }
+
+if (!function_exists('getAvailableTimesForDate')) {
+
+    function getAvailableTimesForDate($date)
+    {
+        
+        $dayOfWeek = date('l', strtotime($date));
+
+        $calendarTimes = DB::table('calendars')
+            ->where('day', $dayOfWeek)
+            ->pluck('time')
+            ->toArray();
+
+        $bookedTimes = DB::table('bookings')
+            ->where('date', $date)
+            ->pluck('time')
+            ->toArray();
+
+        $availableTimes = $calendarTimes;
+
+        $availableTimes = array_diff($availableTimes, $bookedTimes);
+        //dd($availableTimes);
+
+
+        return $availableTimes;
+    }
+}
+
+
+
 
 

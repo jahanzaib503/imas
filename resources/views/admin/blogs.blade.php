@@ -1,4 +1,5 @@
-@extends('admin/layouts.main')
+@extends('admin.layouts.main')
+
 @section('content')
     <div class="page-wrapper">
         <div class="page-content">
@@ -17,40 +18,42 @@
                                 <tr>
                                     <th>Sr.No</th>
                                     <th>Title</th>
+                                    <th>Heading</th>
                                     <th>Content</th>
-                                    <th>Status</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-
-                                <tr>
-                                    <td>1</td>
-                                    <td>Blog 1</td>
-                                    <td>This is blog 1</td>
-                                    <td>Active</td>
-                                    <td>
-                                        <div class="icon_flex">
-                                            <a href="javascript:void(0);">
-                                                <i class="fa fa-check" title="Status"></i>
-                                            </a>
-                                            <a href="javascript:void(0);">
-                                                <i class="fa fa-edit" title="Edit"></i>
-                                            </a>
-                                        </div>
-                                    </td>
-                                </tr>
-                                {{-- <tr>
-                                    <td colspan="6">No records found.</td>
-                                </tr> --}}
+                                @forelse ($blogs as $index => $blog)
+                                    <tr>
+                                        <td>{{ $blog->id }}</td>
+                                        <td>{{ $blog->title }}</td>
+                                        <td>{{ $blog->heading }}</td>
+                                        <td>{{ \Illuminate\Support\Str::limit($blog->content, 100) }}</td>
+                                        <td>
+                                            <div class="icon_flex">
+                                                <a href="{{ route('blog.edit', $blog->id) }}" title="Edit">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <a href="javascript:void(0);" title="Status">
+                                                    <i class="fa fa-check"></i>
+                                                </a>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                @empty
+                                    <tr>
+                                        <td colspan="5">No records found.</td>
+                                    </tr>
+                                @endforelse
                             </tbody>
                         </table>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
+
     <!-- DataTables CSS -->
     <link rel="stylesheet" href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css">
 
@@ -64,6 +67,7 @@
     <script>
         $(document).ready(function() {
             var table = $('#blogs').DataTable({
+                order: [[0, 'desc']],
                 lengthChange: false,
                 buttons: ['copy', 'excel', 'pdf', 'print']
             });

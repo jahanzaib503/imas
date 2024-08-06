@@ -56,7 +56,7 @@
                                 <div class="selected_date_display"></div>
                                 <div class="radio-container">
                                     <label class="radio-button">
-                                        <input type="radio" name="radio" value="7:00 pm" checked>
+                                        <input type="radio" name="radio" value="7:00 pm">
                                         <span class="radio-button-label">7:00 pm</span>
                                     </label>
                                     <label class="radio-button">
@@ -112,10 +112,79 @@
 
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
 
-    // The code for getting values from params
-    
+$(document).ready(function() {
+    $('#calendar_container').flatpickr({
+        inline: true,
+        dateFormat: "Y-m-d",
+        minDate: "today",
+        disable: [
+            function(date) {
+                return (date.getDay() === 0 || date.getDay() === 6);
+            }
+        ],
+        onChange: function(selectedDates, dateStr, instance) {
+            if (selectedDates.length > 0) {
+                displayFormattedDate(selectedDates[0]);
+                var dateStr = formatDate(selectedDates[0]);
+                console.log('Formatted Date:', dateStr);
+                fetchAvailableTimes(dateStr);
+            }
+        }
+    });
+
+    function displayFormattedDate(date) {
+        var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        var formattedDate = date.toLocaleDateString('en-US', options);
+        $('.selected_date_display').text(formattedDate);
+        $('.appointment_date').val(formatDate(date));
+    }
+
+    function formatDate(date) {
+        var year = date.getFullYear();
+        var month = ('0' + (date.getMonth() + 1)).slice(-2);
+        var day = ('0' + date.getDate()).slice(-2);
+        return `${year}-${month}-${day}`;
+    }
+
+    function fetchAvailableTimes(date) {
+        console.log('Fetching available times for date:', date);
+        $.ajax({
+            url: '{{ route("booking-times") }}',
+            type: 'GET',
+            data: { date: date },
+            success: function(response) {
+                console.log('Available times:', response);
+                if (typeof response === 'object') {
+                    let availableTimes = Object.values(response);
+                    populateTimes(availableTimes);
+                } else {
+                    console.error('Response is not an object:', response);
+                }
+            },
+            error: function(xhr) {
+                console.error('Error fetching available times:', xhr);
+            }
+        });
+    }
+
+    function populateTimes(availableTimes) {
+        var radioContainer = $('.radio-container');
+        radioContainer.empty();
+        availableTimes.forEach(function(time) {
+            var timeSlot = $('<label class="radio-button">');
+            var radio = $('<input type="radio" name="radio" class="radio-input">').val(time);
+            var label = $('<span class="radio-button-label">').text(time);
+
+            if (availableTimes.includes(time)) {
+                timeSlot.append(radio).append(label);
+                radioContainer.append(timeSlot);
+            }
+        });
+    }
+});
+
+document.addEventListener('DOMContentLoaded', function() {
     const params = new URLSearchParams(window.location.search);
     const id = params.get('id');
     const name = params.get('name');
@@ -132,8 +201,6 @@ document.addEventListener('DOMContentLoaded', function() {
         assessmentSelect.disabled = true;
     }
 
-    // The Code for default behaviour
-    
     document.getElementById('location').addEventListener('change', function() {
         const location = this.value;
         const locationElement = document.getElementById('service_location');
@@ -150,8 +217,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-    // The code to send data to next route
 
     document.getElementById('assessment').addEventListener('change', function() {
         const selectedAssessment = this.options[this.selectedIndex].textContent;
@@ -171,7 +236,8 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelector('.btn.theme-btn').addEventListener('click', function(event) {
         event.preventDefault();
 
-        const assessment = document.getElementById('assessment').value;
+        const assessmentSelect = document.getElementById('assessment');
+        const assessment = assessmentSelect.options[assessmentSelect.selectedIndex].text;
         const location = document.getElementById('location').value;
         const date = document.getElementById('appointment_date').value;
         const time = document.querySelector('input[name="radio"]:checked') ? document.querySelector('input[name="radio"]:checked').value : '';
@@ -221,11 +287,8 @@ document.addEventListener('DOMContentLoaded', function() {
         document.body.appendChild(form);
         form.submit();
     });
-
-
-
- 
 });
+
 </script>
 
 @endsection
