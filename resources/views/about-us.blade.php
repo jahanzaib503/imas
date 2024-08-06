@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/mission.png') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/mission.webp') }}" alt=""
                         class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/vision.png') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/vision.webp') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
                 
@@ -99,7 +99,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/core.png') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/core.webp') }}" alt=""
                         class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">

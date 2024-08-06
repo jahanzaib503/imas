@@ -49,7 +49,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/ambulance1.jpg') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/ambulance1.webp') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
             </div>

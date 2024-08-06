@@ -43,7 +43,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/hgv1.jpg') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/hgv1.webp') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
             </div>
@@ -188,7 +188,7 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/taxi2.jpg') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/taxi2.webp') }}" alt=""
                         class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
@@ -268,7 +268,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/taxi3.jpg') }}" alt=""
+                    <img src="{{ asset('assets/images/inner-images/taxi3.webp') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
             </div>

@@ -23,7 +23,7 @@
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="100ms">
                     <div class="card-header">
                         <a href="{{ Route('booking') }}">
-                            <img src="{{ asset('assets/images/inner-images/taxi_assessment.jpg') }}" alt="">
+                            <img src="{{ asset('assets/images/inner-images/taxi_assessment.webp') }}" alt="">
                         </a>
                     </div>
                     <div class="card-body">
@@ -46,7 +46,7 @@
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="200ms">
                     <div class="card-header">
                         <a href="{{ Route('booking') }};">
-                            <img src="{{ asset('assets/images/inner-images/hgv_assessment.jpg') }}" alt="">
+                            <img src="{{ asset('assets/images/inner-images/hgv_assessment.webp') }}" alt="">
                         </a>
                     </div>
                     <div class="card-body">
@@ -70,7 +70,7 @@
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="300ms">
                     <div class="card-header">
                         <a href="{{ Route('booking') }};">
-                            <img src="{{ asset('assets/images/inner-images/seafarers2.jpg') }}" alt="">
+                            <img src="{{ asset('assets/images/inner-images/seafarers2.webp') }}" alt="">
                         </a>
                     </div>
                     <div class="card-body">
@@ -142,7 +142,7 @@
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="600ms">
                     <div class="card-header">
                         <a href="{{ Route('booking') }};">
-                            <img src="{{ asset('assets/images/inner-images/ambulance1.jpg') }}" alt="">
+                            <img src="{{ asset('assets/images/inner-images/ambulance1.webp') }}" alt="">
                         </a>
                     </div>
                     <div class="card-body">
@@ -165,7 +165,7 @@
                 <div class="card assessment_card wow fadeInUp" data-wow-delay="700ms">
                     <div class="card-header">
                         <a href="{{ Route('booking') }};">
-                            <img src="{{ asset('assets/images/inner-images/motorhome1.jpg') }}" alt="">
+                            <img src="{{ asset('assets/images/inner-images/motorhome1.webp') }}" alt="">
                         </a>
                     </div>
                     <div class="card-body">

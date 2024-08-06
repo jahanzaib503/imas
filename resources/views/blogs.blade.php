@@ -27,7 +27,7 @@
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="200ms">
                     <div class="post-image">
                         <a href="{{ route('blog-details') }}">
-                            <img src="{{ asset('assets/images/inner-images/taxi2.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/images/inner-images/taxi2.webp') }}" alt="image">
                         </a>
                         <div class="date">
                             <span>July 12, 2024</span>
@@ -47,7 +47,7 @@
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="300ms">
                     <div class="post-image">
                         <a href="{{ route('blog-details') }}">
-                            <img src="{{ asset('assets/images/inner-images/hgv1.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/images/inner-images/hgv1.webp') }}" alt="image">
                         </a>
                         <div class="date">
                             <span>July 12, 2024</span>
@@ -83,7 +83,7 @@
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="200ms">
                     <div class="post-image">
                         <a href="{{ route('blog-details') }}">
-                            <img src="{{ asset('assets/images/inner-images/taxi2.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/images/inner-images/taxi2.webp') }}" alt="image">
                         </a>
                         <div class="date">
                             <span>July 12, 2024</span>
@@ -103,7 +103,7 @@
                 <div class="single-blog-post wow fadeInUp" data-wow-delay="300ms">
                     <div class="post-image">
                         <a href="{{ route('blog-details') }}">
-                            <img src="{{ asset('assets/images/inner-images/hgv1.jpg') }}" alt="image">
+                            <img src="{{ asset('assets/images/inner-images/hgv1.webp') }}" alt="image">
                         </a>
                         <div class="date">
                             <span>July 12, 2024</span>

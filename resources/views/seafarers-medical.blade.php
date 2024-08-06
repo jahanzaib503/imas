@@ -33,7 +33,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers1.jpg') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/seafarers1.webp') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
             </div>
         </div>
@@ -44,7 +44,7 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers2.jpg') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/seafarers2.webp') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">
@@ -104,7 +104,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers3.jpg') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/seafarers3.webp') }}" alt="" class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
             </div>
         </div>
@@ -115,7 +115,7 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/seafarers4.jpg') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
+                    <img src="{{ asset('assets/images/inner-images/seafarers4.webp') }}" alt="" class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
                     <div class="content wow fadeInRight" data-wow-duration="1s">

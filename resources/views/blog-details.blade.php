@@ -21,7 +21,7 @@
         <div class="boxStyle">
 
             <div class="sec-image">
-                <img src="{{ asset('assets/images/inner-images/taxi2.jpg') }}" alt="" class="inner-page-image wow fadeInUp"
+                <img src="{{ asset('assets/images/inner-images/taxi2.webp') }}" alt="" class="inner-page-image wow fadeInUp"
                     data-wow-duration="1s">
             </div>
 
