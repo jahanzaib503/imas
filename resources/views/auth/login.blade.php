@@ -14,7 +14,7 @@
         }
 
         body {
-            background-image: url('{{ asset('assets/images/home/login_bg.webp') }}');
+            background-image: url('{{ asset('public/assets/images/home/login_bg.webp') }}');
             background-size: cover;
             background-position: center;
             width: 100%;
@@ -201,7 +201,7 @@
                 <div class="left">
                     <div class="form_section">
                         <div class="logo">
-                            <img src="{{ asset('assets/images/imas_logo.png') }}" alt="">
+                            <img src="{{ asset('public/assets/images/imas_logo.png') }}" alt="">
                         </div>
                         <div class="welcome_text">
                             <h1>Welcome!</h1>
@@ -261,7 +261,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <img src="{{ asset('assets/images/login.png') }}" alt="">
+                    <img src="{{ asset('public/assets/images/login.png') }}" alt="">
                 </div>
             </div>
         </div>
