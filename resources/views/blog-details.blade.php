@@ -4,7 +4,7 @@
 @section('metaDescription', $blog->description)
 
 @section('content')
-<section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/seafarers_medical.jpg') }}')">
+<section class="inner_banner" style="background-image: url('{{ asset('public/assets/images/banner/seafarers_medical.jpg') }}')">
     <div class="container">
         <div class="inner_banner_content">
             <h1 class="text-center">
@@ -25,7 +25,7 @@
         <div class="boxStyle">
 
             <div class="sec-image">
-                <img src="{{ asset('storage/images/' . $blog->image) }}" alt="" class="inner-page-image wow fadeInUp" data-wow-duration="1s">
+                <img src="{{ asset('public/storage/images/' . $blog->image) }}" alt="" class="inner-page-image wow fadeInUp" data-wow-duration="1s">
             </div>
 
             <div class="content-wrapper">

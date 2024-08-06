@@ -12,7 +12,7 @@
             });
         </script>
     @endif
-<section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/seafarers_medical.jpg') }}')">
+<section class="inner_banner" style="background-image: url('{{ asset('public/assets/images/banner/seafarers_medical.jpg') }}')">
     <div class="container">
         <div class="inner_banner_content">
             <h1>

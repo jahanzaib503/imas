@@ -13,7 +13,7 @@ use App\Http\Controllers\TestEmailController;
 Route::get('/send-test-email', [TestEmailController::class, 'sendTestEmail']);
 
 Auth::routes(['register' => false]);
-Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
+Route::get('/', [HomeController::class, 'index'])->name('index');
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/logout', [App\Http\Controllers\Auth\LoginController::class, 'logout'])->name('logout');
 

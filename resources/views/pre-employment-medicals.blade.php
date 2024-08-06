@@ -1,7 +1,7 @@
 @extends('layouts.main')
 @section('content')
     <section class="inner_banner"
-        style="background-image: url('{{ asset('assets/images/banner/pre-employment-medicals.webp') }}')">
+        style="background-image: url('{{ asset('public/assets/images/banner/pre-employment-medicals.webp') }}')">
         <div class="container">
             <div class="inner_banner_content">
                 <h1>
@@ -36,7 +36,7 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/pre-employment1.webp') }}" alt=""
+                    <img src="{{ asset('public/assets/images/inner-images/pre-employment1.webp') }}" alt=""
                         class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
@@ -104,7 +104,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/pre-employment2.webp') }}" alt=""
+                    <img src="{{ asset('public/assets/images/inner-images/pre-employment2.webp') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
 
@@ -116,7 +116,7 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/why_choose.webp') }}" alt=""
+                    <img src="{{ asset('public/assets/images/inner-images/why_choose.webp') }}" alt=""
                         class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
@@ -158,7 +158,7 @@
 
 
     <section class="cta-section bg-theme mb-30">
-        <div class="pattern-layer lazy" style="background-image: url('{{ asset('assets/images/home/shape-2.png') }}');">
+        <div class="pattern-layer lazy" style="background-image: url('{{ asset('public/assets/images/home/shape-2.png') }}');">
         </div>
         <div class="auto-container">
             <div class="clearfix">
@@ -203,7 +203,7 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="img-box2 wow fadeInRight" data-wow-duration="2s">
-                        <img src="{{ asset('assets/images/home/cta_1.png') }}" alt="Medical Services">
+                        <img src="{{ asset('public/assets/images/home/cta_1.png') }}" alt="Medical Services">
                     </div>
                 </div>
             </div>

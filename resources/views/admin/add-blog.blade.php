@@ -1,6 +1,6 @@
 @extends('admin/layouts.main')
 @section('content')
-<link rel="stylesheet" href="{{ asset('admin-assets/css/text-editor.css') }}">
+<link rel="stylesheet" href="{{ asset('public/admin-assets/css/text-editor.css') }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/css/dropify.min.css">
     <div class="page-wrapper">
         <div class="page-content">
@@ -78,7 +78,7 @@
         </div>
     </div>  
     @endsection
-      <script src="{{ asset('admin-assets/js/text-editor.js') }}"></script>
+      <script src="{{ asset('public/admin-assets/js/text-editor.js') }}"></script>
       @push('script')
       <script src="https://cdnjs.cloudflare.com/ajax/libs/Dropify/0.2.2/js/dropify.min.js"></script>
         <script>

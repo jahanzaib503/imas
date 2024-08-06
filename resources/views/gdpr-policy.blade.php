@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('content')
-    <section class="inner_banner" style="background-image: url('{{ asset('assets/images/privacy/terms-banner.jpg') }}')">
+    <section class="inner_banner" style="background-image: url('{{ asset('public/assets/images/privacy/terms-banner.jpg') }}')">
         <div class="container">
             <div class="inner_banner_content">
                 <h1>

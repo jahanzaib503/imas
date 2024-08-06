@@ -4,7 +4,7 @@
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title wow fadeInUp" data-wow-duration="1s">
-                    <img src="{{ asset('assets/images/home/title_icon.svg') }}" alt="Icon">
+                    <img src="{{ asset('public/assets/images/home/title_icon.svg') }}" alt="Icon">
                     Insights and Updates from IMAS Medical
                 </span>
                 <h2 class="sec-title mb-30 wow fadeInUp" data-wow-duration="2s">
@@ -17,7 +17,7 @@
                         <div class="single-blog-post wow fadeInUp" data-wow-delay="{{ $loop->iteration * 100 }}ms">
                             <div class="post-image">
                                 <a href="{{ route('blog-details', ['slug' => $blog->slug]) }}">
-                                    <img src="{{ asset('storage/images/' . $blog->image) }}" alt="image">
+                                    <img src="{{ asset('public/storage/images/' . $blog->image) }}" alt="image">
                                 </a>
                                 <div class="date">
                                     <span>{{ $blog->created_at->format('F d, Y') }}</span>
@@ -48,7 +48,7 @@
         <div class="row">
             <div class="col-lg-4">
                 <div class="footer_logo">
-                    <img src="assets/images/Imas_white.png" alt="">
+                    <img src="public/assets/images/Imas_white.png" alt="">
                     
                     <p class="about_footer">
                         Subscribe to out newsletter today to receive latest news administrate cost effective for tactical data.
@@ -148,7 +148,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="{{ asset('assets/js/custom.js') }}"></script>
+<script src="{{ asset('public/assets/js/custom.js') }}"></script>
 
 </body>
 

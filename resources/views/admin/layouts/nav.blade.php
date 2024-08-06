@@ -9,7 +9,7 @@
                     <div class="simplebar-content" style="padding: 0px;">
                         <div class="sidebar-header" style="height:75px!important;">
                             <div class="text-center">
-                                <img src="{{ asset('assets/images/Imas_white.png') }}" alt="">
+                                <img src="{{ asset('public/assets/images/Imas_white.png') }}" alt="">
                             </div>
                         </div>
                         <!--navigation-->

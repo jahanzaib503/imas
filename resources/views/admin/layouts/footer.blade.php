@@ -18,7 +18,7 @@
            Swal.fire("Error!", "{{ session('error') }}", "error");
        @endif
 </script>
-<script src="{{ asset('admin-assets/js/main.js') }}"></script>
+<script src="{{ asset('public/admin-assets/js/main.js') }}"></script>
 @stack('script')
 </body>
 

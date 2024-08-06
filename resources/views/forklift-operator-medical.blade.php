@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('content')
-    <section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/forklift-operator-medical.webp') }}')">
+    <section class="inner_banner" style="background-image: url('{{ asset('public/assets/images/banner/forklift-operator-medical.webp') }}')">
         <div class="container">
             <div class="inner_banner_content">
                 <h1>Forklift Operator Medical Assessment</h1>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/forklift1.webp') }}" alt=""
+                    <img src="{{ asset('public/assets/images/inner-images/forklift1.webp') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
             </div>
@@ -62,7 +62,7 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/forklift2.webp') }}" alt=""
+                    <img src="{{ asset('public/assets/images/inner-images/forklift2.webp') }}" alt=""
                         class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
@@ -147,18 +147,18 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/ambulance2.webp') }}" alt=""
+                    <img src="{{ asset('public/assets/images/inner-images/ambulance2.webp') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="space" data-bg-src="{{ asset('assets/images/home/process_bg_1.jpg') }}">
+    <section class="space" data-bg-src="{{ asset('public/assets/images/home/process_bg_1.jpg') }}">
         <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title wow fadeInUp" data-wow-duration="1s"><img
-                        src="{{ asset('assets/images/home/title_icon.svg') }}" alt="Icon">Requirements</span>
+                        src="{{ asset('public/assets/images/home/title_icon.svg') }}" alt="Icon">Requirements</span>
                 <h2 class="sec-title mb-30 wow fadeInUp" data-wow-duration="2s">What your required to bring to your medical
                     assessment</h2>
             </div>
@@ -167,7 +167,7 @@
                     <div class="process-card wow fadeInUp" data-wow-delay="200ms">
                         <div class="box-img">
                             <div class="img">
-                                <img src="{{ asset('assets/images/inner-images/ambulance3.webp') }}" alt="icon">
+                                <img src="{{ asset('public/assets/images/inner-images/ambulance3.webp') }}" alt="icon">
                             </div>
                             <p class="box-number">01</p>
                         </div>
@@ -183,7 +183,7 @@
                     <div class="process-card wow fadeInUp" data-wow-delay="300ms">
                         <div class="box-img">
                             <div class="img">
-                                <img src="{{ asset('assets/images/inner-images/ambulance4.webp') }}" alt="icon">
+                                <img src="{{ asset('public/assets/images/inner-images/ambulance4.webp') }}" alt="icon">
                             </div>
                             <p class="box-number">02</p>
                         </div>
@@ -199,7 +199,7 @@
                     <div class="process-card wow fadeInUp" data-wow-delay="400ms">
                         <div class="box-img">
                             <div class="img">
-                                <img src="{{ asset('assets/images/home/attend_appointment.jpg') }}" alt="icon">
+                                <img src="{{ asset('public/assets/images/home/attend_appointment.jpg') }}" alt="icon">
                             </div>
                             <p class="box-number">03</p>
                         </div>
@@ -216,7 +216,7 @@
     </section>
 
     <section class="cta-section bg-theme mb-30">
-        <div class="pattern-layer lazy" style="background-image: url('{{ asset('assets/images/home/shape-2.png') }}');">
+        <div class="pattern-layer lazy" style="background-image: url('{{ asset('public/assets/images/home/shape-2.png') }}');">
         </div>
         <div class="auto-container">
             <div class="clearfix">
@@ -260,7 +260,7 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="img-box2 wow fadeInRight" data-wow-duration="2s">
-                        <img src="{{ asset('assets/images/home/cta_1.png') }}" alt="Medical Services">
+                        <img src="{{ asset('public/assets/images/home/cta_1.png') }}" alt="Medical Services">
                     </div>
                 </div>
             </div>
