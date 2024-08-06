@@ -5,7 +5,7 @@
 
     </style>
     <section class="inner_banner"
-        style="background-image: url('{{ asset('assets/images/banner/ambulance-driver-medical.jpg') }}')">
+        style="background-image: url('{{ asset('public/assets/images/banner/ambulance-driver-medical.jpg') }}')">
         <div class="container">
             <div class="inner_banner_content">
                 <h1>About IMAS Medical</h1>
@@ -42,7 +42,7 @@
         <div class="container">
             <div class="row col_reverse">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/mission.webp') }}" alt=""
+                    <img src="{{ asset('public/assets/images/inner-images/mission.webp') }}" alt=""
                         class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/vision.webp') }}" alt=""
+                    <img src="{{ asset('public/assets/images/inner-images/vision.webp') }}" alt=""
                         class="img-fluid wow fadeInRight" data-wow-duration="2s">
                 </div>
                 
@@ -99,7 +99,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
-                    <img src="{{ asset('assets/images/inner-images/core.webp') }}" alt=""
+                    <img src="{{ asset('public/assets/images/inner-images/core.webp') }}" alt=""
                         class="img-fluid wow fadeInLeft" data-wow-duration="2s">
                 </div>
                 <div class="col-lg-6">
@@ -168,7 +168,7 @@
                 </div>
                 <div class="col-xl-5">
                     <div class="img-box2 wow fadeInRight" data-wow-duration="2s">
-                        <img src="{{ asset('assets/images/home/cta_1.png') }}" alt="Medical Services">
+                        <img src="{{ asset('public/assets/images/home/cta_1.png') }}" alt="Medical Services">
                     </div>
                 </div>
             </div>

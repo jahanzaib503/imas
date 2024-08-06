@@ -1,6 +1,6 @@
 @extends('layouts.main')
 @section('content')
-<section class="inner_banner" style="background-image: url('{{ asset('assets/images/banner/seafarers_medical.jpg') }}')">
+<section class="inner_banner" style="background-image: url('{{ asset('public/assets/images/banner/seafarers_medical.jpg') }}')">
     <div class="container">
         <div class="inner_banner_content">
             <h1>
@@ -28,7 +28,7 @@
                     <div class="single-blog-post wow fadeInUp" data-wow-delay="200ms">
                         <div class="post-image">
                             <a href="{{ route('blog-details', ['slug' => $blog->slug]) }}">
-                                <img src="{{ asset('storage/images/' . $blog->image) }}" alt="image">
+                                <img src="{{ asset('public/storage/images/' . $blog->image) }}" alt="image">
                             </a>
                             <div class="date">
                                 <span>{{ $blog->created_at->format('F d, Y') }}</span>

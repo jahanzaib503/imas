@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="twitter:title" content="@yield('metaTitle', 'IMAS Medicals')" />
+    <meta name="twitter:title" content="@yield('metaTitle', 'IMAS Medicalspublic/')" />
     <meta name="twitter:description" content="@yield('metaDescription', 'IMAS Medicals')" />
 
     <title>@yield('metaTitle', 'IMAS Medicals')</title>
@@ -13,15 +13,15 @@
 
 
     <title>IMAS Medical | Medicals from £45 - Taxi | D4 | Pre-Employment | Safety Critical</title>
-    <link rel="icon" href="{{ asset('assets/images/favicon.png') }}">
+    <link rel="icon" href="{{ asset('public/assets/images/favicon.png') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <link rel="stylesheet" href="{{ asset('assets/css/animate.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
-    <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/animate.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/style.css') }}">
+    <link rel="stylesheet" href="{{ asset('public/assets/css/responsive.css') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css"> -->
     
@@ -76,7 +76,7 @@
     <nav class="navbar sticky-top navbar-expand-xl navbar-light bg-light">
         <div class="container">
             <a href="{{ Route('index') }}" class="navbar-brand">
-                <img src="{{ asset('assets/images/imas_logo.png') }}" alt="Filingzone" class="logo">
+                <img src="{{ asset('public/assets/images/imas_logo.png') }}" alt="Filingzone" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas"
                 aria-controls="navbarOffcanvas" aria-expanded="false" aria-label="Toggle navigation">
@@ -85,7 +85,7 @@
             <div class="offcanvas offcanvas-end" id="navbarOffcanvas" tabindex="-1"
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
-                    <img src="{{ asset('assets/images/imas_logo.png') }}" alt="Filingzone" class="logo">
+                    <img src="{{ asset('public/assets/images/imas_logo.png') }}" alt="Filingzone" class="logo">
                     <button type="button" class="btn-close btn-close-dark text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
                 </div>
